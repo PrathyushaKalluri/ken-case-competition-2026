@@ -1,0 +1,14 @@
+{
+  "pages": 21,
+  "bytes": 129117,
+  "clickable_links": 24,
+  "q3_word_counts": [
+    14,
+    12,
+    14,
+    12,
+    11,
+    12
+  ],
+  "layout": "All 21 pages visually inspected; corrected section reference on page 11; structural boundary checks passed."
+}
