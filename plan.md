@@ -4,6 +4,8 @@
 
 This is a living document — update it as interviews happen and the insight converges. See `progress.md` for a lighter-weight status checklist against this plan.
 
+**⚠️ Superseded in part — see `team_reconciliation.md`.** A teammate (Sricharan) independently built a more complete interview guide, survey instrument, and fieldwork capture system in `research/report-source.md` and `research/Fieldwork_Templates.md`. That is now the canonical operating guide; this file's probes below are additive (see `team_reconciliation.md` §3 for exactly where to insert them), and the interview-volume target below is now an open team decision, not settled — see `team_reconciliation.md` §4.
+
 ---
 
 ## Objective

@@ -38,7 +38,7 @@ Every household asset creates a fragmented operational workflow: **invoice → w
 
 ### 1.3 Segments **[TEAM, from braindump — unscored]**
 
-Geography: metro / tier 1 / tier 2 / tier 3. Demographic: age. **Not yet scored against each other** — the braindump explicitly notes these are dimensions to test, not conclusions ("just the 1st round of possibilities, need not be the full set").
+Geography: metro / tier 1 / tier 2 / tier 3. Demographic: age. **Not yet scored against each other** — the braindump explicitly notes these are dimensions to test, not conclusions ("just the 1st round of possibilities, need not be the full set"). **Correction, per `team_reconciliation.md` §6**: do not treat any claim that machines has the highest repetition rate among 18-24-year-olds as established — a teammate's independent audit found the one local file that stored such a score (`The_Ken_2026_Case_Selection_Playbook.html`) doesn't match the live competition chart, and its own source files were never in the workspace to verify.
 
 ### 1.4 Universal failure taxonomy **[TEAM, from context files]**
 

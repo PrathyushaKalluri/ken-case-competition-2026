@@ -61,6 +61,16 @@ Two columns of decisions: what the **team (user)** decided, and what **Claude** 
 
 ---
 
+## New section — team reconciliation (Sricharan's independent research pipeline discovered)
+
+| # | Item | Notes |
+|---|---|---|
+| 28 | Discovered mid-session that teammate Sricharan ran his own Claude Code session and pushed a second commit to the shared repo with a substantially more complete interview guide, survey instrument, fieldwork capture templates, and rail documentation | Full detail in `team_reconciliation.md`. Also resolved the "Atharv" identity gap flagged since `decisions.md` #21 — he's the third Invictus teammate. |
+| 29 | User's explicit instruction, when asked how to proceed: **"Reconcile first, then textbooks."** | Deferred the originally-requested 20-textbook synthesis until the two research tracks are merged into one team-wide source of truth. |
+| 30 | Claude's judgment call: designated Sricharan's `research/report-source.md` and `research/Fieldwork_Templates.md` as canonical for interview guide, survey, fieldwork capture, and the day-by-day operating schedule, since they are materially more complete and rigorous than this session's `plan.md` equivalents | This session's own probes (from resource-scan and the Household Service Memory PDF) were kept as additive insertions rather than discarded — see `team_reconciliation.md` §3. Did not edit Sricharan's files directly; reconciliation lives in a new file so his authored work stays intact. |
+| 31 | Claude's judgment call: surfaced the interview-volume conflict (3-6 vs. 10-12+ interviews) as an open team decision rather than silently picking one number | Both estimates come from real inputs (your own stated capacity vs. Sricharan's own written plan) that are in genuine tension — not something Claude should resolve unilaterally. |
+| 32 | Claude's judgment call: flagged that the user's own personal incident for Q1 has never been collected in this session, mirroring the exact gap Sricharan's own brief already flagged for himself and Atharv | See `team_reconciliation.md` §5. Still open. |
+
 ## Open decisions still pending (not yet made by anyone)
 
 - Which of the 17+ candidate insight threads survives real interview evidence (deliberately not decided yet — see decision #6).

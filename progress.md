@@ -83,6 +83,15 @@ Last updated: 2026-09-08 (session in progress). Update the checkboxes as work ac
 - [x] Household Service Memory Supplementary Note (PDF) read and integrated — new section added to all 8 markdown files (`context.md` Part 7, `decisions.md`, `links.md`, `notes.md` §6a, `plan.md`, `progress.md` — this section, `r1.md`, `system_map.md` §5), PDF preserved to `/files/`
 - [x] Independent secondary research on task-substitution theory (compensatory consumption, bricolage, jugaad) and service-tracking mechanisms (vehicle SMS-reminder infra, AMC vendor practices, RO brand apps, physical stickers/log books) — ~14 web searches, synthesized into `system_map.md` §6, `notes.md` §6b, sources in `links.md`, 2 new interview probes added to `plan.md`
 
+## Team reconciliation (new — see `team_reconciliation.md`)
+
+- [x] Discovered teammate Sricharan's independent research pipeline (`research/` folder: interview guide, survey instrument, fieldwork capture templates, rail documentation, 20 reference textbooks) pushed to the shared repo
+- [x] Reconciled both tracks into `team_reconciliation.md` — canonical sources designated per area, additive probes mapped to insertion points, hypothesis sets cross-checked (4 of 5 independently overlap)
+- [x] Corrected `system_map.md` §1.3 based on Sricharan's audit finding (18-24/machines repetition-rate claim is not supported by any current source)
+- [ ] **Team decision needed today**: is "six hours daily" per-person or combined across the team? Determines whether 3-6 or 10-12+ interviews is the real target (`team_reconciliation.md` §4)
+- [ ] **Your own personal incident for Q1** — still not collected in this session; needed alongside Atharv's (also still pending)
+- [ ] Confirm with Sricharan the exact meaning of "duplicate" RAM in his incident before it's used in any answer draft
+
 ## Known open risk
 
-Zero interviews have been conducted as of this update, with roughly 2 days left before the hard deadline. Stage 1 (fieldwork) is the critical path — everything in Stage 2 onward is blocked on it. Recommend starting outreach for interview #1 immediately rather than finishing tooling/planning further.
+Zero interviews have been conducted as of this update, with roughly 1.5 days left before the hard deadline. Stage 1 (fieldwork) is the critical path — everything in Stage 2 onward is blocked on it. Recommend resolving the interview-volume decision and collecting the two missing personal incidents today, then starting outreach immediately.
