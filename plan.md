@@ -12,6 +12,8 @@ This is a living document — update it as interviews happen and the insight con
 
 **Superseded again — see `narrowed_problem.md`.** That file now holds the actual, real-access-based recruitment plan (6 interview slots, specific channels, ready to execute today) and the confirmed segmentation axis (managed-community vs. independent-household service-network structure — not renter/owner). The object/machine category is deliberately left unpicked, to emerge from unprimed interviews. Use `narrowed_problem.md` §5 as the operating recruitment plan; this file's Stage 1 interview-split (household/technician/landlord lenses) is now superseded by that more concrete channel-based plan.
 
+**Superseded once more — see `research_plan.md`.** That's now the operating document for actually running fieldwork: a full stakeholder map (8 confirmed interviews, up from the earlier 3-6 estimate, plus 3 recommended snowball additions), per-stakeholder-type interview guide deltas, the survey plan with a new segmentation question, and an evidence-capture matrix mapping every interview to the competition's own 5 attachment types. Use `research_plan.md` end to end when fieldwork actually starts.
+
 ---
 
 ## Objective
