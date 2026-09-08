@@ -10,6 +10,8 @@ This is a living document — update it as interviews happen and the insight con
 
 **New**: `best_practices.md` now exists — a synthesis of all 20 reference textbooks (how to think like a designer/systems-thinker/UX-researcher/experiment-designer) plus 3 years of Ken competition winner/judge research. Read it before drafting Q1-Q10; it directly reframes several of the probes and rail-choice reasoning below (e.g. §3's leverage-point test for Q5, §1's judge-quoted warnings against vague AI/financial claims for every answer).
 
+**Superseded again — see `narrowed_problem.md`.** That file now holds the actual, real-access-based recruitment plan (6 interview slots, specific channels, ready to execute today) and the confirmed segmentation axis (managed-community vs. independent-household service-network structure — not renter/owner). The object/machine category is deliberately left unpicked, to emerge from unprimed interviews. Use `narrowed_problem.md` §5 as the operating recruitment plan; this file's Stage 1 interview-split (household/technician/landlord lenses) is now superseded by that more concrete channel-based plan.
+
 ---
 
 ## Objective

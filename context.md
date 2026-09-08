@@ -435,3 +435,40 @@ Asked the user how to proceed (textbooks now, reconcile first, or both in parall
 ### The one actionable finding worth flagging above the rest
 
 The experiment/survey-design fork's audit of the team's existing S0-S30 survey came back with a **"ship it" verdict** — the survey independently follows textbook-correct practice (question ordering, bias avoidance, honest disclosure of its convenience-sample limitation) without having been built from these specific books. Three optional hardenings were suggested (duplicate-response flagging, completion-time capture, a note that its uneven answer bins are correct, not a bug) and one real outstanding item was found (a placeholder contact field in the survey's own intro still needs to be filled in before launch).
+
+---
+
+## Part 11 — Asked directly: are we on the right track, can we win
+
+### User's question (verbatim)
+
+> Say yes or no: Are we on the right track? Can we win the competition?
+
+### Claude's answer (verbatim)
+
+> **Yes — on the right track. Can you win — genuinely possible, but not yet earned.**
+>
+> Here's the honest gap: everything that's been built so far (`system_map.md`, `best_practices.md`, the reconciled research plan, the audited survey) is *preparation quality*, and it's genuinely strong — stronger than most teams will have. But **zero real interviews have happened**. Q2, the answer judges "read first," doesn't exist yet. Neither do Q1, Q3-Q10. All of that depends on evidence you don't have yet.
+>
+> Preparation doesn't win this — the insight from a real conversation does, and the clock on that is the only thing that matters right now. You're set up to win. You haven't yet done the thing that actually wins it.
+
+No files changed for this turn — a direct answer only.
+
+---
+
+## Part 12 — Narrowing the problem statement for Round 1: `narrowed_problem.md`
+
+### User's request (verbatim)
+
+> Now I want you to go through all the best practices and all the remaining Files, whichever you have created, like links, decisions, and all the research-related files that you have created I want you to narrow down the problem statement so that I will be going for interviews, narrowing down what the criteria are, etc. Ask me questions and come up with the best strategy or algorithm to narrow down the problem statement. The target now is Phase 1 or Round 1 of this case competition. I have been asking about the winning, but let's concentrate on selecting for the next round. Go through all 10 questions that are there: What is being expected? What interviews do we have to do? How to narrow it down? Go through everything. Now the task for you is to narrow down the problem statement. Ask me so many questions, and as we go, whatever decisions I take, you take. Put everything in a narrowed problem.md. Some context for why narrowing down is based on the context, like Hyderabad, or if I have my home pooja as an axis for these things: the problem completely changes, right? [...] How to do that? You need to narrow it down in such a way that there is a higher potential to go through all the best practices that are there to follow the winning criteria and to win the competition. Which direction has a huge potential? Which direction has a huge potential to come up with a strategy?
+
+### What Claude did
+
+1. Fetched from the shared repo first (`git fetch origin`) — confirmed no new commits from Sricharan since the last push.
+2. Wrote `narrowed_problem.md` with: §1 the mechanism explaining why narrowing changes whitespace/evidence-claims/rail-relevance simultaneously, §2 a 4-filter narrowing algorithm (object → segment → geography → mechanism), §3 a full Q-by-Q table (all 10 questions: what's expected, what evidence is needed, how narrowing changes each answer) built from `context.md` Part 1.3, `r1.md`, and Sricharan's answer scaffolds in `research/report-source.md`.
+3. **First question batch was rejected by the user** — asked to clarify before proceeding. The rejected batch had asked the user to pick an object/domain cluster (AC/appliances vs. trade services vs. a "home pooja" axis vs. "not sure") plus geography scope and risk appetite.
+4. **User's clarification (verbatim, condensed)**: *"That is not puja access. I was talking about my home bhooja... a big community in Hyderabad... a big network of servicemen available, and if they raise a complaint, that will be resolved. In some other individual houses... you have to find your own people for the repair... Also, don't ask me which field or which cluster to commit to, because we don't know which one is better. We also don't know how to procure people for interviews, so help us find the easiest accessible people as well."* This corrected a mishearing (the "pooja" axis was actually a reference to **My Home**, a Hyderabad gated-community builder group) and pushed back on being asked to make an ungrounded strategic choice, redirecting toward concrete recruitment help instead.
+5. Re-asked a leaner, more concrete question batch: confirming the community name (My Home), which access channels the user could personally activate *today* (multi-select — user selected: My Home community, independent households, IIITH campus professors/staff, **plus a volunteered addition**: tier-3-city technicians reachable by phone), and whether the user has direct or indirect access to My Home residents (answer: **direct — lives there, or immediate family does**).
+6. Updated `narrowed_problem.md` §4-6 with: Decision 1 (object left deliberately unpicked, interviews stay unprimed), Decision 2 (the real segmentation axis is service-network structure — managed-community vs. independent self-sourcing — not renter/owner, with the reasoning tied to `best_practices.md` §5's "recruit for a smooth case" good practice), Decision 3 (geography is Hyderabad, confirmed by real access rather than chosen abstractly), and a concrete 6-slot recruitment plan with specific channels, priority order, and a ready-to-ask probe question for the managed-vs-independent contrast.
+7. Added a new candidate pain-thread, **#18**, to `notes.md` §2 — explicitly framed as a nuance/complication of existing thread #8 (RWA/society diffuse ownership), not a replacement: large professionally-managed communities may partially solve the accountability-diffusion problem via an internal vendor system, or may have their own different friction — both outcomes are flagged as valuable findings, avoiding the trap of only wanting the answer that confirms a prior hypothesis.
+8. Updated `plan.md` (flagged as superseded again, pointing to `narrowed_problem.md` §5 as the operating recruitment plan), `progress.md` (new checklist entries, recruitment execution now the explicit next unchecked item), and `decisions.md` (#39-43).

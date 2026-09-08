@@ -51,6 +51,9 @@ Status: **none of these are confirmed** — per explicit user instruction, they 
 16. The dominant feeling isn't anger at the technician — it's low-grade dread of *initiating* the process at all (why things get postponed).
 17. The household member who owns this work never chose the role — it defaulted to whoever was home/available.
 
+**Service-network structure** *(added after `narrowed_problem.md`'s recruitment planning surfaced real, personal access to this exact contrast)*
+18. Large, professionally-managed residential communities (e.g. My Home in Hyderabad) may partially solve thread #8's accountability-diffusion problem via an internal approved-vendor system — while independent households and informally-managed buildings inherit the full diffusion problem with none of the professional-management fix. **Two possible real findings, both valuable**: managed communities are genuinely smoother (then the insight is *what specifically* their system does that an individual household's agent should replicate), or they have their own, different friction (then "managed doesn't mean solved" is itself a sharp, counterintuitive finding). See `narrowed_problem.md` §4 Decision 2 for the full reasoning and the confirmed interview plan testing this directly.
+
 **A sharper, 18th candidate that emerged later (from the resource-scan test-drive, see §5):**
 18. India already has a cultural precedent of delegating physical-world tasks to trusted human intermediaries (a building's go-to electrician, a family's regular repair contact, a domestic helper who "handles" this). The real design question may not be "will households delegate to an agent" but "who does this household already informally delegate this exact job to, and what would it take to trust software in that specific role instead?"
 
