@@ -1,0 +1,74 @@
+Source platform: Trustpilot (trustpilot.com/review/www.urbancompany.com)
+Collected via WebFetch on the live review page.
+
+---
+
+QUOTE: "When I called for an Fridge problem, the guy said I have to replace condensor for 11K."
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "GDLC DEMO", 2 days before collection (~Sept 2026) / 1 star
+RELEVANCE: Quote-to-bill / diagnosis-trust pattern (thread #10) — a large, single-number repair quote given over a phone call, no independent second opinion possible. Same review also mentions a washing machine motherboard-replacement recommendation for what the customer describes as a fuse issue — a second instance of an escalated, possibly-inflated diagnosis in the same complaint.
+
+---
+
+QUOTE: "Our AC was not repaired even after replacing the cooling coil for ₹6,500, gas charging of ₹3,000"
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "Shikha Jain", Aug 31, 2026 / 1 star
+RELEVANCE: Strong, specific match to thread #10 (quote-to-bill gap) AND the NCH-documented "damage during repair" and "no warranty on replaced part" buckets (system_map.md §7.1) — ₹9,500 spent, problem persisted, and the outdoor unit developed a new noise afterward per the review. A near-textbook instance of the exact national complaint pattern the government data names.
+
+---
+
+QUOTE: "My AC has started throwing water again just a few days after the service."
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "Rekha Agarwal", 3 days before collection (~Sept 2026) / 1 star
+RELEVANCE: Recurrence pattern — directly matches the "issue_recurred" field already defined in the incident-dataset schema (Keeping_Machines_Running_Context.md §13). A completed, paid-for repair that didn't actually hold.
+
+---
+
+QUOTE: "Even after multiple complainants they are not taking seriously neither returning money"
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "Pragati Gupta", Aug 13, 2026 / 1 star
+RELEVANCE: Escalation-failure pattern (thread: no reliable escalation path even after repeated contact) — supports the "escalation" failure type in the universal taxonomy (system_map.md §1.4).
+
+---
+
+QUOTE: "assigned person took motherboard of my washing machine for repairing but still didn't turned up."
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "Ajay Singh", Aug 29, 2026 / 1 star
+RELEVANCE: Very strong match to thread #20 (extended unavailability, no resolution timeline) — the actual physical part/appliance component was removed from the home and never returned, an escalated version of "kept for testing for weeks."
+
+---
+
+QUOTE: "professional did not come to my flat or even visited my residential complex. Despite this, the booking was cancelled by marking it as a 'no-show'"
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "Diversity_Exp", Aug 23, 2026 / 1 star
+RELEVANCE: A sharper, second-order version of thread #5/#6 — not just a missed visit, but the platform's own record of what happened (who was marked "no-show") is disputed by the customer. This is a genuine ticket-reality gap (thread #4) with an added trust/accountability dimension: the system's record and the customer's lived experience actively disagree.
+
+---
+
+QUOTE: "partners cancel the services end moment by giving lame excuses"
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "Divya", Aug 27, 2026 / 1 star
+RELEVANCE: Thread #5/#6, commitment enforcement.
+
+---
+
+QUOTE: "After payment of spa, they rescheduled the booking 3 times saying product is not available"
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "Bharti Sharma", Sept 5, 2026 / 1 star
+RELEVANCE: Outside the appliance category (a spa/beauty booking) but the mechanism — payment collected before availability was actually confirmed, then repeated rescheduling — is the same structural pattern as thread #11 (payment-before-verification) and could recur in an appliance-parts-availability context too.
+
+---
+
+QUOTE: "Service providers cancel bookings without arriving at the location, and Urban Company deducts 40% of the amount"
+SOURCE: Trustpilot
+URL: https://www.trustpilot.com/review/www.urbancompany.com
+DATE/RATING: reviewer "N Rai", Aug 22, 2026 / 1 star
+RELEVANCE: One of the sharpest quotes found — the platform charges a cancellation penalty even when the customer did not cancel and the provider never arrived. Directly relevant to the payments/authorisation-rail design (Keeping_Machines_Running_Context.md §7B, narrowed_problem.md Decision 1b): a real, documented case of money moving without the customer's action or consent, which is exactly the kind of "milestone-based payment, not automatic deduction" guardrail already listed as a candidate rule in the local context files.

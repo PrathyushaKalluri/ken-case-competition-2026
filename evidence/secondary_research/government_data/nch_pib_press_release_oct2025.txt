@@ -1,0 +1,18 @@
+SOURCE: Press Information Bureau (PIB), Government of India — Ministry of Consumer Affairs, Food & Public Distribution
+DOCUMENT: "National Consumer Helpline — India's Frontline of Consumer Protection"
+URL: https://static.pib.gov.in/WriteReadData/specificdocs/documents/2025/oct/doc20251016668201.pdf
+DATE: October 2025
+COLLECTED: via WebFetch (initial attempt returned unparsed binary), then extracted locally via pypdf
+
+HONESTY NOTE: This is a genuine primary government source, fetched and text-extracted directly (not summarized secondhand). It does NOT contain the specific "household appliance servicing is a top-5 complaint category" claim or the "6 recurring complaint buckets" breakdown referenced earlier in this project's research (system_map.md §7.1) — that earlier claim came from a WebSearch AI-synthesized answer, not verified against a primary document found so far. This document should NOT be cited as confirming that specific claim. It IS a verified primary source for the figures below.
+
+KEY VERIFIED FIGURES (safe to cite directly, with this exact source):
+- Monthly complaint registrations (average): grew from 37,062 in 2017 to 1,70,585 in 2025.
+- Call volumes: grew from 12,553 in December 2015 to 1,55,138 in December 2024 (more than tenfold).
+- July 2025: NCH facilitated refunds totalling Rs. 2.72 crore by resolving 7,256 consumer grievances across 27 sectors (up from 1,079 grievances / Rs. 62 lakh in April 2025).
+- E-commerce was the LARGEST category for refund-related complaints in July 2025: 3,594 cases, Rs. 1.34 crore in refunds. Travel and Tourism followed (Rs. 31 lakh). Household appliances were not named among the top categories in this specific release.
+- Digital channel adoption: ~65% of grievances now registered via online/digital channels; WhatsApp-based grievance registration grew from 3% (March 2023) to 20% (March 2025).
+- Convergence partners (companies that opted in to receive real-time complaint data and respond within 30 days): grew from 263 (2017) to 1,142 (Sept 2025).
+- GST Reforms 2025 tracking: 3,981 GST-related calls logged as of Oct 2, 2025 — 31% queries, 69% formal grievances. Consumer durables (including TVs, ACs, monitors, dishwashers) were named as a sector affected by GST rate changes (28%→18%), relevant context for pricing-related complaints, not repair-coordination complaints specifically.
+
+RELEVANCE: Verifies the *scale and growth* of India's institutional consumer-grievance infrastructure and culture — useful context for arguing that Indian consumers are increasingly willing to formally escalate service failures (relevant to Q9 market-readiness reasoning), and for the general "delegation to institutions is already normalized in India" thesis (context.md Part 5, "The Great Rewiring" column). Does not independently confirm the appliance-specific complaint-category claim already in system_map.md §7.1 — that claim's confidence should be treated as directionally likely (multiple secondary sources converge on it) but not primary-source-verified by this document.

@@ -1,0 +1,74 @@
+Source platform: PissedConsumer (urban-company.pissedconsumer.com)
+Collected via WebFetch on the live review aggregation page. Aggregate site stats reported elsewhere in this project: 1,357 reviews, 1.4-star average, 91% unfavourable (system_map.md §7.2).
+
+---
+
+QUOTE: "My water purifier not working properly"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Aug 9, 2026 / rating not visible
+RELEVANCE: Generic breakdown report — low signal alone, but establishes RO/water purifier as an active complaint category on the platform.
+
+---
+
+QUOTE: "We have a native m2 water purifier. I need to change the dust filter box...It's been nearly 6 months"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 5, 2026 / location: Suryapet, Huzur Nagar (Telangana — same state as Hyderabad and Eluru)
+RELEVANCE: Strong match to thread #20 (extended unavailability with no resolution timeline) — 6 months unresolved for a filter swap is an extreme version of the "appliance kept for testing for weeks" NCH pattern. Also matches the logistics-rail-completeness question in research_plan.md Decision 1b (a part — the filter — never arrived).
+
+---
+
+QUOTE: "I have ordered RO system and want to service it but no idea how to contact customer support"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 6, 2026 / location: Varanasi, UP / 1 star
+RELEVANCE: Discovery/contact-channel failure — supports thread #3 (handoff & context loss) framing that even the "solved" branded-app path can fail at the first step.
+
+---
+
+QUOTE: "No one visited the flat neither contacted me taken the initial amount"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 5, 2026 / location: New Delhi (Kalkaji)
+RELEVANCE: Payment-before-verification pattern (thread #11) — money moved before any service was rendered or even attempted.
+
+---
+
+QUOTE: "After taking the advance money neither they visited for the work nor they contacted me"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 6, 2026 / location: New Delhi (Kalkaji) / 1 star
+RELEVANCE: Same pattern as above, independently reported by what looks like a different customer in the same neighbourhood — possible local/hyperlocal supply issue, or a repeat pattern from the same vendor pool.
+
+---
+
+QUOTE: "No one visited till 1748 hrs however I paid Rs.144 still waiting even no one had contacted me"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 5, 2026 / location: New Delhi (Kalkaji)
+RELEVANCE: Thread #5/#6 (commitment enforcement — a booked visit-time with zero enforcement mechanism) — precise timestamp given by the complainant, showing real-time tracking of a broken promise.
+
+---
+
+QUOTE: "You cancelled my booking, pls initiate refund"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 7, 2026 / location: Gurugram, Haryana / 1 star
+RELEVANCE: Refund/payment-dispute pattern, thread #11.
+
+---
+
+QUOTE: "No refunds happening for cancellations...They are cancelling the services without informing"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 7, 2026 / location: Hyderabad, Telangana
+RELEVANCE: Directly from Hyderabad — matches the team's own confirmed geography. Cancellation-without-notice + no refund is a compound failure across thread #5/#6 (commitment) and #11 (payment/verification).
+
+---
+
+QUOTE: "There is no active customer care number, then how to resolve the query?"
+SOURCE: PissedConsumer
+URL: https://urban-company.pissedconsumer.com/review.html
+DATE/RATING: Sept 5, 2026 / 1 star
+RELEVANCE: Supports the "ineffective AI chatbot / no human escalation path" pattern already noted in system_map.md §7.2 — even the market leader's support channel fails at the point customers need it most.
