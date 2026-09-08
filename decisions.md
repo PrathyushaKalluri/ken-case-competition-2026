@@ -101,6 +101,14 @@ Two columns of decisions: what the **team (user)** decided, and what **Claude** 
 | 46 | Claude's judgment call: upgraded Eluru from a "bonus supply-side data point" (the original framing) to a **full second geography**, given the real numbers show Eluru household access is comparable to or stronger than Hyderabad's | Per the user's own "not sure yet — decide after confirming who's actually reachable" answer, which explicitly deferred this exact call to once real numbers were in. |
 | 47 | Claude's judgment call: flagged, rather than hid, that the current sample confounds two variables at once — managed-vs-independent (thread #18) and metro-vs-tier-3 (new thread #19) — since Hyderabad access is metro+managed and Eluru access is tier-3+presumably-independent | The IIITH campus interview (metro+institutionally-managed) was identified as the one data point that helps triangulate which variable is actually driving any observed difference. Added a specific interview probe to test the "presumably independent" assumption about Eluru directly, rather than taking it for granted. |
 
+## New section — folding yesterday's resource-scan findings into the narrowing plan
+
+| # | Item | Notes |
+|---|---|---|
+| 48 | User asked explicitly to use the resource-scan skill's findings (from earlier in this session) to further inform the narrowing, not just the newer files | Added a "whitespace pre-registration" table to `narrowed_problem.md` Decision 1 — a prior on how exciting each candidate object would be if it surfaces in interviews, built entirely from already-completed research (`system_map.md` §2, §6), not new work. |
+| 49 | Claude's judgment call: registered the whitespace prior *before* interviews rather than after, explicitly framed as avoiding motivated reasoning — trade/repair services rank highest (no FSM-equivalent exists for households), AC is "covered on paper" but only 7% brand-AMC in practice, RO is split depending on which brand, and a vehicle-adjacent incident is framed as a contrast case rather than a target | Kept consistent with Decision 1's original commitment not to pre-select the object — this is a lens for weighing evidence once it arrives, not a selection made in advance. |
+| 50 | Claude's judgment call: added 2 new interview probes across all household slots (vehicle/reminder-infrastructure comparison; formal-AMC-vs-informal-relationship) directly derived from resource-scan findings, and clarified the existing AMC-vendor-forgetting probe should be asked in Eluru *without* assuming an AMC concept exists there | A "no, there's no such contract here" answer from Eluru is itself flagged as a real finding, not a failed question — ties to the metro-vs-tier-3 thread (#19). |
+
 ## Open decisions still pending (not yet made by anyone)
 
 - Which of the 17+ candidate insight threads survives real interview evidence (deliberately not decided yet — see decision #6).

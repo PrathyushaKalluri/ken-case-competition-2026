@@ -491,3 +491,23 @@ No files changed for this turn — a direct answer only.
 6. Rebuilt the recruitment table (`narrowed_problem.md` §5) with the real 6 slots: Eluru households ×1-2, Eluru electrician, Hyderabad/My Home household, IIITH campus (Sricharan), and the uncertain tier-3 institutional technician as a stretch item only — noting no new recruitment is actually needed, the confirmed contacts already cover the 3-6 target.
 7. Added a new candidate thread, **#19**, to `notes.md` §2 (metro vs. tier-3 market maturity), explicitly cross-referenced as confounded with thread #18 in the current sample. Added a specific interview probe to test rather than assume that Eluru households lack any form of managed building/society maintenance.
 8. Updated `decisions.md` (#44-47) and `progress.md` to reflect the correction and the upgraded geography scope.
+
+---
+
+## Part 14 — Folding the resource-scan findings back into the narrowing plan
+
+### User's request (verbatim)
+
+> Also, use the data or the knowledge that you have got by running the resource scan skill yesterday. Use that data as well to narrow down.
+
+### What Claude did
+
+Added a "whitespace pre-registration" table to `narrowed_problem.md` Decision 1, built entirely from the resource-scan run already documented in `context.md` Part 5 and `system_map.md` §2/§6 — no new research, a re-application of existing findings. Explicitly framed as registered *before* interview evidence arrives, to avoid motivated reasoning later. The table:
+
+- **Trade/repair services** (plumbing, carpentry, electrician, pest control) — highest prior whitespace; no FSM-equivalent exists for households sourcing these directly.
+- **AC** — "covered on paper" by Urban Company/brand apps, but a LocalCircles survey found only 7% of AC owners are actually on a brand maintenance contract; also the one object with documented legal ambiguity (Indian rent law leaves AC servicing an undefined tenant/landlord grey zone).
+- **RO/water purifier** — split: Kent's premium "SUPREME" IoT line already auto-detects faults and auto-registers service calls, so the gap narrows to the cross-brand/cross-appliance layer if that's what a respondent has; wide open if they have a non-premium unit.
+- **A vehicle-adjacent incident** — not a target, but a strong contrast case: India has already fully solved this exact class of problem for vehicles via government-coordinated infrastructure, which no equivalent exists for appliances.
+- **Anything with a formal AMC** — industry data shows vendors track renewals in Excel with reminder calls "from memory," losing 20-30% to forgetting; worth testing whether this pattern holds, is absent, or looks different in Eluru's more informal market.
+
+Added two new interview probes, layered onto the existing guide (`narrowed_problem.md` §5): a vehicle/reminder-infrastructure comparison question, and a formal-AMC-vs-informal-relationship question — both applied across every household slot, not just one geography. Clarified that the existing AMC-vendor-forgetting probe (already in `plan.md`) should be asked in Eluru without assuming an AMC concept exists there — a "no such thing here" answer is itself flagged as a real finding tied to thread #19 (metro vs. tier-3), not a failed question. Updated `decisions.md` (#48-50) and `progress.md` accordingly.
