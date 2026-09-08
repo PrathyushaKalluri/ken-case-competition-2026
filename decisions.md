@@ -71,6 +71,17 @@ Two columns of decisions: what the **team (user)** decided, and what **Claude** 
 | 31 | Claude's judgment call: surfaced the interview-volume conflict (3-6 vs. 10-12+ interviews) as an open team decision rather than silently picking one number | Both estimates come from real inputs (your own stated capacity vs. Sricharan's own written plan) that are in genuine tension — not something Claude should resolve unilaterally. |
 | 32 | Claude's judgment call: flagged that the user's own personal incident for Q1 has never been collected in this session, mirroring the exact gap Sricharan's own brief already flagged for himself and Atharv | See `team_reconciliation.md` §5. Still open. |
 
+## New section — textbook synthesis and Ken-winners research (`best_practices.md`)
+
+| # | Item | Notes |
+|---|---|---|
+| 33 | User's decisions on resuming this session: (a) defer own Q1 personal incident to later; (b) go with the realistic 3-6 interview target, and also roll out the survey | Verbatim: *"Let me tell my own Q1 personal incident later... Go with the realistic one... We can go with 3 to 6 interviews, and we can roll out a survey as well."* Recorded in `team_reconciliation.md` §4. |
+| 34 | Claude's judgment call: installed `pypdf` in an isolated venv (`/tmp/pdfenv`) after both `brew install poppler` (network failure) and system-wide `pip install` (blocked by PEP 668) failed, to get real text extraction working rather than reading only 1-2 pages per book via the default Read tool path | Necessary for any real textbook engagement — 20 books, several 500-1000+ pages, made cover-to-cover reading via the default tool infeasible. |
+| 35 | Claude's judgment call: forked 4 parallel background research threads (one per thinking-lens: systems thinker, designer, UX researcher, experiment/survey designer), each assigned a cluster of books, rather than reading all 20 books directly in the main session | Kept ~2M tokens of raw book text out of the main conversation; each fork returned only a synthesized report. Standard practice per this session's own tool guidance for exactly this kind of task. |
+| 36 | Claude's judgment call: read `Courses-Syllabus_M26-V1.pdf` directly (288 pages, targeted via keyword search) to confirm these 20 textbooks are the actual assigned references for 3 real IIITH M.Tech PDM courses, before writing `best_practices.md` | Grounds the whole document in real coursework rather than an arbitrary reading list — see `best_practices.md` §2. |
+| 37 | Claude's judgment call: researched 3 years of Ken competition public material (2024 inaugural, 2025, 2026) — judge quotes, winning-team patterns, judging-criteria evolution, and a demo-prototype pattern analysis (ArogyaGhar.ai) — as the "how to win" half of `best_practices.md`, alongside the textbook synthesis | The user's request explicitly asked for both halves together in one file. |
+| 38 | Claude's judgment call: had the experiment/survey-design fork perform a real line-by-line audit of the team's existing S0-S30 survey (`research/report-source.md`) against the two methods textbooks, rather than only producing abstract theory | Produced an actionable "ship it" verdict with 3 optional hardenings — directly useful given the survey rollout was just confirmed (decision #33). |
+
 ## Open decisions still pending (not yet made by anyone)
 
 - Which of the 17+ candidate insight threads survives real interview evidence (deliberately not decided yet — see decision #6).

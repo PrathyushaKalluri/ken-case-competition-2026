@@ -36,7 +36,7 @@ Insert these at the point they naturally extend his numbered questions (his numb
 - Sricharan's `report-source.md` targets **10-12 customer + 3-4 counterparty interviews** (Page 5) plus a **30-50 response survey** (Page 9), across a three-person team's combined effort.
 - His own `Invictus_Team_and_Research_Brief.md` (line 14) flags this exact ambiguity itself, unresolved: *"Availability reported: six hours daily for three days. Whether this means Sricharan, each member or the combined team is unresolved."*
 
-**This needs an actual team decision, not something I should silently pick.** If six hours/day is *per person* and all three of you are actually free, his target is achievable. If it's six hours *total* across the team, 3-6 interviews (this session's original estimate) is more realistic and his survey component should probably be dropped or radically scoped down. Recommend the team resolve this explicitly, today, before more fieldwork planning happens.
+**Resolved 2026-09-08, by the user directly: going with the realistic target — 3-6 interviews, plus rolling out the survey as well** (not the 10-12+3-4 interview target). Use Sricharan's S0-S30 survey instrument as-is for distribution; his 30-50 usable-response target stands since a survey's cost structure is different from live interviews (parallel distribution, not one-at-a-time time cost) — but do not let survey design/distribution work displace the 3-6 live interviews, which remain the primary evidence source for Q2.
 
 ## 5. Concrete gaps still open — pending inputs, mirrored from `Invictus_Team_and_Research_Brief.md`
 

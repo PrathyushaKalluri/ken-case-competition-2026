@@ -4,7 +4,11 @@
 
 This is a living document — update it as interviews happen and the insight converges. See `progress.md` for a lighter-weight status checklist against this plan.
 
-**⚠️ Superseded in part — see `team_reconciliation.md`.** A teammate (Sricharan) independently built a more complete interview guide, survey instrument, and fieldwork capture system in `research/report-source.md` and `research/Fieldwork_Templates.md`. That is now the canonical operating guide; this file's probes below are additive (see `team_reconciliation.md` §3 for exactly where to insert them), and the interview-volume target below is now an open team decision, not settled — see `team_reconciliation.md` §4.
+**⚠️ Superseded in part — see `team_reconciliation.md`.** A teammate (Sricharan) independently built a more complete interview guide, survey instrument, and fieldwork capture system in `research/report-source.md` and `research/Fieldwork_Templates.md`. That is now the canonical operating guide; this file's probes below are additive (see `team_reconciliation.md` §3 for exactly where to insert them).
+
+**Resolved**: interview volume is 3-6 interviews + survey rollout (`team_reconciliation.md` §4). The survey itself has been audited and cleared to launch — see `best_practices.md` §6 for the full verdict; only real outstanding item is filling in the `[team-controlled contact]` placeholder in the survey's own intro (`research/report-source.md` Page 10, question S0).
+
+**New**: `best_practices.md` now exists — a synthesis of all 20 reference textbooks (how to think like a designer/systems-thinker/UX-researcher/experiment-designer) plus 3 years of Ken competition winner/judge research. Read it before drafting Q1-Q10; it directly reframes several of the probes and rail-choice reasoning below (e.g. §3's leverage-point test for Q5, §1's judge-quoted warnings against vague AI/financial claims for every answer).
 
 ---
 

@@ -88,8 +88,10 @@ Last updated: 2026-09-08 (session in progress). Update the checkboxes as work ac
 - [x] Discovered teammate Sricharan's independent research pipeline (`research/` folder: interview guide, survey instrument, fieldwork capture templates, rail documentation, 20 reference textbooks) pushed to the shared repo
 - [x] Reconciled both tracks into `team_reconciliation.md` — canonical sources designated per area, additive probes mapped to insertion points, hypothesis sets cross-checked (4 of 5 independently overlap)
 - [x] Corrected `system_map.md` §1.3 based on Sricharan's audit finding (18-24/machines repetition-rate claim is not supported by any current source)
-- [ ] **Team decision needed today**: is "six hours daily" per-person or combined across the team? Determines whether 3-6 or 10-12+ interviews is the real target (`team_reconciliation.md` §4)
-- [ ] **Your own personal incident for Q1** — still not collected in this session; needed alongside Atharv's (also still pending)
+- [x] **Interview volume decided**: 3-6 interviews + survey rollout (Sricharan's S0-S30 instrument), not the 10-12+3-4 target (`team_reconciliation.md` §4)
+- [ ] **Your own personal incident for Q1** — deferred by you to later ("at the end"); still needed alongside Atharv's (also still pending)
+- [x] **`best_practices.md` written**: all 20 textbooks read (targeted extraction, not cover-to-cover) via 4 parallel background research threads, plus 3 years of Ken competition winner/judge research (2024 inaugural, 2025, 2026). Covers how to think like a designer/systems-thinker/UX-researcher/experiment-designer, with good/bad practices and given-a-problem frameworks for each, grounded in the actual IIITH M.Tech PDM course syllabi that assign these exact books.
+- [x] **Survey audited and cleared for launch**: `best_practices.md` §6 gives the team's existing S0-S30 survey a "ship it" verdict against Cozby & Bates + King/Churchill/Tan, with 3 optional hardenings and one real outstanding item (fill in the `[team-controlled contact]` placeholder before launch)
 - [ ] Confirm with Sricharan the exact meaning of "duplicate" RAM in his incident before it's used in any answer draft
 
 ## Known open risk

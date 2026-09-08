@@ -398,3 +398,40 @@ Reading the new files revealed:
 ### What Claude did
 
 Asked the user how to proceed (textbooks now, reconcile first, or both in parallel) rather than guessing given the changed situation and the tight deadline. User chose **"Reconcile first, then textbooks."** Wrote `team_reconciliation.md` — a new file (not editing Sricharan's `research/` files directly, to preserve his authored work) that: designates canonical sources per area (interview guide, survey, fieldwork capture, rail docs, operating schedule → Sricharan's; system/resource-scan research → this session's, kept as additive), maps this session's five additive interview probes to specific insertion points in his guide, surfaces the interview-volume conflict as an open team decision rather than silently resolving it, lists concrete pending inputs (the user's own incident, Atharv's incident, the six-hours-per-day ambiguity), and cross-checks both hypothesis sets. Made small corrective edits to `system_map.md` §1.3 (the demographic-claim correction), `plan.md` (pointer to the new canonical sources), `progress.md` (new checklist section + updated risk framing), and `decisions.md` (#28-32). The originally-requested textbook synthesis is deferred, per the user's own instruction, until this reconciliation is complete and acted on.
+
+---
+
+## Part 10 — The textbook synthesis and Ken-winners research: `best_practices.md`
+
+### User's follow-up request (verbatim)
+
+> Let me tell my own Q1 personal incident later. We will do it later at the end for the interview volume. Go with the realistic one. We need not do all that shit. We can go with 3 to 6 interviews, and we can roll out a survey as well.
+>
+> Now I want you to go through each and every textbook that is there and continue the textbook task. Your goal is to understand how to think like a designer, systems thinker, UX researcher, UI/UX designer, experiment designer, everything. First, if you learn how to do this, what are the guardrails? What are the do's and don'ts, etc., etc.? Then we can use this knowledge to continue the work later.
+>
+> I also want you to go through each and every Ken case available. Go through the winning teams or the teams which have been recognized. Understand their work, their particular process, and the things that they have followed. Understand the behavioral patterns, the presentation skills, or the way that they have showcased. What are the patterns that we have to follow? How can we win this competition? That is what you have to understand from the textbooks and from the case competition-winning cases available on the internet.
+>
+> Later, we will use these textbooks to understand or design the research as well.
+>
+> All the patterns, all the important knowledge required for this case competition, put it as a separate Markdown file best_practices.md
+
+### What Claude did
+
+1. **Recorded the two resuming decisions** in `team_reconciliation.md` §4 and `progress.md`: Q1 personal incident deferred by the user to later; interview volume settled at 3-6 interviews plus rolling out the survey (not Sricharan's 10-12+3-4 target).
+2. **Solved PDF text extraction.** `brew install poppler` failed on a network error (ghcr.io connection reset); system-wide `pip install pypdf` was blocked by PEP 668. Created an isolated venv at `/tmp/pdfenv` and installed `pypdf` there successfully; wrote a small reusable extraction script (`extract_pdf.py`) taking a PDF path and page range.
+3. **Forked 4 parallel background research agents**, one per thinking-lens, each assigned a cluster of the 20 textbooks and given the extraction tool, explicit instructions to read TOC + targeted core chapters (not cover-to-cover on 500-1000+ page books), and a fixed deliverable shape (mental models / good practices / bad practices / given-a-problem framework, each claim tagged to its source book):
+   - **Systems thinker**: Sterman's *Business Dynamics*, Senge's *The Fifth Discipline* + *Fieldbook* (an .epub — the fork installed `ebooklib`/`beautifulsoup4` itself to read it), Meadows' *Thinking in Systems* (this project's copy is only a 33-page diagram/appendix companion, not the full book — flagged, not hidden, and its genuine content used directly).
+   - **Designer**: Buxton's *Sketching User Experiences*, Tidwell's *Designing Interfaces*, Calonaci's *Designing User Interfaces*, plus shorter product-experience/aesthetics-usability papers.
+   - **UX/user researcher**: Kuniavsky, Erika Hall, Sharp/Preece/Rogers, Boellstorff et al., Dumas & Loring, Constantine, Gavin Lew & Schumacher, plus two books (Becker, Carroll) synthesized from general knowledge under time constraints, explicitly flagged as such.
+   - **Experiment/survey designer**: Cozby & Bates, King/Churchill/Tan — with an explicit instruction to also audit the team's own existing S0-S30 survey (`research/report-source.md`) against the textbooks, not just produce abstract theory.
+4. **While the forks ran, personally researched the Ken competition's public history** across all 3 years it's existed:
+   - Re-mined `files/ken_case_competition_2025_winning_submissions.txt` more fully (previously only the top-10 finalists were read; this pass covered the 100-team semifinalist list and category-concentration data — CBRE and Narayana Health drew the most entries, and Narayana Health was also the eventual winner, complicating any "avoid crowded categories" assumption).
+   - Fetched (via curl + browser UA, since WebFetch 403s on the-ken.com as established earlier) and read: the 2024 "Solution Guidelines" page (verbatim judge-criteria explanations), the 2024 finalist-shortlist writeup (10 teams, judge commentary per team), and the inaugural-winner announcement (2024 judges' own quotes on what they were looking for, including Deepak Shenoy's "adjusted EBITDA" warning).
+   - Fetched and analyzed the ArogyaGhar.ai prototype (a 2025 showcase site) directly for its presentation/demo structure.
+5. **Read `Courses-Syllabus_M26-V1.pdf` directly** (288 pages — targeted via keyword search across a full-text extraction rather than sequential reading) and confirmed the 20 textbooks are the actual assigned references for 3 real IIITH M.Tech PDM courses: "Behavioral Research & Experimental Design" (CG3.402), "Systems Thinking" (EC5.202, whose own syllabus example is the UPI ecosystem — structurally identical to this competition's rails), and a Design Thinking/User Research course. Pulled each course's stated learning outcomes directly.
+6. **Wrote `best_practices.md`** combining all of the above: §1 Ken competition winning patterns (judging-criteria evolution across 3 years, judge quotes, 7 named winning patterns with direct implications for Q1-Q10), §2 the course-grounding explanation, §3-6 the four thinking-lens deep-dives (each fork's report integrated and condensed, with source attribution preserved), §7 cross-cutting guardrails.
+7. Updated `progress.md`, `decisions.md` (#33-38), and `plan.md` to point to the new file and record the settled decisions; deleted the UX-research fork's intermediate scratch file once its content was fully folded into `best_practices.md`.
+
+### The one actionable finding worth flagging above the rest
+
+The experiment/survey-design fork's audit of the team's existing S0-S30 survey came back with a **"ship it" verdict** — the survey independently follows textbook-correct practice (question ordering, bias avoidance, honest disclosure of its convenience-sample limitation) without having been built from these specific books. Three optional hardenings were suggested (duplicate-response flagging, completion-time capture, a note that its uneven answer bins are correct, not a bug) and one real outstanding item was found (a placeholder contact field in the survey's own intro still needs to be filled in before launch).
