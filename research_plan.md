@@ -12,6 +12,8 @@ The competition's own Q2 instructions, quoted exactly, because every design choi
 
 Five attachment types, one explicit reward for serendipity. This plan is organized so all five get captured systematically, across every stakeholder, not left to chance in the moment.
 
+**Compliance re-check (re-verified again this turn — full-file grep, not memory)**: every section of the live page — the 10 questions and their exact word limits, ground rules, judging criteria, eligibility, partners, timeline — is captured in `context.md` Part 1.3 and threaded through `narrowed_problem.md`/`research_plan.md`. The one real gap found this pass was the workaround-artifact probe being narrower than the page's own examples (fixed in §3 and §4 below — see the correction). Nothing else missing.
+
 ---
 
 ## 1. The full stakeholder map
@@ -58,7 +60,7 @@ Base guides remain Sricharan's (`research/report-source.md` Page 7-8: 14 househo
 - *"When this happened, who actually resolved it — did you contact someone yourself, or did it go through a building/society/management system of some kind?"* (asked after Sricharan's Q3)
 - *"Is this a formal contract/AMC, or more of an ongoing relationship with someone specific you call?"*
 - *"Do you already get automatic reminders for anything else — like vehicle insurance/PUC, or gas cylinder booking? How does that compare to how you're reminded, or not, about this?"*
-- *"Do you have any stickers on your machines with a handwritten next-service date, or a paper log book for warranties/services?"* — and if yes, **ask to photograph it** (this is the workaround-photo evidence type from §0, don't just note it verbally)
+- *"Is there anything you've personally built to keep track of this — a note on the fridge, a notebook, a folder of documents, a WhatsApp chat you keep with just yourself, a sticker on the machine, anything like that? Could I see it?"* — deliberately broadened to match the competition page's own examples verbatim (*"the whiteboard on the fridge, the notebook, the folder of medical reports, the WhatsApp chat someone keeps with themselves"*), not just stickers/log books. **Always ask to see and photograph it, with consent — don't accept a verbal description as a substitute.** This is the single most under-collected evidence type across most teams' submissions, per the page's own framing (*"the systems people build by hand say more than what they tell you about them"*).
 - **Landlord ask** (renters only): *"Would your landlord be open to a 10-minute conversation about how repairs get decided?"*
 
 **Segment-specific deltas:**
@@ -95,7 +97,18 @@ This operationalizes the managed-vs-independent axis (thread #18) as a self-repo
 
 This turns the survey from a single undifferentiated pool into a dataset cuttable by the same comparative structure as the interviews — a 30-50 response survey segmented this way is a genuinely rare piece of evidence for a 2-day sprint.
 
-**Distribution**: post the same instrument into each of the four channels above (My Home resident group if one exists, your standalone/independent-household contacts, any Eluru-reachable group, IIITH campus channels via Sricharan) — same survey, same S7a screening item doing the segmentation work, not four different surveys.
+**Addition 3 — a workaround-artifact question, currently missing entirely.** The survey had no question asking about this at all — a real gap, since it's explicitly one of the 5 attachment types the competition names (`context.md` Part 1.3, §0 above). Insert in the optional module (`report-source.md` Page 12, right after S20 — "what did you do to make the arrangements easier"):
+
+> **S20a. "Do you keep any personal record for this — a note, a notebook, a folder, a WhatsApp chat with just yourself, a sticker on the appliance, anything like that? If you're comfortable sharing a photo of it, tell us how to reach you."** Free text for the description, plus an optional contact field (kept separate from the anonymous response export, per the existing consent/data-handling rules on Page 9).
+
+This is a direct survey-side counterpart to the broadened interview probe above — the same evidence type, captured at scale instead of one conversation at a time. Even a handful of people volunteering a photo this way is real evidence you wouldn't get from interviews alone.
+
+**Distribution — revised for open WhatsApp sharing, not four closed channels.** You confirmed the plan is to float this directly into WhatsApp groups, where anyone can see and answer it, forward it, or have it reach people well outside the four planned channels (My Home, standalone, Eluru, campus). **This is fine, and arguably better for reaching the 30-50 response target — but it changes what the "recruitment channel" tagging in Addition 2 can promise.** Treat it as: post into the four known channels as planned (still record which one it was posted into), but **add a 5th value — "Other / forwarded / unknown" — to the channel field**, and rely on **S7a (managed-vs-independent) plus S22/S23 (age band, city)** to actually classify each response after the fact, not on the posting channel alone. A response from an unexpected city or an unplanned community is not a problem — it's bonus signal — but keep it visibly tagged as outside the core Hyderabad+Eluru claim (per the convenience-sample honesty discipline in `best_practices.md` §6) rather than silently folded into the main count.
+
+**Stakeholders this open distribution might surface, worth being ready to recognize and tag (not actively recruited for, since none of these are confirmed access — just don't discard the data if it shows up)**:
+- A renter specifically, distinct from an owner even within the same managed/independent structure — S7 already captures ownership, cross-tab it against S7a.
+- Someone managing an elderly parent's household remotely, rather than their own — an ICP already named in the original context files (`keeping_the_machines_running_context.md` ICP D) but never actively pursued; if a response describes this, flag it specifically rather than folding it into the general household pool, since it's a structurally different coordination problem (the coordinator and the resident are different people).
+- A respondent from a different managed community altogether (Hyderabad has several large builder-groups besides My Home — Aparna, Prestige, Rajapushpa, and others) — S7a's generic wording ("a dedicated community/facility management service") already captures this without needing to name every builder, so no survey change needed, just don't assume every "managed" response is My Home specifically when writing up findings.
 
 **No technician survey.** With only 3-4 technician contacts total, a survey adds no statistical value a direct conversation doesn't already give better — per `best_practices.md` §6's own construct-validity logic, don't build an instrument for an N too small to need one. Use Sricharan's `Fieldwork_Templates.md` participant/incident record instead, filled in identically for every technician conversation, so they stay comparable to each other even without a formal survey.
 

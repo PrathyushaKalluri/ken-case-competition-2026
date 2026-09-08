@@ -544,3 +544,21 @@ Two new confirmed stakeholders arrived in this message: a **My Home technician**
 4. Added 2 new interview probes to `research_plan.md` §3's technician guides: a universal part-arrival-time question (logistics-completeness, tagged by location for comparison) and a My-Home-specific rate-pre-negotiation question (payments/authorisation-completeness) — reusing the design already built rather than proposing new interviews.
 5. Added §6a to `research_plan.md` — rail-build-potential scoring made an explicit, required step in the synthesis session, not optional: tag every incident's logistics-question and role-separation answers during synthesis (the questions already exist in Sricharan's guide; the only new work is using the answers), score whatever object emerges against Decision 1b's table before concluding a rail is absent, and use the two new probes to test the segment-differentiation hypotheses.
 6. Updated `decisions.md` (#56-59) and `progress.md` to reflect the re-weighting.
+
+---
+
+## Part 17 — Direct compliance check, and a real gap caught: workaround artifacts
+
+### User's request (verbatim, condensed)
+
+> Am I in the right direction till now? Am I following the round 1 Ken competitions and everything there? Did you go through the Ken competition page and map out all the points that we have to research? For example, they mentioned any workarounds that are available, like pasting sticky notes, WhatsApp groups, etc. Those types of workaround proofs can also be taken. That means we have to interview for workarounds as well. These indirect indicators of what we need to get from people should also be tagged for this survey design. Who all are the stakeholders that are also needed? We will be floating it in WhatsApp groups directly, so anybody can answer anything.
+
+### What Claude did
+
+1. Re-verified the live page a second time via full-file grep (section headers, not just evidence keywords) — confirmed every structural element (10 questions, ground rules, judging, eligibility, partners, timeline) remains accurately captured across `context.md` Part 1.3, `narrowed_problem.md`, and `research_plan.md`.
+2. **Found the gap the user was pointing at, and it was real**: the interview probe for workaround artifacts (`research_plan.md` §3) only asked about "stickers on machines" and "a paper log book" — much narrower than the competition page's actual, verbatim examples: *"the whiteboard on the fridge, the notebook, the folder of medical reports, the WhatsApp chat someone keeps with themselves."* Broadened the probe to quote the page's own examples directly, with an explicit instruction to always ask to see and photograph the artifact rather than accept a verbal description.
+3. **Found the survey had no equivalent question at all** — added a new item, S20a, inserted after the existing S20 in the optional module (`report-source.md` Page 12), asking about personal workaround records and offering an opt-in path to share a photo, with contact info kept separate from the anonymous export per the existing consent design.
+4. Addressed the open-WhatsApp-distribution reality directly: the plan had assumed four controlled channels; the user clarified the survey will be floated openly, reachable/forwardable by anyone. Revised the distribution section (`research_plan.md` §4) to add a 5th "Other/forwarded/unknown" channel-tag value, and re-designated **S7a plus the demographic fields (age band, city)** — not the posting-channel field alone — as the real post-hoc classification mechanism, since a survey link can travel beyond where it was posted.
+5. Flagged 3 additional stakeholder types worth recognizing (not actively recruiting for) if they surface via this open distribution: a renter specifically, someone managing an elderly parent's household remotely (an ICP named in the original context files but never pursued), and a respondent from a different large managed community than My Home — noted that existing fields already capture all three generically, no new survey items needed for them.
+6. Added a compact "compliance re-check" note directly into `research_plan.md` §0 rather than rebuilding the full checklist a third time, since the detailed version already exists in `context.md` Part 1.3 and `narrowed_problem.md` §3.
+7. Updated `decisions.md` (#60-62) and `progress.md`.
