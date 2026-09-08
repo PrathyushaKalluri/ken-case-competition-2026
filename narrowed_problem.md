@@ -61,36 +61,50 @@ You correctly refused to pick an object cluster blind — nobody has evidence ye
 
 Your correction replaced a wrong assumption (a ritual/pooja axis) with a much sharper, evidenced one: **whether a household's repairs are routed through a managed community's own service network, or the household has to self-source a technician every time.** This is not the same variable as renter-vs-owner or age — a homeowner in an independent house and a homeowner in a large managed community face structurally different problems even with identical appliances.
 
-**Confirmed access** (your direct answers):
+**Confirmed access** (your direct answers, quantified in Decision 3 below):
 - **My Home** (Hyderabad builder group, large gated-community developer) — **you live there, or immediate family does.** Direct access, no intermediary needed. This is the candidate "smooth/managed" case.
-- **Independent households** (standalone house or small building, no managed service network) — confirmed accessible today. This is the candidate "painful/self-sourced" case — the contrast.
+- **Eluru households** (1-2, tier-3, presumably independent/self-sourced — to be confirmed, not assumed, per the new probe question in §5) — this is now the primary "painful/self-sourced" contrast, not a generic placeholder.
 - **IIITH campus** — professors/staff living on campus (corroborates Sricharan's own brief).
-- **Bonus, volunteered by you**: technicians in **tier-3 cities**, reachable by phone. Genuine supply-side access from a different market tier than Hyderabad metro — very few competing teams will have anything like this.
+- **Eluru electrician** (confirmed) plus one uncertain institutional technician in an unconfirmed tier-3 city — genuine supply-side access from a different market tier than Hyderabad metro; very few competing teams will have anything like this.
 
 **Why this matters beyond just "more people to interview"**: `best_practices.md` §5 (UX researcher section) explicitly flags *"recruit for a negative/smooth case, not just painful ones... to stress-test whether the hypothesized mechanism is real or just a sampling artifact"* as a core good practice. You already have a real, live version of that exact contrast — My Home (candidate smooth case) vs. independent households (candidate painful case) — without having to go looking for it. That's not a minor convenience; it's the single hardest thing to arrange in a 2-day sprint, and you already have it.
 
 **This also updates the divergence map.** `notes.md` §2's thread #8 ("society/RWA-owned assets fail because 'resident' is a diffuse, unaccountable owner") assumed society/RWA ownership is uniformly bad for accountability. Your access suggests a needed nuance — call it **thread #19**: *large, professionally-managed communities may partially solve the accountability-diffusion problem via an internal approved-vendor system, while smaller or informally-managed buildings inherit all of thread #8's diffusion problem with none of the professional-management fix.* Two real possible outcomes, both valuable: either My Home residents report genuinely smoother coordination (then the insight is *what specifically* the community's system does that an individual household's agent should replicate — a facility manager who owns the outcome? pre-negotiated vendor contracts? a shared ticketing system?), or they report their *own* version of friction (then the insight is that "managed" doesn't actually mean "solved," which is an even sharper, more counterintuitive Q2 candidate — per `best_practices.md` §1.2's warning that judges reward non-obvious findings, and "even the well-managed case still struggles, here's why" is about as non-obvious as this project has found so far).
 
-### Decision 3 — Filter 3 (Geography): Hyderabad, confirmed by real access, not chosen abstractly
+### Decision 3 — Filter 3 (Geography): revised — a real two-geography comparison, not just Hyderabad plus a bonus call
 
-Every access channel above is Hyderabad-based (plus the tier-3 phone contacts as a bonus supply-side data point). Per `best_practices.md` §6, claim exactly the geography you have real evidence for — Hyderabad — rather than a broader claim the sample can't support.
+**Correction**: the tier-3 hometown is **Eluru** (Andhra Pradesh), not "Hyderabad" — an earlier mishearing, corrected directly by the user. Real, quantified access, as reported:
 
-## 5. Recruitment plan — ready to execute today
+| Location | Type | Household/customer contacts | Technician/supply-side contacts |
+|---|---|---|---|
+| **Eluru** (tier-3) | Hometown | **1-2 households** | **1 electrician**, confirmed |
+| **Hyderabad** (metro) | My Home community | **1 household** (assumed to be the My Home family from Decision 2 — flag if this is actually a different, independent household) | — |
+| **Tier-3 city, unconfirmed** | Institutional (school/office maintenance) | — | **1 technician, uncertain** ("not sure") — treat as stretch, not core plan |
+| IIITH campus (Hyderabad, metro) | Institutional | Professor/staff, via Sricharan | — |
 
-Six interview slots (the confirmed 3-6 target, using the full range since real access supports it), allocated to maximize the smooth/painful contrast plus the bonus supply-side angle:
+**This changes the geography decision.** Eluru alone gives you as much or more confirmed household access than Hyderabad does from your own network — the original plan's assumption that Hyderabad was the obvious primary geography doesn't hold once the real numbers are in. **Decision: treat this as a genuine Hyderabad-vs-Eluru comparison**, not a Hyderabad-primary-plus-bonus-technician-call framing.
 
-| # | Segment | Channel | Who reaches out | Priority |
-|---|---|---|---|---|
-| 1-2 | My Home community (candidate smooth case) | Family/household directly, or the community's resident channel if one exists (WhatsApp group, notice board) | You, directly — no intermediary | High — do these first, they're your fastest possible access |
-| 3-4 | Independent household (candidate painful case, the contrast) | Your existing independent-household contacts | You | High — needed early to compare against 1-2 while both are fresh |
-| 5 | IIITH campus professor/staff | Sricharan's stated access | Sricharan | Medium — corroborates whichever pattern emerges from 1-4, and may itself be a third "institutional-managed" data point worth comparing against My Home's "community-managed" structure |
-| 6 (bonus) | Tier-3 city technician, supply-side | Phone | You | High-value if time allows — almost no competing team will have a real technician conversation from outside metro Hyderabad; even a short call is a genuine differentiator for Q2/thoroughness |
+**Why this is worth the added complexity, not just more thorough for its own sake**: `system_map.md`'s own market research already establishes that Urban Company and Housejoy are still *expanding into* tier-2/3 cities — meaning app-mediated service coverage in a place like Eluru is genuinely thinner than in Hyderabad today. That's not a weaker version of the same story; it's a different market-maturity condition, which may produce a sharper, less-mediated version of the coordination pain (or a completely different one — e.g. Eluru's smaller scale might mean *more* personal, relationship-based technician trust, which is itself a finding). Either result is real signal, and almost no competing team will have a genuine tier-3 customer-side incident to compare against a metro one.
 
-**Interview guide to use**: Sricharan's household guide (`research/report-source.md` Page 7-8, 14 questions) is still the base — nothing about it needs to change for this segmentation, since it already asks "who owned this machine, who could approve the work, who paid" separately, which will surface the managed-vs-independent distinction naturally without needing to ask about it directly. Add one direct probe for slots 1-2 and 3-4 specifically:
+**Honest limitation to hold onto, not hide**: Hyderabad's data point (My Home) is *metro + managed-community*, and Eluru's is *tier-3 + presumably-independent* (smaller cities are less likely to have My Home-style large managed developments, but this is an assumption, not yet confirmed — worth asking Eluru respondents directly whether any kind of managed building/society maintenance exists in their case, rather than assuming there isn't one). This means the two variables from Decision 2 (managed vs. independent) and Decision 3 (metro vs. tier-3) are **confounded** in this sample — if Eluru and Hyderabad look different, you won't be able to say for certain which variable caused it from these two data points alone. The IIITH campus interview (metro + institutionally-managed) helps triangulate: if campus and My Home look similar to each other but both differ from Eluru, that points toward metro-vs-tier-3 (market maturity) as the driver; if My Home and campus differ from each other despite both being metro-managed, that points toward something else. State this limitation plainly in Q2 if it comes up — per `best_practices.md` §6, an honestly-scoped finding is more credible than an overclaimed one.
 
-> *"When this happened, who actually resolved it — did you contact someone yourself, or did it go through the building/community?"* — asked neutrally, without presupposing which answer is "better," right after Sricharan's question 3 ("could you walk me through the contacts you made").
+## 5. Recruitment plan — ready to execute today, built from contacts you already have
 
-For the tier-3 technician call (slot 6), use Sricharan's technician/service-centre guide (`report-source.md` Page 8) as-is — it's counterparty-agnostic and doesn't assume metro conditions.
+No new recruitment needed — the confirmed access above already covers the 3-6 interview target:
+
+| # | Location | Segment | Contacts | Who reaches out | Priority |
+|---|---|---|---|---|---|
+| 1-2 | Eluru | Tier-3, household/demand-side | 1-2 households | You | **High — start here.** Strongest confirmed household count, and the sharpest available contrast to My Home. |
+| 3 | Eluru | Tier-3, supply-side | 1 electrician | You | High — pairs directly with 1-2, gives you a demand+supply view of the *same* market in one city |
+| 4 | Hyderabad | Metro, managed-community, household/demand-side | 1 household (My Home — confirm this is the My Home family, not a different contact) | You | High — the metro anchor point for the comparison |
+| 5 | Hyderabad | Metro, institutional-managed | Professor/staff | Sricharan | Medium — the triangulation point that helps de-confound Decision 3's limitation above |
+| 6 (stretch) | Tier-3 city (unconfirmed which) | Institutional supply-side | 1 technician, "not sure" | You, if it comes through | Low priority — pursue only if slots 1-5 are done with time to spare |
+
+**Interview guide to use**: Sricharan's household guide (`research/report-source.md` Page 7-8, 14 questions) is still the base for slots 1-2 and 4 — it already asks "who owned this machine, who could approve the work, who paid" separately, which surfaces the managed-vs-independent distinction naturally. Add one direct probe right after his question 3 ("could you walk me through the contacts you made"):
+
+> *"When this happened, who actually resolved it — did you contact someone yourself, or did it go through a building/society/management system of some kind?"* — asked neutrally, and specifically useful for the Eluru interviews to actually test the "presumably independent" assumption above rather than take it for granted.
+
+For slots 3 and 6 (technicians), use Sricharan's technician/service-centre guide (`report-source.md` Page 8) as-is — it's counterparty-agnostic and doesn't assume metro conditions. For slot 5 (campus), the household guide applies, since a professor is a household respondent even though the property itself is institutionally managed.
 
 ## 6. Final narrowed problem statement
 

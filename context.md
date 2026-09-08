@@ -472,3 +472,22 @@ No files changed for this turn — a direct answer only.
 6. Updated `narrowed_problem.md` §4-6 with: Decision 1 (object left deliberately unpicked, interviews stay unprimed), Decision 2 (the real segmentation axis is service-network structure — managed-community vs. independent self-sourcing — not renter/owner, with the reasoning tied to `best_practices.md` §5's "recruit for a smooth case" good practice), Decision 3 (geography is Hyderabad, confirmed by real access rather than chosen abstractly), and a concrete 6-slot recruitment plan with specific channels, priority order, and a ready-to-ask probe question for the managed-vs-independent contrast.
 7. Added a new candidate pain-thread, **#18**, to `notes.md` §2 — explicitly framed as a nuance/complication of existing thread #8 (RWA/society diffuse ownership), not a replacement: large professionally-managed communities may partially solve the accountability-diffusion problem via an internal vendor system, or may have their own different friction — both outcomes are flagged as valuable findings, avoiding the trap of only wanting the answer that confirms a prior hypothesis.
 8. Updated `plan.md` (flagged as superseded again, pointing to `narrowed_problem.md` §5 as the operating recruitment plan), `progress.md` (new checklist entries, recruitment execution now the explicit next unchecked item), and `decisions.md` (#39-43).
+
+---
+
+## Part 13 — Correcting the geography: Eluru, not Hyderabad-only
+
+### User's request (verbatim)
+
+> Hyderabad could be one geography, but also I have technicians, etc., with access from my own hometown called Hyderabad. That is a tier 3 city. I'm not sure if Hyderabad is the actual thing we need to restrict to
+
+### What Claude did
+
+1. Flagged the internal inconsistency directly (Hyderabad is a major metro, not tier-3) rather than silently accepting it, correctly guessing this was another dictation mishearing like "pooja"→"My Home" the previous turn — did not guess the real name.
+2. Attempted an `AskUserQuestion` call with a single-option "type the hometown name" question, which the tool rejected outright (a question needs at least 2 genuinely distinct options) — asked for the name in plain text instead, alongside two valid multiple-choice questions (hometown access depth: technician-only vs. also household-side; how the hometown should fit the plan: bonus data point vs. full second geography vs. decide later).
+3. **User's answer**: confirmed **both** technician and household access in the hometown, and chose "not sure yet — decide after confirming who's actually reachable" for the scope question, deferring the call until real numbers were known.
+4. **User's follow-up (verbatim)**: *"Eluru, 1-2 households, 1 electrician / Hyderabad, 1 household / I may talk to one technician who works for some office or school in tier 3 city (not sure)"* — the real hometown name (**Eluru**, Andhra Pradesh) plus quantified access counts for both locations.
+5. Rebuilt `narrowed_problem.md` Decision 2 and Decision 3 with the real numbers: a table of confirmed access by location and type, the judgment call to treat Eluru as a **full second geography** (not a bonus call) since its household count matches or exceeds Hyderabad's own, the market-maturity argument for why this is worth the added complexity (Urban Company/Housejoy still expanding *into* tier-2/3 per `system_map.md` §2.1), and an explicit, undisguised **confound**: the current sample pairs metro+managed (Hyderabad/My Home) against tier-3+presumably-independent (Eluru) — two variables changing at once — with the IIITH campus interview (metro+institutionally-managed) identified as the one data point that can help triangulate which variable is actually driving any observed difference.
+6. Rebuilt the recruitment table (`narrowed_problem.md` §5) with the real 6 slots: Eluru households ×1-2, Eluru electrician, Hyderabad/My Home household, IIITH campus (Sricharan), and the uncertain tier-3 institutional technician as a stretch item only — noting no new recruitment is actually needed, the confirmed contacts already cover the 3-6 target.
+7. Added a new candidate thread, **#19**, to `notes.md` §2 (metro vs. tier-3 market maturity), explicitly cross-referenced as confounded with thread #18 in the current sample. Added a specific interview probe to test rather than assume that Eluru households lack any form of managed building/society maintenance.
+8. Updated `decisions.md` (#44-47) and `progress.md` to reflect the correction and the upgraded geography scope.
