@@ -69,12 +69,13 @@ Base guides remain Sricharan's (`research/report-source.md` Page 7-8: 14 househo
 
 ### Technician stakeholders (#3-4, 6) — base: Sricharan's 8 questions
 
-**Universal addition, all technician interviews**:
+**Universal additions, all technician interviews**:
 - *"When a customer is due for a follow-up or repeat service, what actually reminds you to reach out — and how often does that step fail?"* (tests the AMC-vendor-forgetting finding, `system_map.md` §6.4) — **ask without assuming a formal AMC concept exists**; "we don't really have that here" is itself the finding for Eluru specifically.
+- *"When a part was needed, how long did it actually take to arrive, and from where?"* — the direct **logistics-rail-completeness probe** (`narrowed_problem.md` Decision 1b). Answers from this question, tagged by location, are what let synthesis actually compare part-availability/delivery speed between Eluru and Hyderabad rather than assume it.
 
 **Segment-specific deltas:**
 - **Eluru electrician (#3)**: add *"How do most of your customers find you — word of mouth, repeat customers, something else? Has that changed over the years?"* — tests whether tier-3 technician-customer relationships are structurally different (more personal, less app-mediated) per the whitespace prior in `narrowed_problem.md` Decision 1.
-- **My Home technician (#6)**: add *"How does a job reach you through the community — is there a fixed panel of vendors, a rotation, something else? What happens if you're not available?"* — this is the single most valuable question in the whole plan for understanding *what the community's system actually does mechanically*, which is exactly what an agent would need to replicate if My Home turns out to be the smoother case.
+- **My Home technician (#6)**: add *"How does a job reach you through the community — is there a fixed panel of vendors, a rotation, something else? What happens if you're not available?"* — the single most valuable question in the whole plan for understanding *what the community's system actually does mechanically*, which is exactly what an agent would need to replicate if My Home turns out to be the smoother case. Also add *"Are prices/rates for common jobs pre-agreed with the community, or negotiated fresh each time?"* — the **payments/authorisation-rail-completeness probe** (`narrowed_problem.md` Decision 1b), testing whether My Home's system already partly substitutes for delegated spend authority in a way standalone/Eluru households can't access.
 
 ---
 
@@ -122,6 +123,15 @@ The design in §1 isn't just "more interviews" — it's a genuine comparative st
 4. **Actively log anything that surprises you**, per §0's Evidence-criterion quote — keep a running list titled "what we weren't looking for," updated after every interview, separate from the hypothesis-confirmation notes. This is where the most-rewarded kind of finding tends to hide.
 
 Do not force a finding into this structure if the data doesn't support it — an honestly narrower insight from 2-3 corroborating cells beats an overstated one stretched across all 8, per the evidence discipline already established throughout this project (`system_map.md` §0, `best_practices.md` §6).
+
+### 6a. Rail-build potential is now a required synthesis step, not optional
+
+Per direct instruction: the insight alone isn't enough — whichever object/mechanism the interviews converge on must also genuinely support **all three rails** (Voice; Payments & Authorisation, one combined rail; Logistics — not four separate things, see `narrowed_problem.md` Decision 1b), since this is what Round 2 actually builds on if you're shortlisted. Add this as an explicit, required step in the synthesis session (§0's Team's-working-notes evidence, `report-source.md` Page 13's 60-90 minute session):
+
+1. **Tag every incident's Q9-equivalent answer** ("did any item need to move somewhere") for logistics-completeness — this question is already in every household interview; the only new work is tagging the answers during synthesis instead of letting them sit unused.
+2. **Tag every incident's role-separation answers** (coordinator/owner/approver/payer/access-provider, already in Sricharan's guide) for payments/authorisation-completeness — a real approval-vs-payer split is what makes delegated authority (`Keeping_Machines_Running_Context.md` §7B) a genuine mechanism, not decoration.
+3. **Score the object that actually emerged against `narrowed_problem.md` Decision 1b's table** — if it lands on a logistics-weak candidate (most likely trade/repair services), actively check whether any specific incident within it involved a real part, before concluding the rail is absent. A logistics rail can be honestly absent with a stated reason (the competition allows this), but check before defaulting to that.
+4. **Use the two new rail-completeness probes** (technician guides, §3) to compare whether payments/authorisation matters more for independent households than My Home, and whether logistics is genuinely worse in Eluru than Hyderabad — both are testable, free byproducts of the comparative design already built, not separate work.
 
 ---
 

@@ -119,6 +119,15 @@ Two columns of decisions: what the **team (user)** decided, and what **Claude** 
 | 54 | Claude's judgment call: added a new survey item (S7a) operationalizing the managed-vs-independent axis as a self-report question for every respondent, plus specific channel-tagging values, so the survey dataset stays cuttable by the same comparative structure as the interviews even if a respondent's channel isn't obvious from context | `research_plan.md` §4. Minimal addition, consistent with the existing survey's own already-audited design principles rather than a rewrite. |
 | 55 | Claude's judgment call: pointed out the team's own Claude Code session transcript (`context.md`, already pushed to the shared GitHub repo) directly satisfies the competition's "chat logs, including logs of you working the problem through with an AI" attachment category, and flagged it as an asset to remember to actually reference, not just internal working material | `research_plan.md` §5. |
 
+## New section — rail-build potential elevated to a required filter
+
+| # | Item | Notes |
+|---|---|---|
+| 56 | User instruction: rail-build potential (voice, payments/authorisation, logistics) is now "the most important thing," since it's what carries into Round 2 if selected — asked for a review across everything to confirm the plan serves both the unique-insight goal and this one | Not a new decision so much as a re-weighting — added as a formal second lens (`narrowed_problem.md` Decision 1b), scored against the same candidate objects as the whitespace table (Decision 1), rather than replacing that analysis. |
+| 57 | Claude's correction: the competition has **3 rails, not 4** — Payments and Authorisation is one combined rail (`Keeping_Machines_Running_Context.md` §7B), matching Pine Labs as a single partner, not two separate rails as the user's message implied | Corrected directly in `narrowed_problem.md` Decision 1b, load-bearing for Q4/Q5 wording and any future Round 2 conversation. |
+| 58 | Claude's judgment call: scored AC and RO as the strongest all-three-rail candidates (logistics via real parts/filters), and flagged trade/repair services — the highest-*whitespace* candidate from Decision 1 — as the *weakest* on logistics specifically, an honest tension surfaced rather than resolved by picking one | The object still isn't pre-selected; this is a second lens to apply once real data arrives, per Decision 1's original commitment. |
+| 59 | Claude's judgment call: identified that the existing comparative design (My Home vs. standalone/Eluru, metro vs. tier-3) can test rail-differentiation-by-segment for free — payments/authorisation may matter less for My Home if it has pre-negotiated rates; logistics may be genuinely worse in Eluru | Added 2 new probes (My Home technician: rate pre-negotiation; both technician types: part-arrival time) rather than proposing new interviews — reuses the design already built. |
+
 ## Open decisions still pending (not yet made by anyone)
 
 - Which of the 17+ candidate insight threads survives real interview evidence (deliberately not decided yet — see decision #6).
