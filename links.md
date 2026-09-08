@@ -2,6 +2,18 @@
 
 Every URL that surfaced in this session, grouped by source. Full-page text for the starred (★) items is preserved in `/files` since these pages are the primary sources behind `context.md`'s Phase 1 breakdown and the resource-scan test-drive.
 
+## Secondary research pass — government data, review mining, public datasets (`system_map.md` §7, `research_plan.md` §8)
+
+- https://www.kaggle.com/datasets/prajwaldongre/urban-company-customer-service-reviews — real Urban Company customer reviews, including AC/TV repair experiences
+- https://www.kaggle.com/datasets/hardikmirani/urban-company-india-services-data — Urban Company services/sub-services by Indian city
+- https://urban-company.pissedconsumer.com/review.html — 1,357 reviews, 1.4-star aggregate rating, 91% unfavourable
+- https://www.trustpilot.com/review/www.urbancompany.com — additional review aggregation
+- https://consumerhelpline.gov.in/public/ — National Consumer Helpline (government) — source of the top-5-complaint-category and 6-bucket finding
+- https://consumeraffairs.nic.in/consumer-corner/national-consumers-helpline — Ministry of Consumer Affairs page
+- https://righttoinformation.wiki/washing-machine-fridge-repair-damage-india — "Washing Machine or Fridge Repair Gone Wrong: Compensation Guide 2026"
+- https://apps.apple.com/in/app/urban-company-home-services/id1032480595 — App Store listing/reviews
+- https://play.google.com/store/apps/details?id=com.urbanclap.urbanclap — Play Store listing/reviews
+
 ## Sources cited in the Household Service Memory Supplementary Note (PDF)
 
 **Note on provenance**: unlike every other section in this file, these were not independently fetched/verified by Claude in this session — they are exactly as cited in the supplied PDF (`/files/Household-Service-Memory-Supplementary-Note.pdf`). Carry the same evidence-strength tag the PDF itself gives each one.

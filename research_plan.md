@@ -157,3 +157,76 @@ Per direct instruction: the insight alone isn't enough — whichever object/mech
 - [ ] Assign one person to own the "working notes" photography for both ideation and synthesis sessions
 - [ ] Assign one person to own tracking "what we weren't looking for" across all interviews
 - [ ] Reconfirm consent script covers recording, photography, and the specific quote-publication rule (age-band + city, never a name) before the first interview
+
+---
+
+## 8. Secondary/desk research — beyond interviews and the survey
+
+Direct answer to "are these the only two research things we can do": no. Interviews and the survey are the **primary** evidence — required, since only real conversations count for Q2 (`context.md` Part 1.3: *"No AI tool can discover how human beings actually behave... that is precisely what we are looking for from you"*). Everything below is **secondary** — it can't substitute for Q2's insight, but it sharpens Q9, grounds Q5, and gives interviews something concrete to corroborate or contradict. Pulled directly from the data sources named in `01_group_braindump.md`, checked for real availability rather than assumed.
+
+| Method | What was actually found | Time cost | Feeds into |
+|---|---|---|---|
+| **National Consumer Helpline government data** | Household appliance servicing is a top-5 national complaint category; 6 specific recurring complaint buckets identified (`system_map.md` §7.1) — including official confirmation of the quote-to-bill gap (thread #10) and a new failure mode (thread #20, extended unavailability) | Already done | Q9 (proves the pain is real and unresolved even by the market leader, at national scale) |
+| **Urban Company review mining** (Kaggle datasets + PissedConsumer/Trustpilot) | Real, quotable complaint patterns: no-shows with no explanation, an explicitly-named "ineffective AI chatbot," disputed charges (`system_map.md` §7.2) | ~30-60 min to pull 5-10 concrete quotes | Corroboration/contrast against your own interview findings; Q9 reasoning |
+| **App/product teardown** | Not yet done — walk through Urban Company's actual booking flow and Kent/Livpure's service app yourself, screenshot exactly where each stops (confirms or corrects the "stops at booking" claim in `system_map.md` §2.1) | ~30-60 min | Q9 (precise, first-hand claim about competitor capability, not just secondhand research) |
+| **Contract/artifact analysis** (warranty cards, AMC contracts, pest-control contracts) | Not yet done — if any team member or interview respondent has an actual contract on hand, read the fine print for the gap between what it promises and what people believe it promises | Opportunistic — do it when an interview respondent has one, per the workaround-artifact probe in §3 | Q6 (customer asset reasoning), Q2 (a documented promise-vs-belief gap is exactly the kind of non-obvious mechanism Q2 wants) |
+| **Social listening** (Reddit r/Hyderabad, local Facebook groups, X/Twitter search for technician/repair complaints) | Not yet done — feasible in under an hour, real public posts, same evidence-tier caveat as reviews (secondary, not primary) | ~30-45 min | Corroboration only — flag any quote used as "public social media post," never imply it was your own interview |
+| **Diary studies, extended ethnography, large-scale fieldwork** | Explicitly out of scope | N/A | Don't attempt — no time for it and it isn't needed at this stage |
+
+**The boundary that matters, restated once more since it governs how all of this gets used**: none of the above can be submitted as Q2's insight itself. They can appear in Q9, in supporting context, and as attached evidence *around* a primary conversation — but the insight has to be traceable to a real person your team talked to.
+
+---
+
+## 9. Interview guide audit — against the Mom Test, directly
+
+You asked directly whether the guide avoids leading questions, and named a specific framework (the Mom Test — Rob Fitzpatrick) to check it against. That book wasn't one of the 20 textbooks in the project folder, but it's a widely-known, standard customer-interview methodology, and it's worth applying explicitly rather than just asserting compliance. Its three rules, and the "bad data" it warns against:
+
+1. **Talk about their life, not your idea.** Never pitch the concept or ask for an opinion of it.
+2. **Ask about specifics in the past, not generics or opinions about the future.** "Tell me about the last time X happened," never "would you use X" or "do you usually X."
+3. **Talk less, listen more.**
+4. **Bad data to watch for**: compliments ("that's a great idea"), fluff (generic claims, hypotheticals, future promises, opinions), and ideas (a respondent's own feature suggestions, mistaken for validated signal).
+
+**Auditing the actual guide** (Sricharan's 14 household questions + this project's additive probes, `research_plan.md` §3):
+
+- **The base guide passes cleanly.** Every one of Sricharan's core questions ("tell me about the most recent time...," "what happened first," "could you walk me through the contacts you made") is a past-specific reconstruction question — textbook Mom Test compliant, and this was true before this audit, not adjusted because of it.
+- **Two real risks found, not zero — here they are, with a fix:**
+  1. **Sricharan's Q15**: *"If a person you trusted had handled this incident, which actions could they take without checking with you?"* — this is a hypothetical-future question, exactly the kind of "fluff" Mom Test warns produces unreliable "sure, that sounds fine" answers. It's needed for Q6/Q5 design reasoning, so don't cut it — but **always follow it immediately with a grounding question**: *"Has there actually been a time you let someone else make that call for you — a family member, a friend, anyone? What happened?"* If a real precedent exists, that answer is the trustworthy one; if it doesn't, treat the hypothetical answer as a weak signal, not a finding.
+  2. **This project's own standalone-household delta** (`research_plan.md` §3): *"Have you ever wished you had access to something like a building management service? What would you actually want it to do?"* — a direct "what would you want" question, textbook fluff-risk. **Fix**: replace or precede it with *"Tell me about a time you tried to solve this some other way — hired help, asked a neighbour, anything."* — grounds the answer in attempted behavior instead of an untested wish.
+- **The survey is lower-risk by design** — S28/S29 ("which action would you want handled, which would you keep") are hypothetical-preference questions too, but they were already self-flagged and hedged in the original survey audit (`best_practices.md` §6: *"these are stated preferences, not demonstrated adoption"*) — correctly treated as weak signal from the start, not something this pass needed to catch.
+
+**Direct answer to "what are you even doing, why are you asking all these things"**: every question this session has asked *you* (not the interview respondents) was for a fact only you could know — real access, a real decision, a real name — never guessed, per the evidence-discipline this whole project has run on since the start (`system_map.md` §0). That's a different thing from the interview guide, which was built Mom-Test-compliant from the beginning; this section is the proof, not a correction. From here, given the 24-hour clock, this session will make more calls directly and flag them for your review rather than stopping to ask each one — consistent with what you asked for over this conversation.
+
+---
+
+## 10. Traps to avoid — consolidated from every source in this project
+
+| Trap | Source | How this plan already guards against it |
+|---|---|---|
+| Vague AI/ML buzzwords with no named mechanism | `best_practices.md` §1.2 (judges' own words: *"we will leverage AI/ML" was liberally thrown around*) | Q3/Q5 drafting rule: never name a technology without the specific mechanism it enables |
+| Financial hand-waving / jargon instead of real numbers | `best_practices.md` §1.2 (Deepak Shenoy: *"will we get that without using the words 'adjusted' and 'ebitda'"*) | State a real number or explicitly flag it unknown — never both hide behind jargon and imply precision |
+| Boldness without rigor | `best_practices.md` §1.3.1 | Bold claims (e.g. a sharp Q2 insight) must be backed by corroborated evidence, per the convergence protocol |
+| Generic "Urban Company but with AI" framing | `Keeping_Machines_Running_Context.md` §4 (explicit "what NOT to build" list) | Whitespace analysis (`narrowed_problem.md` Decision 1) exists specifically to avoid this |
+| Rule beating / seeking the wrong goal (optimizing for reminders-sent instead of incidents-resolved) | `best_practices.md` §3 (systems-thinking) | Flagged explicitly in `research_plan.md` §6a as a synthesis-stage check |
+| Leading questions / hypothetical-future questions treated as real signal | Mom Test, this section (§9) | Audited directly above — 2 real risks found and hardened |
+| Single vivid anecdote treated as a finding | `best_practices.md` §5 (UX research) | Convergence protocol requires independent corroboration before locking Q2 (`plan.md`) |
+| Confirmation bias — only hearing what confirms a hypothesis you already like | `best_practices.md` §5, §6 | Every hypothesis in `notes.md` §2 is paired with what would disprove it, not just support it |
+| Double-barreled or leading survey wording | `best_practices.md` §6 | Full survey audit already found zero instances (`best_practices.md` §6) |
+| Treating a convenience sample as representative | `best_practices.md` §6 | Explicit disclosure already built into the survey and the geography claims (`narrowed_problem.md` Decision 3) |
+| Falling in love with the first idea / happy-path-only demo | `best_practices.md` §4 (design) | Object/mechanism deliberately left open until real data converges (`narrowed_problem.md` Decision 1) |
+| Overclaiming geography or population from a small sample | `best_practices.md` §6 | Hyderabad + Eluru claimed explicitly because that's the real access, not a broader guess (`narrowed_problem.md` Decision 3) |
+| Secondary research (reviews, government data) presented as if it were a primary interview | This section (§8) | Explicit boundary stated: secondary sources support Q9/context, never substitute for Q2 |
+
+---
+
+## 11. Everything you can do in the next 24 hours — one prioritized list
+
+1. **Start the highest-priority interviews now** (`research_plan.md` §1, priority "High"): Eluru households (#1-2), Eluru electrician (#3), My Home household (#5), My Home technician (#6), standalone Hyderabad household (#7).
+2. **While waiting between interviews**: do the app/product teardown (§8, ~30-60 min) and pull 5-10 quotes from Urban Company review mining (§8, ~30-60 min) — these need no one else's time.
+3. **Launch the survey** (§4) with S7a and S20a inserted, into all four channels plus awareness that it may travel further (§4's revised distribution note).
+4. **Snowball for the 3 recommended additions** (§1): ask #7 for a technician referral, ask Sricharan about campus facilities access, ask any renter about their landlord.
+5. **After every interview**: 10-minute solo debrief (`best_practices.md` §5's framework), tag said/observed/artifact/inferred/unknown, log anything unexpected separately (§0's Evidence-criterion quote).
+6. **Once 4+ interviews are in**: run the synthesis session (§6, §6a) — comparative-structure analysis, rail-completeness scoring, and the "what we weren't looking for" review, together, not as separate meetings if time is short.
+7. **Lock Q2** only once independent corroboration exists (`plan.md`'s convergence protocol) — resist locking it early just because the clock is running.
+8. **Draft Q1, Q3-Q10** working backward from the locked Q2 insight, using Sricharan's answer scaffolds (`research/report-source.md` Pages 14, 17-18) and this project's own Q-by-Q table (`narrowed_problem.md` §3).
+9. **Final pass**: check every answer against §10's trap table, the judging-criteria checklist already in `progress.md` Stage 4, and the page's own litmus tests (Q1's "any three students" test, Q2's "changed your design" test).
+10. **Submit with buffer before the deadline** — don't run interviews or edits into the final hour.

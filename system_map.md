@@ -283,3 +283,33 @@ This is a genuinely strong candidate for Q9 framing: rather than asking "why has
 ### 6.8 What this changes about the map, in one line
 
 The problem isn't unsolved because it's unsolvable — India has already built and normalised a working version of this exact reminder/coordination infrastructure for one adjacent category (vehicles). The open question your interviews need to answer is whether appliances/home-services lack it for a structural reason (no shared identifier/anchor, per §6.5) or simply because nobody's tried — those imply very different products.
+
+---
+
+## 7. Secondary research pass — government data, review mining, and public datasets
+
+Done in response to a direct instruction to pursue the data sources named in the original team braindump (`01_group_braindump.md`: warranty/pest-control contracts, Kaggle, Urban Company app data, Amazon customer support data) and to identify research options beyond interviews and the survey. Full action plan for using these: `research_plan.md` §8.
+
+### 7.1 The single strongest finding of this pass — National Consumer Helpline data [LAW, government-sourced, Parliament-tabled]
+
+Consumer Affairs Ministry data tabled in Parliament (2024) shows **"service of household appliances" sits in the top five complaint categories on the National Consumer Helpline, year after year** — alongside e-commerce, telecom, banking, and electricity. This is not a survey or a case anecdote; it's official government complaint-volume data (complaints registered per month rose from 37,062 in 2017 to 1,12,468 in 2024). Six recurring complaint buckets are named specifically:
+
+1. Damage to appliance body/panel/hose/door during repair.
+2. **Repeated visits for the same fault, billed separately** — directly corroborates thread #13 (`notes.md` §2: technician arrives with less context than the household already gave) and the commitment-enforcement threads #5-6, now with national-scale backing, not just case-doc examples.
+3. **Parts replaced without written consent** — directly corroborates the delegated-authority/payments-rail thesis (`Keeping_Machines_Running_Context.md` §7B) with real evidence that unauthorised spend is a documented, common failure, not a hypothetical the team invented.
+4. **Final bill far higher than verbal estimate, with no itemised breakup** — directly and officially confirms thread #10 (`notes.md` §2: the quote-to-final-bill gap) as a real, top-five-national pattern, not just a project hypothesis.
+5. No warranty offered on the repair or the replaced part.
+6. **Appliances kept for testing for weeks** — a genuinely new failure mode, not yet in the divergence map. Added as **thread #20** in `notes.md` §2: extended unavailability with no resolution timeline, distinct from a single missed appointment.
+
+This is strong enough to cite directly in Q9 reasoning (why hasn't an incumbent solved this — the complaint volume proves the pain is large and unresolved even by the market leader) and as supporting context for Q2, though — per the competition's own rule — it cannot substitute for a primary conversation as the insight itself.
+
+### 7.2 Urban Company review mining [A-tier, real public reviews, not primary interviews]
+
+- **PissedConsumer aggregation**: Urban Company holds a 1.4-star rating across 1,357 reviews, 91% unfavourable. Recurring complaint patterns found directly in review text: technician no-shows with no call and no explanation; unresponsive support with an "ineffective AI chatbot" specifically named as a pain point by reviewers; unprofessional technicians; disputed/hidden charges.
+- **Two Kaggle datasets exist and are usable for pattern-mining today**: [Urban Company Customer Service Reviews](https://www.kaggle.com/datasets/prajwaldongre/urban-company-customer-service-reviews) (real customer reviews including AC/TV repair experiences) and [Urban Company India Services Data](https://www.kaggle.com/datasets/hardikmirani/urban-company-india-services-data) (services/sub-services by city — useful for confirming Hyderabad/tier-3 coverage gaps directly rather than assuming them).
+
+**Important boundary, consistent with the competition's own rule (`context.md` Part 1.3)**: reviews and datasets are real people's words, but they are not conversations *you* had — they're legitimate secondary evidence for grounding the problem, sharpening Q9, or cross-checking a pattern found in interviews, but **cannot be submitted as the Q2 insight itself**, since Q2 explicitly requires the insight to come from people the team talked to.
+
+### 7.3 What was checked but not pursued further
+
+Kaggle/Hugging Face searches for a dataset specific to *Indian household appliance service complaints* (as opposed to Urban Company specifically, or general/global consumer complaints) came back thin — nothing India-appliance-specific beyond the Urban Company datasets above and the general financial/telecom consumer-complaint sets, which aren't relevant here. No further time spent searching, per this project's own established discipline of flagging a thin search result rather than padding it.
