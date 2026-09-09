@@ -1,0 +1,230 @@
+# Interview Transcript — Call Amma
+
+- **Source audio:** `Call Amma_260908_230414.m4a`
+- **Call date/time:** 2026-09-08 23:04:14
+- **Duration:** 00:25:02
+- **Transcription:** OpenAI Whisper (whisper-1) audio translation, verbatim, segment-level timestamps — original call is Telugu / Telugu+English code-switched; text below is the full English translation
+- **Speaker detection:** content/role-based (interviewer vs. respondent vs. third speaker), assigned via GPT-4o against the household interview guide — Whisper does not diarize by voice
+- **Speakers identified in this call:** AUDIO UNCLEAR, INTERVIEWER, RESPONDENT, THIRD SPEAKER
+
+---
+
+**[00:00:00] INTERVIEWER:** Hello. Hello. Hi ma'am, this is Sreecharan and my teammate Pratyusha on the call. Hi ma'am. Hi. Thanks for taking the time. We are students and we are trying to understand how people in India actually handle it when something in the house breaks down or needs a repair or a service. Things like AC, fridge, washing machine, geyser etc. So like we are not telling anything. We just want to hear about one real-time This happened to you in as much detail as you remember and this interview this could take around 30 minutes maximum Is it okay if I take notes and would you be okay if I also record the call?
+
+**[00:00:42] RESPONDENT:** Yes, it's okay
+
+**[00:00:45] INTERVIEWER:** You can talk in your own comfortable language when needed You can so say no to either. It's completely fine. And you can also stop or skip any question at any point Okay, yeah and for a few questions maybe a photo of something you show You can show me later on for few questions might be helpful for us.
+
+**[00:01:05] INTERVIEWER:** Okay, just one quick thing. Before we start, when something breaks down at home, is there one particular person who usually ends up dealing with it or does it really vary?
+
+**[00:01:23] RESPONDENT:** Hello?
+
+**[00:01:24] INTERVIEWER:** Hello? Yeah, yeah. Are you able to listen to my question?
+
+**[00:01:28] RESPONDENT:** Yes, thank you. Could you please repeat it?
+
+**[00:01:32] INTERVIEWER:** Like, when something breaks down at home, is there one particular person who usually ends up dealing with it?
+
+**[00:01:39] RESPONDENT:** Yes, I am the one.
+
+**[00:01:42] INTERVIEWER:** Minna, can you tell what is your role?
+
+**[00:01:50] RESPONDENT:** I am the one who starts it.
+
+**[00:01:52] INTERVIEWER:** Okay, okay. So, like, thinking about the last... Last time, something at home needed a repair or a service or something to be newly installed?
+
+**[00:02:08] RESPONDENT:** Yes, I got my purifier repaired.
+
+**[00:02:12] INTERVIEWER:** Can you tell me the whole story from the very beginning? What happened first?
+
+**[00:02:20] RESPONDENT:** We can tell in a comfortable language. Yes, it shows PSER. It says, please do service. I don't know.
+
+**[00:03:00] THIRD SPEAKER:** What's up chat open I'm the and I get on and I've got a I don't need to uh I'll tell you I could work. I'll step work.
+
+**[00:03:09] RESPONDENT:** I don't know what's up.
+
+**[00:03:30] THIRD SPEAKER:** If the chat opens, you can chat in that.
+
+**[00:03:35] INTERVIEWER:** Also, what made you notice something was wrong in the first place?
+
+**[00:03:42] INTERVIEWER:** What made you notice something was wrong? How did you understand that the machine was having a problem?
+
+**[00:03:51] RESPONDENT:** It's a digital purifier. See? The display is coming.
+
+**[00:04:00] INTERVIEWER:** Okay. Okay.
+
+**[00:04:30] RESPONDENT:** PSERN will come and it will show the battery level again. PSERN will come and it will show the battery level again. So, I understood that this is a service requirement.
+
+**[00:04:39] INTERVIEWER:** Okay. You said a WhatsApp chat, right? You talked to them about a problem. Can you screenshot that WhatsApp chat later?
+
+**[00:04:48] RESPONDENT:** Yes, I will share it.
+
+**[00:04:50] INTERVIEWER:** Okay. After that, what did you do immediately when you noticed the CSBR? Did you call the toll-free number?
+
+**[00:04:59] RESPONDENT:** Yes.
+
+**[00:05:00] THIRD SPEAKER:** If you call me on these three numbers, you will get the book.
+
+**[00:05:07] RESPONDENT:** I have already opened the WhatsApp chat.
+
+**[00:05:13] INTERVIEWER:** Do you know the technician or the brand of the company?
+
+**[00:05:18] RESPONDENT:** The company. I know only one person.
+
+**[00:05:22] INTERVIEWER:** Okay, okay.
+
+**[00:05:30] INTERVIEWER:** When was the last time you serviced? Is it still in warranty? When was the last time you called? Do you remember anything?
+
+**[00:05:38] RESPONDENT:** It's still in warranty I need to remember Ok So to remember all this Have you done anything?
+
+**[00:05:48] INTERVIEWER:** Like writing anywhere? How do you remember all this?
+
+**[00:05:54] RESPONDENT:** Just like that I remember When was the last time?
+
+**[00:06:30] INTERVIEWER:** Insurance, Car, Bike, Pollution, Gas Cylinder Booking How do you keep track of all these? These are not necessities, how do you keep track of all these?
+
+**[00:06:39] RESPONDENT:** If there is bike insurance, I remove it and check When is the next insurance?
+
+**[00:06:48] INTERVIEWER:** How many times do you check all these? 3 months Ok, so for these machines, for the machines you are talking about What is the difference in marking?
+
+**[00:07:05] RESPONDENT:** The machine tells you, I have to mark it.
+
+**[00:07:07] INTERVIEWER:** So, you can't mark the water washing machine or ROV, but you can mark the insurance. Why is there a difference between the two?
+
+**[00:07:20] INTERVIEWER:** These are all digitalized now, right?
+
+**[00:07:24] RESPONDENT:** Yes, you can see it. It tells you. We don't have to use our memory.
+
+**[00:07:30] INTERVIEWER:** But this is paper This is paper, right? If it's printed, we have to take care of it Okay Do you have any small things, not big or small, that you fix yourself? Like asking your friend or watching YouTube videos Are there some things that you do without telling anyone?
+
+**[00:07:54] RESPONDENT:** There is a machine for cleaning. It's called a clean drain I will take it out and fix it. If there are any leaks in the taps, I will fix it. If there are any leaks in the cylinder or knob, I will fix it.
+
+**[00:08:17] INTERVIEWER:** Ma'am, when you buy it for the first time, you may not know all this, right? I mean, over the period of time, depending on what you use, you may not remember the process.
+
+**[00:08:29] RESPONDENT:** Thank you.
+
+**[00:08:30] INTERVIEWER:** How do you learn? How do you clean? How do you follow up?
+
+**[00:08:43] RESPONDENT:** First time, when I do it, I do a little bit of this and that. Otherwise, they come and do the demo, right? They keep telling me. Then, when they give the demo, I listen to it, right? If there is a small issue, they will tell us how to solve it. Then we put it together and solve it. After you put it together, you don't have to worry about where to write it again. Yes, nothing will happen. There is no pen and paper.
+
+**[00:09:17] INTERVIEWER:** Okay, okay. Who do you call first? How do you decide?
+
+**[00:09:22] RESPONDENT:** Nowadays, urban companies are dealing with everything, right? Yes, urban companies. company contact us now. Otherwise, we personalize the data and purify it and we will have a set of money and have a contact line.
+
+**[00:09:42] INTERVIEWER:** With an urban company, what kind of issues can you easily fix? Frequently, what kind of issues do you go to an urban company for?
+
+**[00:09:56] RESPONDENT:** Mostly AC and bathrooms.
+
+**[00:09:58] INTERVIEWER:** Thank you very much. So, do you have any official system in your society? Do you have a list of people you can contact? Do you have a maintenance office in your apartment?
+
+**[00:10:11] RESPONDENT:** Yes, we have a maintenance office.
+
+**[00:10:14] INTERVIEWER:** Have you ever used it? Or do you go to other places?
+
+**[00:10:21] RESPONDENT:** Basically, they do some deals here. They come only occasionally.
+
+**[00:10:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:11:00] RESPONDENT:** When I came to the maintenance office, we had a problem with the ACP drip on the 12th floor. There was a drip near the meter reading. The guy came and changed the fuse in our flat.
+
+**[00:11:26] INTERVIEWER:** Did you go to the maintenance office? So, when you leave the office, when you have to do it on your own, how do you decide which one is easier, which one is related to others, do you go to the maintenance office for that, is that it?
+
+**[00:11:48] RESPONDENT:** Yes, with others. Yes, that's it.
+
+**[00:11:54] INTERVIEWER:** Okay.
+
+**[00:12:00] RESPONDENT:** Washing machine may be broken.
+
+**[00:12:02] INTERVIEWER:** Do you know anyone in your community who has recently repaired a washing machine?
+
+**[00:12:15] RESPONDENT:** Yes, I have. I booked a washing machine on Instagram and got it repaired.
+
+**[00:12:22] INTERVIEWER:** Can you tell us about the process on Instagram?
+
+**[00:12:29] RESPONDENT:** Yes, I have. They are showing all the reels that we use to clean the washing machine They are showing the screen number to call I call and fix the appointment and they come and clean it Drum cleaning Washing machine drum cleaning They did all this They are showing all this, right? I booked it They are showing all this
+
+**[00:13:30] INTERVIEWER:** How many people are in the landlord?
+
+**[00:13:34] RESPONDENT:** So actually money is money is money is Spend repair in the I will do it if they ask me to do it. If they ask me to do it next time or next month, I will do it next month.
+
+**[00:14:06] INTERVIEWER:** Okay.
+
+**[00:14:07] THIRD SPEAKER:** Ma'am, I have two questions for you. If they ask you for Rs.1000, is it more or less? Can you take it or not? Can you change it or not? Is that the decision? Basically, how do you take it? On what basis is the pricing correct or not? I mean, how do you decide? What position do you want to take?
+
+**[00:14:32] RESPONDENT:** This is same as urban company. I will see if there are any other options. Otherwise, there are neighbors. I will ask the neighbors whether they are doing it. I will ask the neighbors. I will ask in groups. There are WhatsApp groups. I will ask in those groups.
+
+**[00:14:52] INTERVIEWER:** Okay. One more thing.
+
+**[00:14:56] RESPONDENT:** Not now. I will ask in groups.
+
+**[00:15:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:15:30] INTERVIEWER:** okay something very urgent like you don't like the price of a technician or you want to go to another technician are there such situations? if there are how do you approach another technician?
+
+**[00:15:50] RESPONDENT:** neighbor contact okay whenever you need a machine you can easily pick it up from somewhere
+
+**[00:16:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:16:30] RESPONDENT:** The parts that are given to the purifier are taken regularly, and they repair them and pay the bill and leave. These parts are not coming until it is necessary. For AC, if you book a gas company in an urban company, they will check the gas and fill the cylinder.
+
+**[00:17:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:18:00] INTERVIEWER:** Okay, then how do you communicate with them? What delays do you usually have?
+
+**[00:18:08] RESPONDENT:** AC gas is the only thing that gets delayed. If there is any major issue in AC repair, it gets delayed.
+
+**[00:18:16] INTERVIEWER:** Okay, so have all the problems you mentioned been sorted? Are they still pending?
+
+**[00:18:26] RESPONDENT:** Yes, they are still pending. Purifier is still pending. I've been following it for the past three days.
+
+**[00:18:34] INTERVIEWER:** Okay. How long did it take from the first time you noticed the problem to work again?
+
+**[00:18:42] RESPONDENT:** It hasn't happened yet.
+
+**[00:18:45] INTERVIEWER:** You mentioned a recent task in the washing machine, right?
+
+**[00:18:49] RESPONDENT:** The recent task is purified. I haven't fixed it yet.
+
+**[00:18:54] INTERVIEWER:** If you think about your timeline, talking to people, texting, waiting, etc. How much time did you put in this?
+
+**[00:19:04] RESPONDENT:** I am putting a lot of time. I am putting more than an hour everyday.
+
+**[00:19:09] INTERVIEWER:** Okay, okay. In this entire process, one part that was most difficult or most annoying, what would you say?
+
+**[00:19:23] RESPONDENT:** In what?
+
+**[00:19:25] INTERVIEWER:** In the entire process, the most annoying or most difficult...
+
+**[00:19:28] RESPONDENT:** In which process?
+
+**[00:19:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:20:30] INTERVIEWER:** Okay, they put me up, you know, okay Like a friend, or a family member, or anyone If you have to give all this work Fully handle something like this, next time Which part of it can you do? Which parts do you want to take decisions in this process?
+
+**[00:20:52] INTERVIEWER:** I don't understand If you have to give all this process to someone You have to take some decisions If someone else can manage this process, what would you tell them to manage?
+
+**[00:21:08] RESPONDENT:** What to manage?
+
+**[00:21:11] INTERVIEWER:** You said that you are handling this process alone, right? From the moment you identified that there is a repair, in this entire process, is there a situation where you feel that this work will be done without you? Do you think it is okay to give this job to your friends who are not available at that time?
+
+**[00:21:45] RESPONDENT:** No one will do any work in my house. I have to do everything.
+
+**[00:21:50] INTERVIEWER:** Do you think you have to take the decision or do you want to be the only one to decide?
+
+**[00:21:58] RESPONDENT:** Yes, I do. The washing machine is important, so I have to take care of it. I have to do everything from start to finish. If I have to do it, I will tell everyone at home. Otherwise, no one will see it at home.
+
+**[00:22:22] INTERVIEWER:** Is there any process that is being repeated?
+
+**[00:22:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 60-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:24:00] RESPONDENT:** If you want to say something, it would be better if we know more about it.
+
+**[00:24:04] INTERVIEWER:** Do you have any other examples? You remember everything every time, right? So...
+
+**[00:24:12] RESPONDENT:** I want to say something extra.
+
+**[00:24:14] INTERVIEWER:** Thank you.
+
+**[00:24:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:25:00] RESPONDENT:** you

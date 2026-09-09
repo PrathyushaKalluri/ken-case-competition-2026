@@ -1,0 +1,179 @@
+# Interview Transcript — Call Technician
+
+- **Source audio:** `Technician.m4a`
+- **Duration:** 00:12:59
+- **Transcription:** OpenAI Whisper (whisper-1) audio translation, verbatim, segment-level timestamps — original call is Telugu / Telugu+English code-switched; text below is the full English translation
+- **Speaker detection:** content/role-based (interviewer vs. respondent vs. third speaker), assigned via GPT-4o against the household interview guide — Whisper does not diarize by voice
+- **Speakers identified in this call:** AUDIO UNCLEAR, INTERVIEWER, RESPONDENT, THIRD SPEAKER
+
+---
+
+**[00:00:00] THIRD SPEAKER:** Hello, Uncle.
+
+**[00:00:02] RESPONDENT:** Yes, tell me.
+
+**[00:00:04] THIRD SPEAKER:** You are not only doing carpentry work, but you are also helping people like my mother, right?
+
+**[00:00:16] RESPONDENT:** Yes, I do everything.
+
+**[00:00:18] THIRD SPEAKER:** Yes, yes. So, in general, you call my mother and ask her.
+
+**[00:00:25] RESPONDENT:** You can also ask my elders. Many people call me at the same time.
+
+**[00:00:30] INTERVIEWER:** If you have to do a lot of work at the same time, how do you track all the work and how do you coordinate your phone calls?
+
+**[00:00:40] RESPONDENT:** We have a team of around 10 people, and we keep track of all the phone calls. There are some people who say it's okay to stop after 2 days. There are some people who say there is no problem if they come to the hospital for emergency treatment. We will do it quickly for those people. For some people, if they think they don't have any problem for 2 days, they will keep doing it.
+
+**[00:01:16] INTERVIEWER:** Okay. Okay. So you will find out what the urgency is and do it.
+
+**[00:01:24] RESPONDENT:** Yes, we will keep doing it.
+
+**[00:01:26] INTERVIEWER:** You don't do everything yourself, right? There are many people under you. How do you decide who should be sent for what work?
+
+**[00:01:35] RESPONDENT:** We decide who can do what and send them accordingly. Some people do it as a senior, some people do it as a junior. We send one person to do the main work and one person to do the minor work.
+
+**[00:01:52] INTERVIEWER:** If you want to take someone new, how do you do it? If you want to take someone new, how do you do it?
+
+**[00:02:00] RESPONDENT:** If I am doing it as a senior, I will keep them with me. I will keep them with good people. After they learn for 1-2 years, we will send them out.
+
+**[00:02:18] INTERVIEWER:** Okay, I understood. If someone calls you and says they have a problem, what do you do?
+
+**[00:02:30] RESPONDENT:** When we ask them to come, we know from their side, what kind of questions they ask, we know that.
+
+**[00:02:38] INTERVIEWER:** When you ask them what kind of questions they ask, do you get frustrated? Can you tell us?
+
+**[00:02:47] RESPONDENT:** Like getting irritated. There is no such thing as getting irritated at all. Because 99% of the time, we give answers based on our interest.
+
+**[00:03:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:03:30] RESPONDENT:** Some people are good sirs and good madams. We can answer them as long as we want. Some people just feel for no reason. We tell them 2-3 times. If they say no, we tell them that we are busy. That's it.
+
+**[00:04:00] RESPONDENT:** Even if you come to work, even if you book it from Apple or from outside, apart from the money shown by everyone, they ask for some extra money and say that it looks a little uncomfortable.
+
+**[00:04:11] INTERVIEWER:** How do you handle such things? What do you say to your young people?
+
+**[00:04:17] RESPONDENT:** Actually, they don't have anything. Now, sir and madam, we will tell you this much about this job first. After it is okay, we still have to take care of it.
+
+**[00:04:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:05:00] RESPONDENT:** So I can't ask them.
+
+**[00:05:04] INTERVIEWER:** If you lose a part in the washing machine, if you want to repair it, if you lose a part, when you go and get it back, do they have any doubt? Are you replacing it? Are you replacing the duplicate part? Are you taking more money?
+
+**[00:05:24] RESPONDENT:** Yes, they keep asking. So, what we are trying to say is... If they know the job well, they won't ask us. If they don't, it's okay if we give them the money. Some people are confident that they will do a good job. Some people have some doubts. If we give them the money, they will check what material we are using and what we are doing. Some people trust us and tell us what to do. Then they will go to their duties.
+
+**[00:06:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:06:30] RESPONDENT:** I will call him and tell him that it was a mistake. He doesn't know and he did it. If you were here, you would have done a good job. I will tell him and cover it.
+
+**[00:06:41] INTERVIEWER:** So what about the money?
+
+**[00:06:43] RESPONDENT:** If he says no for that, I will remove that part and give him a new one.
+
+**[00:06:47] INTERVIEWER:** Will you do that for the new parts?
+
+**[00:06:50] RESPONDENT:** Yes, I will do it.
+
+**[00:07:00] INTERVIEWER:** You go and do repairs, right?
+
+**[00:07:03] RESPONDENT:** Yes.
+
+**[00:07:04] INTERVIEWER:** What kind of service do you think would be good for you?
+
+**[00:07:10] RESPONDENT:** Some people come to repair and ask for tea or coffee.
+
+**[00:07:18] INTERVIEWER:** What kind of service do you think would be good for you?
+
+**[00:07:23] RESPONDENT:** We only take care of the workers.
+
+**[00:07:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:08:00] RESPONDENT:** No, time is being saved mainly.
+
+**[00:08:02] INTERVIEWER:** Okay.
+
+**[00:08:03] RESPONDENT:** That's it.
+
+**[00:08:04] INTERVIEWER:** Do you ever get frustrated when you don't come from their side?
+
+**[00:08:18] RESPONDENT:** It won't be like that. For example, if a young person doesn't come at that time, there will still be workers at our place. I mean, there will be outsiders other than us.
+
+**[00:08:28] INTERVIEWER:** Okay.
+
+**[00:08:29] RESPONDENT:** That's it.
+
+**[00:08:30] INTERVIEWER:** Okay.
+
+**[00:08:30] RESPONDENT:** If you have free time, do it. They will do it for you.
+
+**[00:08:34] INTERVIEWER:** Okay, okay.
+
+**[00:08:35] RESPONDENT:** Yes, that's it.
+
+**[00:08:36] INTERVIEWER:** Do you have any communities to take money for this work?
+
+**[00:08:42] RESPONDENT:** Yes, there are some. If you agree with them, we will take 10% and ask them to do it.
+
+**[00:08:54] INTERVIEWER:** Okay.
+
+**[00:08:55] RESPONDENT:** Yes.
+
+**[00:08:56] INTERVIEWER:** Do you have a WhatsApp group?
+
+**[00:09:00] RESPONDENT:** We have a group for all the workers.
+
+**[00:09:03] INTERVIEWER:** What kind of group do you use?
+
+**[00:09:10] RESPONDENT:** It's all about work.
+
+**[00:09:12] INTERVIEWER:** Can you give us a screenshot of the work you do?
+
+**[00:09:25] RESPONDENT:** Screenshot?
+
+**[00:09:30] INTERVIEWER:** If you and Vishnu sir are there, if someone calls you and says Vishnu sir, there is this job here, I am not able to go, will you go? Have you asked anything like that? Or have you posted any photos?
+
+**[00:09:44] RESPONDENT:** I have made such calls.
+
+**[00:09:46] INTERVIEWER:** Okay.
+
+**[00:09:47] RESPONDENT:** I have made such calls. There are no groups. Normally, if there are 10-20 people, there will be a group with their numbers.
+
+**[00:09:56] INTERVIEWER:** Okay, I understood. Have you posted any photos?
+
+**[00:10:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:10:30] RESPONDENT:** I will call you and let you know I will show you my work and show it to sir and madam I will take a video and upload it Ok Uncle, you have a lot of work, right?
+
+**[00:10:45] INTERVIEWER:** Do you write it down somewhere? Or do you just remember it?
+
+**[00:10:51] RESPONDENT:** I have a memory power Even if it is just 2 months, 3 months or 4 months back I have all the measurements in my mind I have all the measurements in my mind I understand Ok Uncle You know the Urban Company Apps right?
+
+**[00:11:21] INTERVIEWER:** Hello Hello Uncle, can you hear me?
+
+**[00:11:25] RESPONDENT:** Yes, tell me Do you know the Urban Company Apps?
+
+**[00:11:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:12:00] INTERVIEWER:** So, you have a chance to get some work from the organization?
+
+**[00:12:07] RESPONDENT:** Yes, there is a chance from the organization. If someone bothers you about the work, they will take care of it.
+
+**[00:12:19] INTERVIEWER:** Ok, I got it. So, you don't have any problems with them?
+
+**[00:12:27] RESPONDENT:** No, I don't have any problems with them. You go to the elders and tell them what you are doing until you get that boy and there will be a meeting.
+
+**[00:12:35] INTERVIEWER:** Okay, okay. I got it.
+
+**[00:12:37] RESPONDENT:** Yes, that's it.
+
+**[00:12:39] INTERVIEWER:** Okay. Okay, uncle. This is enough for now.
+
+**[00:12:45] RESPONDENT:** If you have any other questions, you can call me. Yes, yes.
+
+**[00:12:52] INTERVIEWER:** Okay, uncle. Thanks, uncle.
+
+**[00:12:55] RESPONDENT:** Okay.
+
+**[00:12:56] INTERVIEWER:** Bye, bye.
+
+**[00:12:57] RESPONDENT:** Bye, uncle.

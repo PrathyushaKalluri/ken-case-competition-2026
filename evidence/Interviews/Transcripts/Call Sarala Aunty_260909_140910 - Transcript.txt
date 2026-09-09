@@ -1,0 +1,80 @@
+# Interview Transcript — Call Sarala Aunty
+
+- **Source audio:** `Call Sarala Aunty_260909_140910.m4a`
+- **Call date/time:** 2026-09-09 14:09:10
+- **Duration:** 00:08:15
+- **Transcription:** OpenAI Whisper (whisper-1) audio translation, verbatim, segment-level timestamps — original call is Telugu / Telugu+English code-switched; text below is the full English translation
+- **Speaker detection:** content/role-based (interviewer vs. respondent vs. third speaker), assigned via GPT-4o against the household interview guide — Whisper does not diarize by voice
+- **Speakers identified in this call:** AUDIO UNCLEAR, INTERVIEWER, RESPONDENT
+
+---
+
+**[00:00:00] INTERVIEWER:** Hello.
+
+**[00:00:01] RESPONDENT:** Hello. Yes. Tell me.
+
+**[00:00:04] INTERVIEWER:** In the whole process, what was the most frustrating thing? The electronic goods that you are talking about...
+
+**[00:00:19] RESPONDENT:** Where?
+
+**[00:00:20] INTERVIEWER:** In the whole process?
+
+**[00:00:21] RESPONDENT:** In the whole process, after you find all the techniques, it was repaired normally...
+
+**[00:00:30] INTERVIEWER:** What is the most difficult thing you have to face in your home?
+
+**[00:00:35] RESPONDENT:** The most difficult thing is drainage issues. We have a flat in Vijayawada. During Covid, all the water used to come to our home. When it came, no one could identify it. During that time, all the water came from the top. In the gutter, the bottle of liquor they drank got stuck. I flushed it well and washed it with water. Then it came down and all the water was gone. Except for that one issue, everything else is fine. Everything is going well as we thought.
+
+**[00:01:21] INTERVIEWER:** So, when it was difficult for you to identify the problem, you got frustrated. In normal issues... Do you have any frustration from the beginning to the end? I mean, about their payment, or whether they contacted you or not?
+
+**[00:01:40] RESPONDENT:** Frustration or not, that is something to be identified later. Now, they will pipe in something and leave. Later, if we don't do it properly, we won't get an idea.
+
+**[00:01:55] INTERVIEWER:** Has that ever happened to you?
+
+**[00:01:58] RESPONDENT:** Outside... the parking tiles are still being used. They won't be in contact with us again. They won't come regularly. Even if we ask them now, they won't be available to us. Either they are available or they have other reasons. If we give this decision now, if we ask someone else to do this, will anyone do it?
+
+**[00:02:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:03:00] RESPONDENT:** I will go and see how serious it is, how urgent it is, how long it will take, how much time it will take, how much money it will cost, after I get an idea, I will tell each one of you.
+
+**[00:03:24] INTERVIEWER:** Okay. You are saying working, right? How do you match your availability and the technician's availability?
+
+**[00:03:36] RESPONDENT:** I call the technician who is available. I mean, I will be available in the evening. Then I will ask him to come in the evening. If he can't come in the evening, I will ask someone else. We will see what we can do. We can't waste time, right? If we give them time, they will do it like an appointment. They didn't come at that time. We have to put them aside and look for someone else.
+
+**[00:04:14] INTERVIEWER:** How do you look for someone else?
+
+**[00:04:18] RESPONDENT:** When they don't come, we have to call Basha, Krishna and Rana again and ask them to look for someone else. If they don't come, we have to call Basha. If they are not available, I have to call the people around me. If I go to a shop to buy electrical goods, they give me the electrical numbers. If I go to a shop to buy electrical goods, they give me the electrical numbers. I will give it to them.
+
+**[00:05:02] INTERVIEWER:** Okay, okay.
+
+**[00:05:04] RESPONDENT:** I will take it from the shop as well.
+
+**[00:05:06] INTERVIEWER:** Okay. When they give you the technician numbers, when you have a lot of technician numbers, how do you track them?
+
+**[00:05:25] RESPONDENT:** For the time being, the technician numbers...
+
+**[00:05:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 60-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:06:30] INTERVIEWER:** Whatever it is, you can tell me.
+
+**[00:06:33] RESPONDENT:** Like you said, when the problem identification was difficult, I got frustrated.
+
+**[00:06:39] INTERVIEWER:** Is there anything else?
+
+**[00:06:41] RESPONDENT:** Problem identification is like that. If it is diagnosed, it is easy to do. That is the first thing. Then, there are people who do not come because the workers say they will come on time. There again frustration comes. They start with one payment. After starting the business, they take a lot of money and that is a problem. Some people do it in the middle and leave it and go. They do not get it and that is a frustration. When we do this electronic goods, they do not give us anything at the time they say they will give. Then it becomes a problem. So all these are problems.
+
+**[00:07:24] INTERVIEWER:** Okay.
+
+**[00:07:30] RESPONDENT:** If we don't have him at the time of our request, we can say that you are not available. Or, if we are not available at the time of his arrival, we can say that you are not available.
+
+**[00:07:43] INTERVIEWER:** Hmm. Yes.
+
+**[00:07:47] INTERVIEWER:** Okay.
+
+**[00:07:48] RESPONDENT:** That's all. Mostly, we asked what you wanted to ask. Thank you.
+
+**[00:07:52] INTERVIEWER:** Hmm.
+
+**[00:07:53] RESPONDENT:** If you find anything in the diary, please write it down. It will be better if there is a photo.
+
+**[00:08:00] INTERVIEWER:** Thank you.

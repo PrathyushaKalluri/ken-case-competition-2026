@@ -1,0 +1,110 @@
+# Interview Transcript — Call Sarala Aunty
+
+- **Source audio:** `Call Sarala Aunty_260909_135058.m4a`
+- **Call date/time:** 2026-09-09 13:50:58
+- **Duration:** 00:17:03
+- **Transcription:** OpenAI Whisper (whisper-1) audio translation, verbatim, segment-level timestamps — original call is Telugu / Telugu+English code-switched; text below is the full English translation
+- **Speaker detection:** content/role-based (interviewer vs. respondent vs. third speaker), assigned via GPT-4o against the household interview guide — Whisper does not diarize by voice
+- **Speakers identified in this call:** AUDIO UNCLEAR, INTERVIEWER, RESPONDENT, THIRD SPEAKER
+
+---
+
+**[00:00:00] INTERVIEWER:** Hi Aunty, how are you? Hi Aunty, how are you?
+
+**[00:00:09] RESPONDENT:** I am good, how are you?
+
+**[00:00:11] INTERVIEWER:** I am good, how is your eyesight?
+
+**[00:00:13] RESPONDENT:** It is okay, it is going on Have you eaten?
+
+**[00:00:18] INTERVIEWER:** No, no, uncle has to come Okay, okay We will ask questions Okay For that, you can tell us in detail We'll try, yeah.
+
+**[00:00:32] RESPONDENT:** Okay.
+
+**[00:00:34] INTERVIEWER:** Okay. First, thanks for the time. We are a student group from 888 Hyderabad. We are trying to understand in India, in Indian households, how do you handle the servicing, or the new repairs, or the installations, or the machines? How do you handle it?
+
+**[00:00:55] RESPONDENT:** Okay.
+
+**[00:00:57] INTERVIEWER:** Can I record your call?
+
+**[00:00:59] RESPONDENT:** Okay.
+
+**[00:01:30] RESPONDENT:** I'm going to take up the last time I'm going to repair a recent most
+
+**[00:01:44] INTERVIEWER:** Can you explain in detail about the repair that took place?
+
+**[00:01:48] RESPONDENT:** The repair was a mixer repair We thought the washing machine repair wouldn't be possible, so we got a new one Mixer repair has been done That's it. As the repair cost is high, I removed that and replaced it with a new one The mechanic came and repaired it He said that the time was not enough So I removed it and replaced it with a new one Bye How do you decide if the money is more or less? If you repair it many times, the cost will be balanced when you buy a new one.
+
+**[00:02:52] INTERVIEWER:** Okay.
+
+**[00:03:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:03:30] RESPONDENT:** I got the mechanic shop number on the road when I was looking for a mechanic shop. I called him and he came home for the first time. We call him regularly. We approach any mechanic we want. He is a plumber and an electrician. He has a drainage problem. or cement works, or painters, or whoever you want, you can get the numbers from them.
+
+**[00:04:14] INTERVIEWER:** How do you save those numbers?
+
+**[00:04:19] RESPONDENT:** We save it on the phone.
+
+**[00:04:23] INTERVIEWER:** So you save it? How do you remember the contact names? You have to pay a loan.
+
+**[00:04:30] RESPONDENT:** Electrician is Basha Electrician or Carpenter Vishnu. We have properties in Vijayawada and Eluru as well. Basha Electrician Eluru, Vishnu Carpenter Vijayawada.
+
+**[00:04:53] THIRD SPEAKER:** Please subscribe to our channel for more videos.
+
+**[00:05:00] RESPONDENT:** In case, if there is any problem with the phone, if the phone number is not available, I will note it in a diary and keep it.
+
+**[00:05:18] INTERVIEWER:** Once you have that diary, how can you note it and put a photo?
+
+**[00:05:24] RESPONDENT:** I will see to it. Everything will be clumsy. I'll write it down and send it to you later.
+
+**[00:05:34] INTERVIEWER:** You said that you are handling two locations. When you are handling the second location from here, do you have any frustration points? Like, it would have been better if it was done faster, or it would have been better if it was done better. How do you manage the quality? Thank you.
+
+**[00:06:00] RESPONDENT:** Obviously, it is difficult for us to handle from here to there, but if we put our trust in him, like I said earlier, there is a man called Vishnu Carpenter, I will supervise him and get other people through him. Since they know each other, they will do as he says. I will take your leave now. supervise them and pay them. I don't go to Vijayawada frequently. I don't go to Vijayawada frequently. I fix an appointment there and give him some commission. So that I have time and charges. I don't ask him for commission I don't ask him for commission. So, Carpenter has a network there, so he can get plumbing, drainage works, painting, painters, sealing, etc. So, he can talk to them via video call and tell them what is the problem and how to rectify it.
+
+**[00:07:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:08:00] RESPONDENT:** When we were constructing our flat in Vijayawada, I went to the person who was doing the woodwork. I had a small door repair. When I asked him to come, he came and did it immediately. He took the amount genuinely. Since then, I have been able to trust him and approve his small works. It doesn't matter. I didn't know about it. I just saw it while I was working nearby.
+
+**[00:08:37] INTERVIEWER:** You said that if you do it in a reasonable amount in a short period of time, you will gain trust. How do you decide the time? Which is urgent and which is not? How do you decide? Let's say there is a motor failure.
+
+**[00:09:00] RESPONDENT:** In the evening, I have to fill up the water tank in the motor, because it is an urgent job.
+
+**[00:09:08] RESPONDENT:** For example, if there is a power cut in the house, or if there is a problem with the wiring, it is an urgent job. In the morning, when I go to school, I have to fix the mixer. In the evening, I have to go to work, because it is an urgent job.
+
+**[00:10:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 120-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+
+**[00:12:30] RESPONDENT:** Basically, we need a time factor. We don't want to spend time on repairs. We will keep using it until we get a repair. If there is more wear and tear, we will remove it. There is a limit, right?
+
+**[00:12:51] INTERVIEWER:** Yes.
+
+**[00:12:52] RESPONDENT:** We calculate the damaging period. If there is more wear and tear, we will remove it.
+
+**[00:13:00] INTERVIEWER:** So, now you are going to start from a broken machine to a working machine, right? How long did it take to repair it?
+
+**[00:13:10] RESPONDENT:** Actually, there are two mixers. I sent two of them to my uncle. One of them cost a lot. It cost 2400 rupees for the mixer and 1700 rupees for the repair. I told him that I don't want it. I want it for free. I told him that I don't want it. I want it for free. I'm going to be in five minutes.
+
+**[00:13:34] INTERVIEWER:** Okay. Okay. Okay. Okay.
+
+**[00:13:40] RESPONDENT:** I'm going to be in 10 minutes. One hour maximum.
+
+**[00:14:02] INTERVIEWER:** Okay.
+
+**[00:14:04] RESPONDENT:** We have a four burner stove. When the stove was repaired, we told him that it would be a waste of money to repair the stove. We went to the repair shop regularly. We took his number and asked him when he would be available. He said he would be available on Sunday. We brought the stove on Sunday and repaired it. He said he would be available on Sunday.
+
+**[00:14:30] INTERVIEWER:** I have two working and two non-working burnouts Do you go to the local people or to the company people?
+
+**[00:14:43] RESPONDENT:** If there is a warranty, we go to the local people If there is no warranty, we go to the local people If it is big or costly, we go to the company people If it is big or costly, we go to the company people What kind of equipment is costly? TV, AC, fridge, etc.
+
+**[00:15:08] INTERVIEWER:** Do you have a warranty for the equipment?
+
+**[00:15:12] RESPONDENT:** It's about 5 years. One minute. I'll call you back. One minute.
+
+**[00:15:22] INTERVIEWER:** Can you put it on mute?
+
+**[00:15:24] RESPONDENT:** Yes, I'll put it on mute.
+
+**[00:15:30] THIRD SPEAKER:** The person you are talking to has put your call in a hole. Please wait in the line. After call
+
+**[00:15:50] THIRD SPEAKER:** The person you are talking to has put your call in a hole. Please wait in the line.
+
+**[00:16:00] THIRD SPEAKER:** The person you are speaking with has put your call on hold, please stay on the line. The person you are speaking with has put your call on hold, please stay on the line. The person you are speaking with has put your call on hold. Please stay on the line. The person you are speaking with has put your call on hold. Please stay on the line. Put your call on hold. Please stay on the line.

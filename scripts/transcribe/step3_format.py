@@ -38,6 +38,7 @@ SPEAKER_DISPLAY = {
     "INTERVIEWER": "INTERVIEWER",
     "RESPONDENT": "RESPONDENT",
     "THIRD_SPEAKER": "THIRD SPEAKER",
+    "AUDIO_UNCLEAR": "AUDIO UNCLEAR",
 }
 
 
@@ -81,10 +82,6 @@ def format_file(labeled_json: Path, out_md: Path):
                   f"speaker), assigned via GPT-4o against the household interview guide — Whisper "
                   f"does not diarize by voice")
     lines.append(f"- **Speakers identified in this call:** {', '.join(SPEAKER_DISPLAY[s] for s in speakers_present)}")
-    if is_translated:
-        lines.append(f"- **Original-language verbatim:** preserved in full at the end of this file "
-                      f"(section 'ORIGINAL-LANGUAGE VERBATIM'), chunked by timestamp, for audit against "
-                      f"the English translation above — nothing spoken in the call is dropped")
     lines.append("")
     lines.append("---")
     lines.append("")
@@ -93,23 +90,6 @@ def format_file(labeled_json: Path, out_md: Path):
         ts = hhmmss(t["start"])
         lines.append(f"**[{ts}] {SPEAKER_DISPLAY[t['speaker']]}:** {t['text']}")
         lines.append("")
-
-    if is_translated:
-        lines.append("---")
-        lines.append("")
-        lines.append("## ORIGINAL-LANGUAGE VERBATIM (audit trail — not speaker-separated)")
-        lines.append("")
-        lines.append("Raw Whisper transcript of each 30-second audio chunk in its original spoken "
-                      "language (Telugu / English code-switched), before translation. Provided so every "
-                      "word actually said can be checked against the English translation above.")
-        lines.append("")
-        for c in data["original_language_chunks"]:
-            ts = hhmmss(c["start"])
-            lang = c.get("language", "?")
-            text = c["text"].strip()
-            if text:
-                lines.append(f"**[{ts}] ({lang}):** {text}")
-                lines.append("")
 
     out_md.write_text("\n".join(lines), encoding="utf-8")
     print(f"[done] {out_md.name} ({len(turns)} turns)")
