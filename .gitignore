@@ -1,0 +1,7 @@
+.env
+scripts/transcribe/__pycache__/
+
+# Regenerable intermediate audio chunks (30s/4min slices re-encoded from the
+# source .m4a files for the Whisper pipeline) -- pure derived cache, not
+# source data. Reproducible anytime via scripts/transcribe/robust_*.py.
+evidence/Interviews/_raw/_chunks*/

@@ -1,0 +1,265 @@
+Keeping the Machines Running
+Household Interview Field Guide
+The Ken Case Competition 2026 — Team Invictus, IIIT Hyderabad
+A step-by-step, tested, 40-minute household interview script — with the reasoning, the sources, and the simulated dry-runs behind every question.
+Prepared for Round 1 fieldwork  |  40-minute household script, technician/landlord addenda, decision-maker map, and a documented question-by-question test against three simulated household personas.
+What is in this document
+Part 1 — How this guide was built, and why it can be trusted
+Part 2 — Who actually decides in a household: the decision-maker map
+Part 3 — How we tested it: three simulated interviews, and what they changed
+Part 4 — Ground rules for the interviewer (read before every interview)
+Part 5 — The 40-minute interview, section by section, word for word
+Part 6 — Landlord mini-addendum
+Part 7 — What to listen for, and the post-interview checklist
+Appendix — The three test personas, in full
+Part 1 — How this guide was built, and why it can be trusted
+This is not a first draft. It is the fourth layer of a research plan the team has already been building for this competition, consolidated into one script and then pressure-tested before being handed to an interviewer. Nothing here was invented for this document — every question traces back to one of the following, already in the team's shared repository:
+The base 16-question household guide, an 8-question technician guide, and a landlord/PG addendum (research/report-source.md) — already audited once against the Mom Test, a well-known customer-interview method that exists specifically to stop a team from accidentally asking leading or hypothetical questions and mistaking the answers for real evidence.
+Segment-specific additions for renters, managed-community households, and independent households (narrowed_problem.md, research_plan.md) — built from the team's actual confirmed access: Eluru (tier-3) households, a Hyderabad managed-community (My Home) household, a standalone Hyderabad household, and an IIIT Hyderabad campus household.
+Five additive probes contributed by a second, independently-run research track on the same team (team_reconciliation.md), reconciled into one guide rather than run as two separate scripts.
+A synthesis of interviewing technique drawn from the team's own 20-textbook course reading list and three years of past competition winners (best_practices.md) — the probing toolkit in Part 4 comes directly from this.
+What this document adds on top of that existing work: (1) it merges all of the above into one single, sequenced, plain-language script timed to exactly 40 minutes, instead of several separate documents an interviewer would have to cross-reference in the room; (2) it simplifies every question into short, everyday English so it works equally well with a software engineer, a shopkeeper, or a housewife, with no assumption of English fluency, technical vocabulary, or familiarity with apps; and (3) it was actually run — three times, against three realistic simulated households — before being finalized, and the specific things that went wrong in those dry runs are fixed in the version in Part 5, not just described here.
+Part 2 — Who actually decides in a household: the decision-maker map
+One of the most important things this guide has to uncover is not what broke, but who has the authority to act on it — because a repair almost never has one decision-maker. It usually has up to five different people playing five different roles, and an agent built for this problem needs to know which one is which:
+The team tested this framework against three realistic, contrasting households (full detail in the Appendix) specifically to see how differently these five roles can be split — and to check whether the guide could actually uncover the split in each case, not just in theory.
+Pattern 1 — The dual-income homeowner household (“the 3% household”)
+Coordinator: the more available spouse — usually whoever is home or more used to handling logistics — does essentially all of the calling, remembering, and following up.
+Owner: the household itself, jointly.
+Approver: a soft, informal split the couple has never once discussed as a rule — below a certain rupee amount, the coordinator just decides and pays; above it, a quick WhatsApp message and a thumbs-up from the other spouse is the entire approval process.
+Payer: the coordinator, from a joint account, immediately.
+Access-granter: usually the coordinator, but sometimes casually delegated to household staff without a second thought.
+Why this matters: a household can look like it has no coordination problem on the surface — everyone is amicable, nothing is a fight — while still running on an informal, undiscussed threshold that nobody has ever put into words until asked directly. This kind of household will also often quietly abandon a building's official system (an approved-vendor panel, for instance) in favor of a personal list of trusted contacts, without ever reporting that the official system failed them — it just gets bypassed.
+Pattern 2 — The staff-mediated affluent household (“the 1% household”)
+Coordinator: not the nominal head of the household at all — a house manager, a long-term domestic staff member, or a similar trusted employee who personally notices issues, keeps the technician contacts, and is physically present for every visit.
+Owner: the household head, but often meaningfully uninvolved in the mechanics.
+Approver: the coordinator has an informal spending threshold they can decide within on their own judgment; above it, they message the household head or their assistant and wait — sometimes for hours, if that person is travelling.
+Payer: usually the coordinator, from house funds, with the household head reimbursing or simply staying informed after the fact.
+Access-granter: the coordinator, always.
+Why this matters, and why it is the single most important finding of this exercise: this household has already informally delegated the entire coordination job to a trusted human agent, long before any software is involved. Interviewing only the nominal household head in this pattern produces almost no usable detail, because they generally do not know it; the real informant is the staff member. A guide that does not explicitly plan for this — and ours originally did not, until it was tested — will waste most of an interview on the wrong person.
+Pattern 3 — The renter needing a landlord's permission
+Coordinator: the tenant — notices the issue, is present for the technician, does the calling.
+Owner and approver: the landlord — a separate person, often not on-site, sometimes slow to respond.
+Payer: frequently the tenant, upfront and out of pocket, especially for anything urgent — followed by a separate, sometimes-delayed process of getting reimbursed or adjusted against rent.
+Access-granter: the tenant.
+Why this matters: this pattern splits into two distinct waiting periods that are easy to mistake for one — the wait to get permission, and a separate, later wait to actually get paid back. It also produces a specific, quiet failure mode: small problems the tenant judges not worth the back-and-forth never get reported to the landlord at all, and are instead lived with, worked around personally, or fixed informally through a friend. A guide that only asks about repairs that were actually completed through a technician will never see this second, larger category of unresolved, unreported problems — which is exactly why Part 5 has a dedicated, protected question for it.
+Part 3 — How we tested it: three simulated interviews, and what they changed
+Before handing this guide to a real interviewer, the team ran three full, independent, simulated 40-minute interviews — one per household pattern in Part 2 — using an AI agent to play both a disciplined interviewer following the draft guide, and a realistic, sometimes guarded, sometimes vague respondent built from a detailed persona brief. The respondent was instructed to give shallow, compliant, or evasive answers to any question that was leading, vague, hypothetical-without-grounding, or full of jargon — and to give real, specific, ground-truth answers only when a question actually earned them. This is a way of pressure-testing question wording before spending real people's time on it.
+The headline finding, consistent across all three runs: the wording of the individual questions was already strong — genuinely open, past-tense, non-leading, and in plain English throughout. Every real problem the simulations found was structural — a missing instruction, a question hiding inside the wrong section, or something placed in an optional, first-to-be-cut part of the guide when it should have been protected. The table below is the complete list of what was found and fixed; every fix is already built into Part 5.
+Full simulated transcripts and the complete critique from each of the three test runs are preserved in the team's working files and can be attached separately as supporting evidence of the team's process (the competition explicitly credits chat logs, including logs of you working the problem through with an AI, as valid evidence).
+Part 4 — Ground rules for the interviewer (read this once, out loud, before every session)
+The one rule that matters more than any question wording: we are not here to find out if people would like our idea. We haven't told them we have an idea. We are here to find out what actually happened, one real time, in the past. If a question can be answered without remembering a real event, it is the wrong question.
+Three things to never do:
+Never describe an app, an agent, or what if a service could... — not even at the end, unless the guide explicitly says to (only in the Handing it over section).
+Never ask would you... or do you usually... — always tell me about the one time...
+Never accept a compliment, a general opinion, or a yeah that would be nice as an answer. If you get one, ask: can you tell me about an actual time that happened?
+How to probe — five moves that work in almost every section:
+Echo it back. Repeat their last few words as a question (...three days later?) — costs nothing, gets more.
+And then? — keep asking this until the story actually ends. Don't fill the silence yourself.
+Can you give me one specific example of that? — whenever they say something general (it's always like this).
+What did that actually look like, this time? — the single most useful probe in the whole guide. Use it whenever an answer sounds like a policy or a habit, instead of a memory of one real event.
+Silence. Count to five in your head before jumping in. People often add the most important detail in the pause.
+What NOT to do, ever:
+Ask isn't that frustrating?, that must have been so annoying, or wouldn't it be easier if.... If it is frustrating, they will tell you themselves, in their own words, if you just wait and ask and then what did you do? The moment you feel the urge to sympathize out loud is exactly the moment to stay quiet and ask the next question on the page instead.
+Before you knock: setup checklist
+Phone charged, recording app ready (ask permission first)
+Camera ready, in case there is something to photograph later
+A notebook for your own notes (do not rely only on memory or recording)
+You already know this person's rough situation (renter/owner, which city) so you do not waste time re-asking things you can see
+Opening script — say this, in your own natural words, in whatever language they are comfortable in
+“Hi, thank you for taking the time. We're students, and we're trying to understand how people in India actually handle it when something in the house breaks down or needs a repair or a service — things like the AC, the fridge, the washing machine, the geyser, the water purifier. We're not selling anything. We just want to hear about one real time this happened to you, in as much detail as you remember. This will take about 30 to 40 minutes.
+
+Is it okay if I take notes while we talk? And would you be okay if I also just record the conversation on my phone, so I don't miss anything? You can say no to either — it's completely fine, and you can also stop or skip any question at any point.
+
+A few of your answers, and maybe a photo of something you show me, might get used later — without your name, just your rough age and city — as part of a student competition project. I'll check with you again before using anything specific.”
+Get a clear yes/no on: notes, audio recording, using a photo if one comes up, and using their words (anonymously) in our submission. Do not proceed past this without a clear answer.
+Then, before moving to the main interview, ask this — it takes 30 seconds and can save you 20 minutes:
+“Just one quick thing before we start — when something breaks down at home, is there one particular person who usually ends up dealing with it, or does it really vary?”
+If they name themselves, proceed normally. If they name someone else — a spouse, a house helper, a parent, a house manager — make a mental note now, and watch for it again in Section D below. You may still continue with this person for what THEY genuinely know, but be ready to ask, later, whether the other person could join for part of the conversation.
+Timing map
+Updated drop-order, if you are running short:
+First, shorten Section I to just the main question — drop the comparison follow-up.
+Second, shorten Section J to just the main question plus its required grounding follow-up (never drop the grounding follow-up on its own — an ungrounded hypothetical answer is worse than no answer).
+Never drop: the screening question in Section A, the small unreported thing question in Section C, the travel-comparison line in Section G, or either half of Section D's two-step question.
+If, partway through, you realize the person you are speaking to is not the one who actually deals with repairs: do not keep pressing them for detail they do not have. Politely ask if the real person could join, even for the second half. If they do, treat everything already asked to the first person as background only, and prioritize Sections D, G, I, and J with the real person — you can always recap the basic facts (what broke, roughly when, how much it cost) quickly rather than re-asking in full.
+Part 5 — The 40-minute interview, section by section, word for word
+Ask the main question first. Only use the follow-ups and probes that are actually needed — do not read every single one mechanically if the story already answers it.
+SECTION B — The most recent time (6 min)
+Main question:
+“Think about the last time something at home needed a repair, a service, or had to be newly installed -- could be the AC, fridge, washing machine, geyser, water purifier, anything at all. Can you tell me the whole story, from the very beginning -- what happened first?”
+Why we ask it this way: Starting broad (anything at all) stops us from planting an object in their head (an AC, say) before they have told us what actually comes to mind first. What they pick, unprompted, is itself information.
+Follow-ups:
+Roughly when was this -- a few weeks ago, a couple of months ago?
+Which machine was it, exactly?
+And whose flat/house was this -- where you are living now?
+Probes to go deeper:
+“What made you notice something was wrong?”
+“What did you do right after you noticed?”
+“And then what happened?  (repeat until the story runs out on its own)”
+“Who else got involved, at any point?”
+Avoid: Don't say tell me about your AC -- let them choose the machine.
+SECTION C — How they keep track, remember, and the small things that never even got reported (7 min)
+Main question:
+“When this was happening, was there anything you needed to look up or remember -- like when it was last serviced, whether it's still under warranty, or who you called last time?”
+Follow-ups:
+Where would that kind of information usually be -- in your head, on a piece of paper, in your phone, somewhere else?
+Was there anything you couldn't find when you needed it? What happened because of that?
+Probe -- always ask this one, it matters a lot:
+“Is there anything you've made yourself, to help you remember these things -- a note on the fridge, a notebook, a sticker on the machine, a WhatsApp chat with just yourself or with someone else about it, a folder of receipts, anything like that? Would you be comfortable showing me?”
+Second probe -- a useful comparison:
+“Just thinking about other things you have to renew or remember for the house -- like your car or bike's insurance, or the pollution certificate for the vehicle, or booking your gas cylinder -- do you get reminded about those automatically? How is that different from how you remembered about the machine you just told me about?”
+Third probe:
+“Is there a paper contract where you pay once a year for regular servicing -- some people call this an AMC -- or is it more like you just know a person you always call when something breaks?”
+Fourth question -- always ask, protect this one from being dropped:
+“Has there ever been something small at home that needed fixing, that you just never actually got around to calling anyone about, or that you dealt with in some other way -- asked a friend, did it yourself, just left it for a while?”
+Avoid: Don't ask wouldn't it help to have an app remind you? -- just ask what they actually do today.
+If they show you something in the second probe: always ask to take a photo, and ask them to explain what it is and how they made it, in their own words. This is one of the most valuable things you can bring back.
+The fourth question is deliberately different from Section B: Section B only catches things that got fully sorted out through a proper repair. This one is for the small stuff that never became a story -- do not skip it just because Section B already produced a good answer.
+SECTION D — How they picked who to call — and who really decides (5 min)
+First question:
+“How did you decide who to call or contact for this?”
+Follow-ups:
+Had you used this person or company before?
+Did you think about other options? What were they?
+Was there an app or service you thought about using but didn't? Why not?
+Second question -- ask this one separately, even if you think you already know the answer:
+“Does your building or society have any kind of official system for this -- like an approved list of people to call, or a maintenance office?”
+Third question -- always ask this next, whatever the answer to the second question was:
+“And thinking just about this one time -- did you actually end up using that, or did you do something else? Walk me through exactly what you did, this time.”
+Do not stop at yes, there's a list or no, there isn't. A system existing on paper and what actually happens can be two very different things -- this third question is what finds the difference. If they say they used the official system, ask them to walk through it step by step anyway, the same way.
+If, anywhere in this section, they mention that someone else actually made the call or handled it -- a spouse, a staff member, a parent, anyone:
+“It sounds like [name] handles this side of things -- would they be able to spare a few minutes to talk to us too, maybe later in this same visit?”
+Then continue the rest of this interview with this respondent only for what they genuinely know (roughly what it cost, whether they were happy with the outcome, how the decision to spend money worked) -- and once you reach the other person, prioritize Sections D, G, I, and J with them, since that's where the most specific, useful detail will actually live.
+SECTION E — What was promised (3 min)
+Main question:
+“What exactly did they tell you -- like when they'd come, or when it would be fixed?”
+Follow-ups:
+Do you remember their exact words, or close to it?
+Did they give you a clear time, or something vague like soon?
+Did what they said would happen actually happen?
+Probe:
+“Was there any receipt, message, or note confirming that -- could I see it, if you still have it?”
+SECTION F — Who decides, and who pays (7 min) — take your time here
+Main question:
+“Was there any point where it wasn't clear what should happen next -- like nobody quite knew who should decide, or you had to wait to check with someone?”
+Follow-ups:
+What was unclear exactly?
+Who ended up deciding?
+What happened while you were waiting?
+If they say everything was clear the whole time -- that's a real, useful answer too. Write it down as-is, don't push for a problem that isn't there.
+Then ask these, one at a time, slowly -- they are really four separate questions, don't rush them together:
+“Whose machine was it, technically -- yours, or someone else's, like a landlord's or a family member's?”
+“Who actually decided to go ahead and spend the money?”
+“Who paid the person in the end?”
+“Did the price change at any point after you first agreed to it? What happened then?”
+If they rent, or the flat isn't fully theirs, ask this directly:
+“Did you need to check with anyone before you could go ahead with this -- a landlord, a family elder, or a building office?”
+“How did you ask them, and how long did it take to hear back?”
+“Once you told them about it -- or asked to be paid back or adjusted for it -- how long did that part actually take to sort out? Was it straightforward, or did you have to follow up?”
+“Would that landlord/person be open to a short 10-minute conversation with us sometime, about how repairs get decided? A yes or no is completely fine.”
+HIGH-RISK MOMENT -- read this to yourself before asking the questions above: if they mention any kind of delay or difficulty getting a response, resist any urge to sympathize or comment on it -- no that's so slow of him, no that must have been frustrating. Just ask the next question on the list. Anything you say here can make them soften or minimize their next answer.
+If they live in a large managed community/gated society, ask about one actual instance, not a habit:
+“Think about the last time you actually raised something like this with the community office or app -- not necessarily this time, if you didn't use them, but any time you did. What happened, step by step, that one time?”
+If they can't think of a specific time they actually used it, that's a useful, real answer too -- write down has never actually used it rather than pushing them to describe it in general.
+SECTION G — Did anything have to travel anywhere (2 min)
+Main question:
+“Did any part, or the whole machine, need to be picked up, sent somewhere, or delivered -- to a shop, a workshop, anywhere?”
+Follow-ups:
+What exactly moved?
+Who arranged that -- did you have to organise it, or did the technician/company handle it?
+How long did that part take?
+Always ask this, even if you think you already know the answer:
+“Has that ever been different, another time -- something did have to be sent somewhere or picked up from somewhere? What happened then?”
+This last question matters -- a single incident with no movement doesn't tell you whether physical delivery is ever part of this person's experience at all. Don't skip it just because this time was no.
+SECTION H — Is it fixed now, and what did it actually cost you (3 min)
+Main question:
+“Is it fully sorted now, or is anything still pending?”
+Follow-ups:
+How do you know it's actually fixed -- did you test it yourself, or did they just tell you it's done?
+Has the same problem come back since?
+Then ask, gently, as its own question:
+“Roughly, from the moment you first noticed the problem to the moment it was actually working again -- how long did that take in total?”
+“And thinking just about your own time -- calling people, texting, waiting around at home for someone to show up -- roughly how much of your own time did this take, would you guess?”
+“Did this cost you any money out of pocket? Roughly how much, if you remember?”
+SECTION I — The hardest part (1 min, extend only if time remains)
+Main question:
+“Looking back at the whole thing, was there one part that was the most difficult or the most annoying? Doesn't have to be a big thing -- and if honestly nothing really stood out, that's a completely fine answer too.”
+Follow-ups:
+What exactly happened at that point?
+What did you end up doing about it?
+Comparison probe, only if time genuinely remains:
+“Can you think of another time -- with a different machine, or even the same one -- where it went differently, better or worse? What was different about that one?”
+Avoid: Never ask why didn't you just do X -- it sounds like blame, and people stop being honest.
+SECTION J — Handing it over (3 min)
+Main question:
+“If someone you really trusted -- a friend, a family member, anyone -- offered to fully handle something like this for you next time, which parts would you be happy to let them do without checking with you first, and which parts would you still want to decide yourself?”
+This is a what if question, so treat the answer carefully -- it's a guess, not a fact, until grounded. Always follow it immediately with the next question.
+Required grounding follow-up -- always ask this right after, don't skip it:
+“Has there actually been a time in the past where you did let someone else make one of these calls for you -- book something, talk to the technician, agree to a price -- without checking with you first? What happened that time?”
+If they have a real example, that's the answer to trust. If they don't, treat the first answer as a guess, and say so honestly in your notes.
+Closing questions:
+“What would make you feel sure the job was actually finished properly?”
+“Is there anything about all this that I should have asked but didn't?”
+Closing script
+“Thank you so much, this was really useful. Just to confirm -- are you still okay with me using the specific things they agreed to anonymously, without your name? And if I have one quick follow-up question later, would it be alright to message you?”
+Immediately after they leave (or you hang up), before doing anything else: spend 10 minutes writing down, on your own, what they actually said, what you actually saw (like the notebook or WhatsApp chat), what surprised you, and one thing you might be wrong about. Do this before discussing it with your teammates.
+Part 6 — Landlord mini-addendum
+Only if a renter's landlord agrees to talk, separately, for about 10 minutes.
+“1. Tell me about the last time a tenant asked you to fix or replace something in one of your properties.”
+“2. How did you decide whether to approve it, and how much it should cost?”
+“3. Who let the technician into the property -- you, the tenant, someone else?”
+“4. Is there anything a tenant can just go ahead and fix themselves, without asking you first? Where's that line, in your mind?”
+Part 7 — What to listen for, and the post-interview checklist
+For your own notes only -- never say any of this out loud to the respondent.
+Section A screening question -- is this person actually the coordinator, or should we be reaching someone else?
+Section C -- does a real, personal, handmade record-keeping system exist (photograph it if so)? What small things get quietly never-reported at all?
+Section D -- is there a gap between the official/building system and what actually happens? Is the coordinator the same person as the owner/approver/payer, or different people?
+Section F -- managed community vs. self-sourced; renter needing landlord approval; is there a real approval delay, and a separate reimbursement delay?
+Section G -- did a real part or machine physically move, ever, not just this one time? (this is the logistics/rail-completeness check)
+Section I -- what did they postpone, and why? Never label it laziness -- find the real reason.
+Section J -- is there a real precedent of delegating this kind of decision to another human already?
+Anything, anywhere, that surprises you -- write it in a separate didn't expect this list, every single interview.
+Appendix — The three test personas, in full
+These are the three simulated households used to pressure-test the guide in Part 3. Each was built to be realistic and, where relevant, deliberately guarded or evasive -- not an idealized, eager respondent -- so that a leading or poorly-worded question would visibly produce weak data, and a well-worded one would visibly earn the real, specific detail underneath.
+Persona 1 — The 3% household: Ananya Rao
+Marketing director, 42; husband Rohit (45, IT); two children. Owns a 3BHK flat in a large gated community in Hyderabad. Full-time daytime housekeeper, part-time cook. Multiple ACs, an RO purifier, washing machine, dishwasher, geyser.
+What she revealed once probed well:
+A personal phone-notes list of six trusted technicians, built over three years, that she now relies on more than her building's official approved-vendor panel -- which she quietly stopped trusting after one no-show.
+An informal, never-discussed spending threshold with her husband: below roughly Rs. 5,000 she just decides and pays; above it, a WhatsApp message and a thumbs-up is the entire approval process.
+She gets automatic reminders for her car's insurance and pollution certificate, but has never once been reminded to service the AC or change the RO filter -- a contrast she noticed herself, unprompted, only once asked to compare the two directly.
+Persona 2 — The 1% household: Mrs. Malhotra and her house manager, Suresh
+Mrs. Malhotra, early 50s, runs a business with her husband, frequently travels for work; owns an independent bungalow in Hyderabad outright. Suresh, her house manager of eight years, and Kamala, housekeeping staff, run the household day to day.
+What the simulation showed:
+Mrs. Malhotra genuinely could not answer most operational questions in detail -- a realistic, valid response, not evasiveness -- because Suresh handles it all and only sends her a WhatsApp update after the fact.
+Suresh keeps a physical notebook of technician contacts and service dates, partly inherited from the house manager before him, and has a roughly Rs. 3,000 threshold he can approve on his own judgment.
+He is physically present for every technician visit and would resist handing over who I call to anyone else, but would happily hand over reminders and scheduling -- a nuance only reachable by actually interviewing him, not the household head.
+Persona 3 — The renter needing a landlord's permission: Priya Iyer
+29, software engineer, rents a 2BHK alone in a standalone Hyderabad building for two years. Landlord (Mr. Reddy) lives elsewhere in the city; no building management office, just a watchman.
+What she revealed once probed well:
+A WhatsApp chat literally saved as Landlord -- Flat 302 that serves as her entire system of record for repairs, photos, and rent-adjustment conversations.
+A three-day wait for her landlord to respond to a repair request during a heatwave, after which she paid Rs. 800 out of pocket herself and asked to be reimbursed -- followed by a separate, further delay of about a week and two reminders before the amount was actually adjusted against rent.
+A smaller leaking-tap issue, about four months earlier, that she never reported to her landlord at all -- she lived with a bucket under it for two weeks until a friend fixed it casually, judging it not worth the back-and-forth.
+Role | What it means
+The user / coordinator | Notices the problem and does the actual calling, texting, and following up.
+The owner | The machine legally belongs to them — could be the resident, a landlord, or a shared building.
+The approver | Has to say yes before money is spent or a technician is booked.
+The payer | Actually hands over the money — not always the same person as the approver.
+The access-granter | Lets the technician into the home and is present for the work.
+Found in simulation | The risk | The fix, now in Part 5
+3% household: the ‘does an official system exist’ question let the respondent stop at ‘yes, there's a list’ without ever saying what she actually did. | The single most interesting fact in the whole interview — that she quietly bypasses the building's official vendor panel — almost went uncaught, and only surfaced because the simulated interviewer improvised a fix the script did not require. | Section D is now two explicit, sequential questions: does a system exist, and separately, what did you actually do this time.
+3% household: one question about a managed community accidentally asked what usually happens instead of tell me about one time. | It produced the vaguest, weakest answer of the entire simulated interview — sitting right next to well-designed questions producing sharp, specific detail. | Reworded to anchor to one specific, real past instance; if no such instance exists, that itself is now recorded as the answer.
+1% household: the instruction to reach the real coordinator (staff member) existed, but was placed at the very end of Section F — by which point roughly 20 minutes had already been spent extracting thin, secondhand answers from someone who genuinely did not know the details. | A literal interviewer following the script in order would burn most of the interview on the wrong person before ever realizing it, then have almost no time left for the person who actually matters. | Added a 30-second screening question at the very start (is there one person who usually deals with this?), and moved the pivot instruction up into Section D, right where the evidence for it first appears.
+Renter household: hearing about a landlord's slow response created a strong, natural pull for the simulated interviewer to sympathize out loud (that must have been so frustrating). | Any such comment, even a well-meaning one, risks making a guarded respondent minimize or soften their next answer — exactly the leading failure mode this whole guide is designed to avoid. | Added an explicit, in-line reminder at that exact point in Section F: notice the urge, say nothing, ask the next scripted question instead.
+Renter household: the getting-permission delay and the separate, later getting-paid-back delay were being treated as one question. | A real household could report the permission delay and never mention that reimbursement took another week and two reminders — a materially different, second friction point, silently lost. | Added a dedicated follow-up asking specifically how long it took to actually get sorted out or paid back, separate from how long it took to hear back at all.
+Renter household: the only way to catch a small, informally-worked-around problem that was never actually reported to the landlord was an indirect question sitting inside the first section marked cut this if you're short on time. | This is one of the single most valuable things this research can find — a real, unreported workaround — and it was structurally only one time-crunch away from never being asked at all. | Added a direct, protected question in Section C, explicitly marked always ask, protect this one from being dropped.
+3% household: the only evidence that parts or machines sometimes have to physically travel anywhere lived inside an optional comparison question in the section the guide itself says to cut first. | A single nothing moved this time answer could get wrongly generalized into this household never needs anything delivered, when a past incident actually did require a part to be shipped in. | Added a short, always-asked comparison line directly to the main travel question in Section G, instead of relying on the optional section further along.
+Section | Topic | Minutes (cumulative)
+A | Warm-up, consent, screening question | 3 (0-3)
+B | The most recent time | 6 (3-9)
+C | How they keep track / remember / small unreported things | 7 (9-16)
+D | How they picked who to call — and who really decides | 5 (16-21)
+E | What was promised | 3 (21-24)
+F | Who decides, who pays | 7 (24-31)
+G | Did anything have to travel (ever) | 2 (31-33)
+H | Is it fixed now, what did it cost you | 3 (33-36)
+I | The hardest part | 1 (36-37)
+J | Handing it over | 3 (37-40)

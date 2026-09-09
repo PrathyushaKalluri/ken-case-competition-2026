@@ -1,0 +1,79 @@
+CORE INTERVIEWER SCRIPT — "Keeping the Machines Running" household/technician interviews
+(Condensed reference: use this to recognize which speaker is the INTERVIEWER — their turns will
+paraphrase or closely match these scripted questions. The RESPONDENT is whoever answers with
+concrete personal stories, names, dates, amounts, and experiences. A THIRD_SPEAKER may appear
+briefly — e.g. another household member, a technician being discussed/joining, a call-waiting
+interruption, or a translator — usually a short handful of turns, not the main back-and-forth.)
+
+OPENING / CONSENT (Section A):
+"Hi, thank you for taking the time. We're students, and we're trying to understand how people in
+India actually handle it when something in the house breaks down or needs a repair or a service —
+things like the AC, the fridge, the washing machine, the geyser, the water purifier. We're not
+selling anything. We just want to hear about one real time this happened to you..."
+"Is it okay if I take notes while we talk? And would you be okay if I also just record the
+conversation on my phone?"
+"When something breaks down at home, is there one particular person who usually ends up dealing
+with it, or does it really vary?"
+
+SECTION B — Most recent repair (main): "Think about the last time something at home needed a
+repair, a service, or had to be newly installed... Can you tell me the whole story, from the very
+beginning — what happened first?"
+Follow-ups: Roughly when was this? Which machine was it, exactly? Whose flat/house was this?
+Probes: What made you notice something was wrong? What did you do right after? And then what
+happened? Who else got involved?
+
+SECTION C — Record-keeping / small unreported things: "When this was happening, was there anything
+you needed to look up or remember — like when it was last serviced, whether it's still under
+warranty, or who you called last time?" ... "Is there anything you've made yourself, to help you
+remember these things?" ... "Just thinking about other things you have to renew or remember for the
+house — like insurance or a gas cylinder — do you get reminded about those automatically?" ...
+"Is there a paper contract where you pay once a year for regular servicing — an AMC — or do you
+just know a person you always call?" ... "Has there ever been something small at home that needed
+fixing that you just never got around to calling anyone about?"
+
+SECTION D — Who they called, who decides: "How did you decide who to call or contact for this?"
+"Had you used this person or company before? Did you think about other options?" "Does your
+building or society have any kind of official system for this?" "Thinking just about this one
+time — did you actually end up using that, or did you do something else?"
+
+SECTION E — What was promised: "What exactly did they tell you — like when they'd come, or when it
+would be fixed?" "Did they give you a clear time, or something vague like soon?" "Did what they said
+would happen actually happen?"
+
+SECTION F — Who decides, who pays: "Was there any point where it wasn't clear what should happen
+next?" "Whose machine was it, technically?" "Who actually decided to go ahead and spend the money?"
+"Who paid the person in the end?" "Did the price change at any point after you first agreed to it?"
+(If renter) "Did you need to check with anyone before you could go ahead — a landlord, family
+elder, or building office? How long did it take to hear back? Once you asked to be paid back or
+adjusted, how long did that take?"
+
+SECTION G — Did anything travel: "Did any part, or the whole machine, need to be picked up, sent
+somewhere, or delivered?" "Who arranged that? How long did that part take?" "Has that ever been
+different, another time?"
+
+SECTION H — Fixed now / cost: "Is it fully sorted now, or is anything still pending?" "How do you
+know it's actually fixed?" "From the moment you first noticed the problem to the moment it was
+actually working again — how long did that take?" "How much of your own time did this take?" "Did
+this cost you any money out of pocket? Roughly how much?"
+
+SECTION I — Hardest part: "Looking back at the whole thing, was there one part that was the most
+difficult or the most annoying?" "What exactly happened at that point? What did you end up doing?"
+
+SECTION J — Handing it over: "If someone you really trusted offered to fully handle something like
+this for you next time, which parts would you be happy to let them do without checking with you
+first?" (grounding follow-up, always asked) "Has there actually been a time in the past where you
+did let someone else make one of these calls for you?"
+
+CLOSING: "What would make you feel sure the job was actually finished properly?" "Is there anything
+about all this that I should have asked but didn't?" "Thank you so much, this was really useful..."
+
+LANDLORD MINI-ADDENDUM (if applicable): "Tell me about the last time a tenant asked you to fix or
+replace something." "How did you decide whether to approve it, and how much it should cost?" "Who
+let the technician into the property?" "Is there anything a tenant can just go ahead and fix
+themselves, without asking you first?"
+
+NOTE: Real calls may follow this loosely, skip sections, reorder, or add extra ad-hoc questions
+suited to the respondent (e.g. if the respondent is a technician/service person rather than a
+householder, questions will pivot toward their side of the job — how they get called, how they
+quote, how they get paid, what goes wrong). Use conversational structure (who asks vs. who narrates
+personal experience) as the primary signal, not exact word match.

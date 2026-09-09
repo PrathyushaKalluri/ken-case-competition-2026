@@ -1,0 +1,170 @@
+# Interview Transcript — Call Rk Sir
+
+- **Source audio:** `Call Rk Sir_260909_132051.m4a`
+- **Call date/time:** 2026-09-09 13:20:51
+- **Duration:** 00:24:26
+- **Transcription:** OpenAI Whisper (whisper-1), verbatim, segment-level timestamps
+- **Speaker detection:** content/role-based (interviewer vs. respondent vs. third speaker), assigned via GPT-4o against the household interview guide — Whisper does not diarize by voice
+- **Speakers identified in this call:** INTERVIEWER, RESPONDENT, THIRD SPEAKER
+
+---
+
+**[00:00:00] INTERVIEWER:** Sir, when we registered this competition, we received a problem statement. In some of the problem statements we received, in Indian households, the machines with common servicing, plumbing, water problems, car servicing, all those machines are allowed in the process. The delivery, the final apps are all sponsored for this. So, your problem scheme, your AI agent, I'm going to follow up on that in a few seconds.
+
+**[00:00:37] INTERVIEWER:** I'm going to introduce you to the primary research.
+
+**[00:00:40] RESPONDENT:** Okay.
+
+**[00:00:43] RESPONDENT:** Tell me, what should I do?
+
+**[00:00:45] INTERVIEWER:** I'm going to ask you a few questions, and you have to answer how you're going to proceed.
+
+**[00:00:51] RESPONDENT:** Tell me.
+
+**[00:00:53] INTERVIEWER:** I'm going to record the call.
+
+**[00:00:55] RESPONDENT:** Okay.
+
+**[00:00:57] INTERVIEWER:** English one.
+
+**[00:00:59] RESPONDENT:** Hello.
+
+**[00:01:00] INTERVIEWER:** So the initial model is in public.
+
+**[00:01:02] RESPONDENT:** He improved.
+
+**[00:01:08] RESPONDENT:** Work started. Yeah, please.
+
+**[00:01:12] INTERVIEWER:** Hello Sir, thank you for taking the time we're students. I'm with my team myself and Patricia.
+
+**[00:01:18] THIRD SPEAKER:** Hello Sir, good morning.
+
+**[00:01:20] INTERVIEWER:** Yeah, good morning like we're trying to understand how people in India actually handle it when something in the house breaks down or needs a repair or service. Things like AC, fridge or washer. machine, etc. So we just want to hear about one real time. This happened to you in as much detail as you remember, so this will take about 20 to 30 minutes. Is it OK if I record the call?
+
+**[00:01:41] RESPONDENT:** Yeah, please.
+
+**[00:01:43] INTERVIEWER:** Oh, just one quick thing before we start. When something breaks down at home, like is there one particular person who usually ends up dealing with it, or does it really vary?
+
+**[00:01:55] RESPONDENT:** I am not getting your question.
+
+**[00:01:58] INTERVIEWER:** So when something breaks down at home. Like is there any one particular person who usually ends up like dealing with it or is it does it vary?
+
+**[00:02:07] RESPONDENT:** No actually At my home it will be the problem will be identified by everyone but finally
+
+**[00:02:19] INTERVIEWER:** the way to solve it and The way to get it back to working is actually one person who will take it So we'll take it as a responsibility so like who would that one person be?
+
+**[00:02:30] RESPONDENT:** in the household? Myself, I'm the household, I'm the in-charge and the man of the family, myself. So I'm married, I have two kids and my brother lives with me, it's a joint family.
+
+**[00:02:44] INTERVIEWER:** So I take up the responsibility, the head of the family. Okay, so think about the like last time something at home needed a repair, a service or something newly installed.
+
+**[00:02:56] RESPONDENT:** Can you tell me like the whole story from the very beginning, like what happened first and happened with the recent most incident so I remember my air conditioner not working properly the room is not being getting cooled as it used to be so then I checked as a forefront measure I checked all the filters and all other things so I am not able to identify the problem then I booked the service of a mechanic through an app that air conditioner mechanic has arrived He said that the filters, the under-fiddlers are completely blocked, it requires a foam wash. Then after thinking for a while, I allowed him. So he came with a bag, he fitted it to the entire air conditioner. The foam jet means he will spray the water with a high jet, that speeding water will clean the entire air conditioner removing all the dirt inside and blocks.
+
+**[00:03:59] INTERVIEWER:** Thank you.
+
+**[00:04:00] RESPONDENT:** And then the air conditioner will work as usual. So the mechanic has done that process. And after doing all the things, he said that he cleared the problem only 60% to 70% because there are certain issues that need AC to be dismantled completely. And a chemical process is to be initiated. So for that, he asked for a higher amount. So I wanted to cross-check. So I closed his call. And now, it's already 1 o'clock. one nearly it's nearing one month yeah the air conditioner is working normally or I don't know when the problem will resurface again so that's the issue okay so just a follow-up question to what you have mentioned you said that you have cross-checked the cost or something whatever the process right how did you do that did you contact anybody else problem my friend knows another AC mechanic so the mechanic who has repaired coated nearly three to four thousand to do the chemical wash it is called the process called chemical wash dismantling the machine and cleaning every part okay then I called my friend and asked him he he knows very many mechanics and he asked the cost of the and they quoted nearly 2500 to 3000 almost the same as this person did.
+
+**[00:05:37] INTERVIEWER:** OK, got it. Sir, you said that you have used some app to book a mechanic, right? What app is it?
+
+**[00:05:45] RESPONDENT:** Urban company.
+
+**[00:05:45] INTERVIEWER:** OK, OK, like when this was happening, was there anything you needed to look up or remember like when was it last serviced or whether it's still under warranty or something like that?
+
+**[00:05:56] RESPONDENT:** Yeah, we purchased the machine
+
+**[00:06:00] RESPONDENT:** in 2021. These kind of problems used to surface till 2033. It is a two-year warranty mission. So we used to call the mechanic. The mechanic used to come for first year it is completely free. Second year they used to charge a minimal amount in this person. From third year they started to charge like regular machines. Not new, I mean old machines. I observed that whenever I file a complaint of AC not working or not cooling properly with the company, say my AC is Lloyds, so when I filed a complaint with Lloyds, so they used to take up the complaint, call me, assign a complaint number, all this process used to be very corporate in structure. But later I observed that they have so many franchisee centers in the city where I'm living, they used to call any one franchisee and assign the call, that a franchisee again used to . .
+
+**[00:07:00] INTERVIEWER:** behave in a chaotic way they used to charge more than the than what company prescribed they used to come late they used not to serve properly so after a few three after a few calls like this I switched to the urban clapper is there anything you have made yourself to help you remember these things like how do you remember the machine has to be serviced in this date anything any whatsapp chat or notes are you right Yeah, there's an app called Floyds.
+
+**[00:07:33] RESPONDENT:** Apart from that, the company used to, in the first two years, the company used to spend, the company used to send the, what do you call, the dates, this date is the date the mission is to be serviced like that. In the first three, first four services, they used to mention. Later, I used to get messages that the company needs to be maintained. After two years of the warranty, they started giving AMC. maintenance contractor one year I took it as I told you I have seen that they are assigning the work to the local franchises and no proper result for the complaint given to them I switched off the company to that app I mentioned just now yeah so after this AMC is done like how are you keeping track of it now like is it ad-hoc like when you when the AC is spoiled then you go for maintenance or do you maintain it regularly random like this. Supposedly, summer is approaching. So, actually, throughout the entire winter, the usage of AC will be less. So, as summer approaches, we call a regular mechanic to clean the filters and other things. And once the summer is at its peak, as AC runs, we live in a very dirt-prone area where construction activities go throughout the year. So, AC accumulates a lot of dust and the filters are always spoiled. Once the cooling comes down or once water like things dip out of AC, we think it is the time for repair or it is the time for maintenance and we call the mechanics to do the job.
+
+**[00:09:12] INTERVIEWER:** Sir, apart from the AC, have you have you signed any contract like AMC for any other machine in your house? Water filter. Okay. My water filter is Eureka
+
+**[00:09:30] RESPONDENT:** and I as I for the last five years I do the same thing assign the AMC to the water filter. They come twice a year, change the filters, clean the water for her and if any problem arises I use I will call him and he will come within a day.
+
+**[00:09:47] INTERVIEWER:** OK, just thinking about other things you have to renew every year like your car or bike insurance or anything vehicle related or gas cylinder like do you get reminded about those automatically? How would it differ from the machine?
+
+**[00:10:00] RESPONDENT:** Remind about a gas cylinder, no one will remove it, there is no such thing like reminding about a gas cylinder, unless it is a piped one, where you get built through the meters, so regular cylinders, no kind of messaging, we just have to understand by the color of the flame, or once the cylinder is over, we maintain a spare cylinder and we just fit the other cylinder to it. Regarding laptops, regarding cell phones and other things, the same process. For the first year, we get messages through the phone itself, the phone and through the laptops itself. For car, they send reminders once the three-month period is over, or two-month period is over, the car dealers, the car service people send messages, your car is in service, your car is serviced. Same with insurance. Even insurance, once the time comes to an end of the policy, they send the reminders that your insurance is due. your policy is due. All these things come like that only.
+
+**[00:11:04] INTERVIEWER:** OK, like was there any time like you missed even after giving all those reminders? Was there any time like there was possibility of you missing the payment?
+
+**[00:11:14] RESPONDENT:** Even there are multiple reminders. Yeah, definitely payment. Why payment no service no payment now so. Yeah, generally I know we never miss, but there may be a time supposedly like. I mentioned my two wheelers insurance this month because the less I use the less I miss The more I use the the FI is the more I miss the more I use less less I miss So I think you've got the point. Yeah
+
+**[00:11:44] INTERVIEWER:** Like has there ever been something small at home like that needed fixing that you just never actually got around to calling anyone But you didn't do yourself Or asked a friend or something now fixing a fan fixing a bulb Fixing a fan fixing a bulb Fixing a fan Fixing a bulb, fixing a fan, fixing a mobile, a new phone, things we don't require people. Okay, so when the servicing happened, did the price change at any point after you first agreed to it?
+
+**[00:12:20] RESPONDENT:** First they quoted some other price and then the price was different.
+
+**[00:12:25] INTERVIEWER:** I don't know, where do you? In service charges, was there any point of time?
+
+**[00:12:30] RESPONDENT:** where the price was differing with originally what they said so initially the price was different but at the end the price increased. It happens because they come to repair one point and they identify the multiple points and differently for example in an air conditioner we call them for foam jet cleaning they identify issues with capacitor and other things then they charge more. Okay so like was there any moment where the whole machine or some part we picked up send somewhere and delivered anything like that? I can't, I don't get you.
+
+**[00:13:06] INTERVIEWER:** Like, was there any time where the whole machine has to be delivered or sent somewhere for repairing or workshops? Instead of they visiting you, were there any...
+
+**[00:13:17] RESPONDENT:** No, in fact, the car has to go to the car service station. People never come to me. So the car has to go to the car service station. Certain times even the mobiles, even the... laptops, all these things they require we we have to visit them. They require a visit by us.
+
+**[00:13:38] INTERVIEWER:** OK. So in that case, so were there any issues or doubts from your side regarding the parts that they are using for the repair or anything as such regarding the quality of the repair?
+
+**[00:13:55] RESPONDENT:** It generally happens like this. If we visit a service station run by the company portions. never be asked whatever they say I will listen to them. If we visit a local local man definitely doubts will arise and speculation comes then we'll ask what are the parts to be installed, so it all depends on how we are getting the repair or service done. If you are visiting it, if you are visiting the company service room for example my car is Maruti's so if I visit Maruti company whatever they say I follow them without any asking any questions unless the bill is very high and like that. If suppose if I am visiting Any other car mechanic instead of my my brand company then definitely allows them many questions. It depends whom we are visiting
+
+**[00:14:39] INTERVIEWER:** Okay, what type of questions or answers would Give you assurance that it is a good thing good quality or good thing to go ahead
+
+**[00:14:51] RESPONDENT:** The first thing is necessity if I am in urgency or if I am in a kind of emergency The questions will be asked unless the repair is to be get done I have to I will I will, the agency will define things. Otherwise, if I can wait for a few days, if I can wait for the time which is required, then I'll definitely ask them, what are the spares you are buying? Are they genuine spares? How much time is taken? What is the problem with the car? So these questions generally I will not ask in the service station. I ask these questions, definitely, what are the spares being fixed? Are they genuine spares? Whatever, I go for a trial run. Once the car is fixed, I check everything and then only I'll step out of that.
+
+**[00:15:37] INTERVIEWER:** Right. Sir, one more question is regarding the availability. So you are a working man. So if somebody wants to visit your site or your household when you are not there, so how do you manage to match your availability with the service people?
+
+**[00:15:57] RESPONDENT:** I'm married. My wife will look after my children. brothers family is there my brother so I will look after otherwise my brother will be there he would look after my kids will be there. So I'm I mean not be present there are many people who are at home who will take the charge and whatever I'm the as I told you I'm the one who fix the responsibility who file the complaint all these things. So like if you trust a family or a friend or someone offer to fully handle something like this for you next time like which
+
+**[00:16:30] INTERVIEWER:** you happy to let them do without checking with you first or which parts would you still want to decide for yourself like the you are telling payment would be decided by you like what part would you completely leave on others and what would you want to still take.
+
+**[00:16:43] RESPONDENT:** I just fixed I just filed a complaint I mean I arranged the man to visit the home whatever cost he specifies to the family it will be paid back.
+
+**[00:16:53] INTERVIEWER:** Okay like thinking about your own time calling people texting waiting around home for someone How much of your own time did this take around?
+
+**[00:17:03] RESPONDENT:** Like would you guess? It all depends again, the office hours and other hours. Generally. If it is an app. They have the offer slots. I generally fix the slots where I'm available. So if sometimes I'm not available as per the slot, I have to wait. So today I don't have the car with me because I gave the car to the car service. So I have to engage another car and I have to go. with the other car only. So here in these kind of works where I have to go to the service center, hand over my phone, hand over my laptop, hand over my car, these things, I have to plan accordingly. I'd arrange a car, I have to see to that my calls are restricted, all these things. Where the mechanic or where the service person is going to visit my home. So I'm a bit relaxed, my time doesn't matter there because even if I'm not available, the household people will be.
+
+**[00:18:00] INTERVIEWER:** there who will be looking after. Yes like looking back at the whole thing like was there one part that was most difficult or most annoying in the process? Definitely once the thing gets repaired we think everything is fine and fair and within no time it gets spoiled again. It annoys you too. The people who visit the home, the mechanics, some mechanics are very courteous, some mechanics are rude. Rude people annoy a lot.
+
+**[00:18:30] RESPONDENT:** the mechanics work and they simply leave leaving the home dirty so we have to do a lot of work cleaning and all these things even it it gives a lot of headache and during phone payments during the during the payments once the entire work is done some mechanics ask for extra amount because the amount which they which we are paying goes to the company so give some money to us like these things will be asked by some mechanics which is a really annoying because we already paid for service and we again have to pay as a tip or something to them. So these are the things most of the times these are the things that annoy a lot and the most the most important annoying thing is once you get a thing repaired and it goes in the coming two three days it really annoys a lot.
+
+**[00:19:21] INTERVIEWER:** Okay so in that case what do you usually do the first thing that you usually do?
+
+**[00:19:28] RESPONDENT:** First we file a complaint. if it is an app we file complaint in the app and secondly we ask for another mechanic to do something immediately if it is if the user thing is like an AC or thing that is the thing yeah secondly once the mechanic arrives we already we tell him already got it to repair only few days back and again it works and so please kindly look and see to that it was fixed correctly in this
+
+**[00:20:00] INTERVIEWER:** correctly this time. Okay, do you have to pay twice or will you ask to adjust the money which was already paid? It actually depends for example, if the machine which we got repaired
+
+**[00:20:16] RESPONDENT:** is working completely, it is all right. If it is working 70 to 90 percent and few issues persist, then we file a complaint, we wait for the person who got assigned with a company to come, the man. repairs again, sees to that everything is done and then there will be no cost to be paid.
+
+**[00:20:35] INTERVIEWER:** Okay.
+
+**[00:20:36] RESPONDENT:** Thirdly, if we want it to be repaired immediately, if the machine which got repaired and again works and only 10% of it is not working completely, we have to definitely go for a new one because the company doesn't send the worker immediately.
+
+**[00:20:51] INTERVIEWER:** Okay, got it. How do you decide the urgency? Is it based on your daily needs or how do you decide? do you prioritize if let's say two machines are spoiled? So how do you prioritize which one gets repaired first?
+
+**[00:21:09] RESPONDENT:** It depends, actually. The usage and, for example, if it is a stove that got repaired, it completely disturbs the routine in the morning. So it is urgent prioritized. The AC is not that priority. If the cooling is not coming, we can live without it for one or two days. That is not a priority. Cooking is a priority. are not functioning, water is not working. It is urgent priority because water is the most important necessity. It all depends on the regular routine works which are to be assisted, which are to be attended immediately and those things which can which need time.
+
+**[00:21:45] INTERVIEWER:** OK. So since you understood like what we're trying to actually actually. But in the beginning you said that you would try to identify the. worker or what has happened first, right? So how do you do you watch some YouTube video? Or how do you get to the point that to understand where the issue is happening? Even to explain to the mechanic, how do you?
+
+**[00:22:17] RESPONDENT:** How can we understand anything by YouTube? Only simple thing is the car is not starting. It's not starting, so we just go through the bonnet. We just go through the battery and other things, which are general things to understand. So. So, if it is AC, the cooling is not coming, the room is not being cooled, even after switching on the AC for 10 to 15 minutes, the problem is understood. The stove is not burning, so all these problems are practical. So, if the stove is not burning, if the stove is not lighting up, we immediately check the switch regulator of the gas cylinder, whether it is on or not.
+
+**[00:22:59] INTERVIEWER:** Thank you. Got it, I think you understood what what are we trying to understand? Like we want to add something which you think we did not ask any information you want to give us.
+
+**[00:23:11] RESPONDENT:** You you mean to say that I'm I'm understanding. The thing which you're doing right now.
+
+**[00:23:18] INTERVIEWER:** No, no, I'm asking like is there something you want to add on which you think we missed or you want to add something which you want to tell like any additional information?
+
+**[00:23:27] RESPONDENT:** No. Whatever questions you ask I answered everything. There's nothing more to cover.
+
+**[00:23:35] INTERVIEWER:** Right, I mean if you have any other examples, or if you want to share anything.
+
+**[00:23:41] RESPONDENT:** You can hear that. Like what?
+
+**[00:23:46] INTERVIEWER:** OK, so if there is nothing else, thank you so much Sir. This is really useful for us just to confirm again. Are you still OK with with us using specific things or anything? We have recorded now for our.
+
+**[00:24:03] RESPONDENT:** For our research anonymously, please go ahead. There's nothing. There's nothing great in this. You can go ahead.
+
+**[00:24:10] INTERVIEWER:** OK, and if we have any quick follow follow up questions later, can we message you or contact you later?
+
+**[00:24:18] RESPONDENT:** Yeah, you can.
+
+**[00:24:20] INTERVIEWER:** Sure, OK, thank you.
+
+**[00:24:21] RESPONDENT:** Thank you. Thank you so much.
