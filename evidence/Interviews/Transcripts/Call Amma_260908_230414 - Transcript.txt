@@ -125,7 +125,7 @@
 
 **[00:10:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
 
-**[00:11:00] RESPONDENT:** When I came to the maintenance office, we had a problem with the ACP drip on the 12th floor. There was a drip near the meter reading. The guy came and changed the fuse in our flat.
+**[00:11:00] RESPONDENT:** When I came to the maintenance office, we had a problem with the ACB trip on the 12th floor. There was a drip near the meter reading. The guy came and changed the fuse in our flat.
 
 **[00:11:26] INTERVIEWER:** Did you go to the maintenance office? So, when you leave the office, when you have to do it on your own, how do you decide which one is easier, which one is related to others, do you go to the maintenance office for that, is that it?
 
@@ -157,17 +157,24 @@
 
 **[00:14:56] RESPONDENT:** Not now. I will ask in groups.
 
-**[00:15:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:15:00] Interviewr: How do you deal with the original task to be done like like washing the clothes, if the washing machine is spoiled, something like that. What will you do if the original work you have to do is hindered by these tasks?
+ Respondent: so if it's an RO problem I will get water bottles and I'll prioritize. If the oven is currently a problem it is not that important to me. I can heat my food on the cooker or stove so I am postponing that. 
 
 **[00:15:30] INTERVIEWER:** okay something very urgent like you don't like the price of a technician or you want to go to another technician are there such situations? if there are how do you approach another technician?
 
 **[00:15:50] RESPONDENT:** neighbor contact okay whenever you need a machine you can easily pick it up from somewhere
 
-**[00:16:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:16:00] Interviewer: were there any situations where the mission had to be picked up and taken to the center to get repaired? 
+Respondent: No nothing like that.
+
+Interviewer: were there any situations where the technician came, looked at the part, and told you, "I'll get a part," and went and never came back, or took money from you and never came back? 
+
+Respondent: there used to be situations like that 5 years before but now nothing like that is happening. 
 
 **[00:16:30] RESPONDENT:** The parts that are given to the purifier are taken regularly, and they repair them and pay the bill and leave. These parts are not coming until it is necessary. For AC, if you book a gas company in an urban company, they will check the gas and fill the cylinder.
 
-**[00:17:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:17:30] Interviewer: was there any time technicians said they will replace a part and they'll replace a duplicate part with an original, not the same quality one, something like that? 
+Respondent: no, nothing like that. Usually the given original part also has very little warranty for 3 months. Even if it is spoiled or something, we won't know it because anything, even a duplicate part, will have 3 months of warranty and will work for 3 months at least. We won't know if the part is duplicate or original. 
 
 **[00:18:00] INTERVIEWER:** Okay, then how do you communicate with them? What delays do you usually have?
 
@@ -184,7 +191,7 @@
 **[00:18:45] INTERVIEWER:** You mentioned a recent task in the washing machine, right?
 
 **[00:18:49] RESPONDENT:** The recent task is purified. I haven't fixed it yet.
-
+ss
 **[00:18:54] INTERVIEWER:** If you think about your timeline, talking to people, texting, waiting, etc. How much time did you put in this?
 
 **[00:19:04] RESPONDENT:** I am putting a lot of time. I am putting more than an hour everyday.
@@ -197,8 +204,9 @@
 
 **[00:19:28] RESPONDENT:** In which process?
 
-**[00:19:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:19:30] Interviewer: In the entire process if there is one thing which is very much annoying, what would that one step be? 
 
+Respondent: Getting the technician to the home to fix something is the most annoying part. 
 **[00:20:30] INTERVIEWER:** Okay, they put me up, you know, okay Like a friend, or a family member, or anyone If you have to give all this work Fully handle something like this, next time Which part of it can you do? Which parts do you want to take decisions in this process?
 
 **[00:20:52] INTERVIEWER:** I don't understand If you have to give all this process to someone You have to take some decisions If someone else can manage this process, what would you tell them to manage?
@@ -215,7 +223,9 @@
 
 **[00:22:22] INTERVIEWER:** Is there any process that is being repeated?
 
-**[00:22:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 60-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:22:30] steps like searching for a technician number again for the same problem how do you want to handle, in the future, similar tasks? 
+
+Respondent: I usually go through Instagram also. If there are ads saying or any reels showing, "I repaired this machine in this particular way and there is no problem now," or any reviews or any people doing reels on the service were good, I look at the reviews and the comments and I book those services for us. 
 
 **[00:24:00] RESPONDENT:** If you want to say something, it would be better if we know more about it.
 

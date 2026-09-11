@@ -37,7 +37,9 @@
 
 **[00:02:52] INTERVIEWER:** Okay.
 
-**[00:03:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:03:00] there are repetitive problems coming and time is also getting wasted for the same task to be done. It is getting hard to go around the shops in the town and I am working so the time becomes difficult. 
+
+Interviewer: When there is a repair how do you approach it first? How do you know? Do you directly go somewhere, or do you ask someone for a contact, or do you already know people? How?
 
 **[00:03:30] RESPONDENT:** I got the mechanic shop number on the road when I was looking for a mechanic shop. I called him and he came home for the first time. We call him regularly. We approach any mechanic we want. He is a plumber and an electrician. He has a drainage problem. or cement works, or painters, or whoever you want, you can get the numbers from them.
 
@@ -61,7 +63,9 @@
 
 **[00:06:00] RESPONDENT:** Obviously, it is difficult for us to handle from here to there, but if we put our trust in him, like I said earlier, there is a man called Vishnu Carpenter, I will supervise him and get other people through him. Since they know each other, they will do as he says. I will take your leave now. supervise them and pay them. I don't go to Vijayawada frequently. I don't go to Vijayawada frequently. I fix an appointment there and give him some commission. So that I have time and charges. I don't ask him for commission I don't ask him for commission. So, Carpenter has a network there, so he can get plumbing, drainage works, painting, painters, sealing, etc. So, he can talk to them via video call and tell them what is the problem and how to rectify it.
 
-**[00:07:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+Respondent: I know a few people who I trust so I know they can handle the job without me going somewhere. 
+
+Interviewer: How did you gain that trust in the first place from a few people? 
 
 **[00:08:00] RESPONDENT:** When we were constructing our flat in Vijayawada, I went to the person who was doing the woodwork. I had a small door repair. When I asked him to come, he came and did it immediately. He took the amount genuinely. Since then, I have been able to trust him and approve his small works. It doesn't matter. I didn't know about it. I just saw it while I was working nearby.
 

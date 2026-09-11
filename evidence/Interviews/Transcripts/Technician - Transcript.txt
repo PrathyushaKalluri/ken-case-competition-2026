@@ -44,7 +44,7 @@
 
 **[00:02:47] RESPONDENT:** Like getting irritated. There is no such thing as getting irritated at all. Because 99% of the time, we give answers based on our interest.
 
-**[00:03:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:03:00] even if people are getting irritated we will control ourselves. We will try to look at how we can answer this question and then go ahead with that only. Answer in a soft manner. 
 
 **[00:03:30] RESPONDENT:** Some people are good sirs and good madams. We can answer them as long as we want. Some people just feel for no reason. We tell them 2-3 times. If they say no, we tell them that we are busy. That's it.
 
@@ -62,7 +62,7 @@
 
 **[00:05:24] RESPONDENT:** Yes, they keep asking. So, what we are trying to say is... If they know the job well, they won't ask us. If they don't, it's okay if we give them the money. Some people are confident that they will do a good job. Some people have some doubts. If we give them the money, they will check what material we are using and what we are doing. Some people trust us and tell us what to do. Then they will go to their duties.
 
-**[00:06:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:06:00] Interviewer: So here, if someone (who need not necessarily be from your boys) goes to their house and asks for money, some boy who went for repair asks for money, gets a duplicate part, fixes that part, and if they complain to you that the part has not been working, what will you do?
 
 **[00:06:30] RESPONDENT:** I will call him and tell him that it was a mistake. He doesn't know and he did it. If you were here, you would have done a good job. I will tell him and cover it.
 
@@ -86,9 +86,9 @@
 
 **[00:07:23] RESPONDENT:** We only take care of the workers.
 
-**[00:07:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:07:30] Interviewers: so if boys come to repair, a few people give tea, coffee, something, or water. Do you feel like, if they give you something like that, that would be good for you? 
 
-**[00:08:00] RESPONDENT:** No, time is being saved mainly.
+**[00:08:00] RESPONDENT:** No, usually boys have to go out. If there is such a long job they take a 10-minute break, go out, drink something, and come again. Now since people are giving something, if that is there then time would definitely be saved time is being saved mainly.
 
 **[00:08:02] INTERVIEWER:** Okay.
 
@@ -140,7 +140,7 @@
 
 **[00:09:56] INTERVIEWER:** Okay, I understood. Have you posted any photos?
 
-**[00:10:00] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:10:00] Somewhere in the group, when you told me, "This is a problem. How to fix it?" Something like that. If you're not able to find a part outside, do you request the part from someone else? 
 
 **[00:10:30] RESPONDENT:** I will call you and let you know I will show you my work and show it to sir and madam I will take a video and upload it Ok Uncle, you have a lot of work, right?
 
@@ -150,9 +150,9 @@
 
 **[00:11:21] INTERVIEWER:** Hello Hello Uncle, can you hear me?
 
-**[00:11:25] RESPONDENT:** Yes, tell me Do you know the Urban Company Apps?
+**[00:11:25] Interviwer::** Yes, tell me Do you know the Urban Company Apps?
 
-**[00:11:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:11:30] Respondent: no we have communities of our own. We are Vishwabrahmins so we have our own community where we all will be registered. If there is any complaint or something regarding the work, we are getting someone else. Someone from the same community is taking it so we have that community to do all the conflict management. 
 
 **[00:12:00] INTERVIEWER:** So, you have a chance to get some work from the organization?
 

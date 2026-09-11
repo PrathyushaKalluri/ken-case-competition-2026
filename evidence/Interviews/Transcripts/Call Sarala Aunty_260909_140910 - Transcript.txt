@@ -33,7 +33,7 @@
 
 **[00:01:58] RESPONDENT:** Outside... the parking tiles are still being used. They won't be in contact with us again. They won't come regularly. Even if we ask them now, they won't be available to us. Either they are available or they have other reasons. If we give this decision now, if we ask someone else to do this, will anyone do it?
 
-**[00:02:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 30-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:02:30] Interviewer: if someone else, like your friend or a family member, would take care of all this process, what would you allow them to do and what actions would you like to take care of personally? 
 
 **[00:03:00] RESPONDENT:** I will go and see how serious it is, how urgent it is, how long it will take, how much time it will take, how much money it will cost, after I get an idea, I will tell each one of you.
 
@@ -51,9 +51,9 @@
 
 **[00:05:06] INTERVIEWER:** Okay. When they give you the technician numbers, when you have a lot of technician numbers, how do you track them?
 
-**[00:05:25] RESPONDENT:** For the time being, the technician numbers...
+**[00:05:25] RESPONDENT:** For the time being, the technician numbers... They will be on the phone or in the diary. Or if we don't have anything at all, we have to follow the same process again and find more technicians. 
 
-**[00:05:30] AUDIO UNCLEAR:** [AUDIO UNCLEAR -- Whisper could not produce a reliable transcript for this 60-second span. Tested with both the translation and original-language passes at four temperatures each (0.0/0.3/0.6/0.9) -- every attempt returned either a hallucinated repetition loop, empty output, or text that changed each time. The source audio is present at normal-to-loud volume (not silence). Recommend a Telugu speaker review the original audio directly for this segment.]
+**[00:05:30] 
 
 **[00:06:30] INTERVIEWER:** Whatever it is, you can tell me.
 
