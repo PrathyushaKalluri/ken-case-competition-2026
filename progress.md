@@ -1,12 +1,14 @@
 # Progress Tracker — The Ken Case Competition 2026
 
-Last updated: 2026-09-08 (session in progress). Update the checkboxes as work actually happens — this file should always reflect current real state, not the plan's aspirational state (that's what `plan.md` is for).
+Last updated: 2026-09-10. **Update the checkboxes as work actually happens — this file should always reflect current real state, not the plan's aspirational state (that's what `plan.md` is for).**
 
-**Deadline: Sep 10, 2026, 11:59 PM IST — 2 days from session start.**
+**Deadline: Sep 10, 2026, 11:59 PM IST — today.**
+
+**2026-09-10 update: 7 real interviews were conducted (2026-09-08 to 2026-09-09) and pulled into this repo via git commits `300159a` and `57156c0` (audio + Whisper transcripts + a `scripts/transcribe/` pipeline the team built). This section below was rewritten from the actual transcripts, not from the plan. A first real draft of Answers 1-10 now exists at `answers_draft.md`, grounded in this evidence — it is NOT submission-ready; see its §0 for a real, unresolved compliance gap (no age-band/city/consent metadata was logged for any interview, even though verbal consent was captured on-recording for at least 2 calls). ~~No survey was fielded~~ — **wrong, corrected later the same day: a survey WAS fielded and collected 19 responses (12 qualified) between 8 and 10 Sep. It lived in Google Sheets/Forms and had simply never been exported, so it was invisible to a filesystem search. Raw data and analysis now in `evidence/survey/`; see risk item 5 below and `MASTER_CONTEXT.md` §17.** `survey_guide.md` and `research/survey_guide_qa/` remain design artefacts — the fielded instrument is a third, 21-question version, and its wording is the only one that matters now.**
 
 ---
 
-## Phase 1 (Solution Assembly) — overall status: research not started
+## Phase 1 (Solution Assembly) — overall status: fieldwork done, drafting in progress, consent metadata outstanding
 
 ### Understanding & setup
 - [x] Read all local context files (`01_group_braindump.md`, both `*context.md` files)
@@ -22,37 +24,46 @@ Last updated: 2026-09-08 (session in progress). Update the checkboxes as work ac
 - [ ] **Obtain the "main dossier"** referenced throughout that PDF (its own workaround ladder, seasonal-trigger section, and Section 6 decision framework) — not yet in this session's possession; flagged as a priority gap in `decisions.md` #21 and `plan.md`
 
 ### Stage 1 — Fieldwork
-- [ ] Household-lens interview #1
-- [ ] Household-lens interview #2
-- [ ] Technician/service-provider-lens interview #1
-- [ ] Technician/service-provider-lens interview #2 (if reached)
-- [ ] Landlord/tenant-lens interview #1
-- [ ] Landlord/tenant-lens interview #2 (if reached)
+- [x] Household interview — **Call Amma** (25:02), 2026-09-08 — RO purifier, 3-day-pending repair, sole handler, "putting more than an hour every day" chasing it
+- [x] Household interview — **Call Sai Kakki** (22:36), 2026-09-08 — washing machine inlet-pipe repair, known-technician-first, husband decides spend
+- [x] Household interview — **Call Rk Sir** (24:26), 2026-09-09 — AC servicing via Urban Company, switched from brand (Lloyd) after franchisee chaos, cross-checked quote via a friend's contact
+- [x] Household interview — **Call Sarala Aunty**, part 1 (17:03), 2026-09-09 — manages Vijayawada + Eluru properties remotely via a trusted carpenter-broker (Vishnu) who has his own tradesperson network
+- [x] Household interview — **Call Sarala Aunty**, part 2 / follow-up (08:15), 2026-09-09 — drainage-issue deep dive, explicit sequential-fallback calling (Basha → Krishna → Rana)
+- [x] Household interview — **Call 6128maggi** (24:54), 2026-09-09 — young Bangalore renter, appliances rented via RentMozo (repairs bundled free); contrast case for owned-appliance friction
+- [x] Technician/supply-side interview — **Technician** (carpenter, 12:59) — runs a ~10-person crew, job allocation by urgency/seniority, confirms informal side-payments from his own side of the transaction
 
-**0 of 3-6 target interviews completed as of this update.**
+**7 of 7 recorded interviews now transcribed** (Whisper + GPT-4o role-labeling, per `scripts/transcribe/`), audio + full transcripts in `evidence/Interviews/`. Landlord/tenant-lens and a second technician-lens interview were planned but not reached — not fabricated as done.
+
+**Real, unresolved gap**: none of these interviews has a filled consent log (age-band, city, audio/photo consent confirmed) — see `answers_draft.md` §0. Verbal consent is audible on at least the Amma and Sai Kakki recordings but was never transcribed into a tracker. This blocks using verbatim quotes with proper attribution in the final submission.
+
+**Artifact photos captured** (in `~/Downloads/ken-case-competition/evidence/notes/` and `Workflows/`, not yet moved into this git repo's `evidence/`): a Havells RO purifier with its next service date handwritten in marker directly on the AMC sticker ("NEXT 15/M/26") plus a taped-on "Contact for Service" number card; Sarala Aunty's handwritten diary pages tracking payments/balances/phone numbers for Eluru tradespeople — both real, both corroborate what was said verbally in interview.
 
 ### Stage 2 — Synthesis
-- [ ] Interviews logged against the 17+1 candidate threads (`notes.md` §2)
-- [ ] Independent-corroboration check run across interviews
-- [ ] Insight passes the "changes a design decision" test
-- [ ] Q2 insight locked (≤60 words)
+- [x] Interviews reviewed for a corroborated, non-obvious pattern (done directly against the 7 transcripts, not yet cross-tagged into `notes.md` §2's 17+1 thread table — that cross-tagging is still open)
+- [x] Independent-corroboration check run: the "informal cash side-payment beyond the official/app price" pattern is corroborated **three ways** — two households (Rk Sir, 6128maggi) independently report it, and the technician interview confirms it unprompted from the supply side
+- [x] Insight passes the deletion test against the drafted Q3 loop (see `answers_draft.md`)
+- [x] Q2 insight drafted (58 words) — **not locked**, pending the team's own read and the consent-metadata fix before any quote is attached to it
 
-### Stage 3 — Drafting (all blocked on Stage 2 completing)
-- [ ] Q1 — team & right-to-win
-- [ ] Q2 — the one insight
-- [ ] Q3 — six-step agent loop
-- [ ] Q4 — rail roles
-- [ ] Q5 — rail to innovate on
-- [ ] Q6 — customer asset requested
-- [ ] Q7 — the annexation
-- [ ] Q8 — which opening you'd never automate
-- [ ] Q9 — which Indian company should've built this
-- [ ] Q10 — track (Product Strategy — already decided, just needs locking in the form)
+### Stage 3 — Drafting — first real draft exists, see `answers_draft.md`
+- [ ] Q1 — team & right-to-win — **team asset paragraph drafted; the 3 per-member personal-connection lines are still blank, only the team can write these**
+- [x] Q2 — the one insight — drafted, 58 words, evidence-backed (see above)
+- [x] Q3 — six-step agent loop — drafted, all 6 cells within the 15-word limit
+- [x] Q4 — rail roles — drafted; Payments and Voice are evidence-backed, **Logistics is honestly thin** (no interview surfaced a parts-shipping delay)
+- [x] Q5 — rail to innovate on — drafted, 39 words, Payments-led
+- [x] Q6 — customer asset requested — drafted, 29 words, ties to the Padmaja RO-sticker photo
+- [x] Q7 — the annexation — drafted, 29 words, **flagged as needing more team discussion, less evidenced than Q2-Q6**
+- [ ] Q8 — which opening you'd never automate — **deliberately not drafted**, this is a personal values call for one team member to write
+- [x] Q9 — which Indian company should've built this — drafted, 59 words, uses the team's own RentMozo finding as a real counterfactual data point alongside Bajaj Finserv
+- [x] Q10 — track — Product Strategy, already locked
 
 ### Stage 4 — Review & submit
 - [ ] Full draft reviewed against judging criteria (Evidence/Creativity/Clarity/Feasibility/Thoroughness)
 - [ ] Reviewed against page's own litmus tests (Q1 "any three students" test, Q2 "changed your design" test)
-- [ ] Submitted with buffer before Sep 10, 11:59 PM IST
+- [ ] Consent log filled in for all 7 interviews (age-band, city, audio/photo consent) — **hard blocker, see `answers_draft.md` §0**
+- [ ] Q1's 3 personal-connection lines written by the actual team members
+- [ ] Q8 written by one team member
+- [ ] Word counts re-verified against the live Solution Assembly form fields (not just the public page)
+- [ ] Submitted with buffer before Sep 10, 11:59 PM IST — **today; the team's own plan recommends targeting 6PM, not 11:59PM, to leave room for upload failures**
 
 ---
 
@@ -104,6 +115,18 @@ Last updated: 2026-09-08 (session in progress). Update the checkboxes as work ac
 - [x] **`interview_guide.md` and `survey_guide.md` written**: fully merged, per-stakeholder interview question sequences (base + every additive probe, in the actual order to ask them) and a Google-Forms-ready survey script (exact question types, section breaks, branching) — no tool exists here to literally deploy the form, so this is copy-paste-ready instead.
 - [ ] Confirm with Sricharan the exact meaning of "duplicate" RAM in his incident before it's used in any answer draft
 
-## Known open risk
+## Known open risk (updated 2026-09-10, second pass)
 
-Zero interviews have been conducted as of this update, with roughly 1.5 days left before the hard deadline. Stage 1 (fieldwork) is the critical path — everything in Stage 2 onward is blocked on it. Recommend resolving the interview-volume decision and collecting the two missing personal incidents today, then starting outreach immediately.
+Fieldwork is done (7 interviews). `answers_draft.md` was **rewritten** on 2026-09-10 after a full re-read of every transcript, the raw Whisper JSON (for exact timestamps), all 16 evidence photographs, The Ken's founding column, and `research/report-source.md` p.16's rail documentation. Four answers changed materially — see that file's header for what changed and why. **Today's real risks, in priority order:**
+
+1. **Consent is the hard gate, and it is worse than the first pass recorded.** Recording consent is audible in 6 of 7 calls, and 3 respondents explicitly reconfirmed anonymised use at the close — better than previously logged. But: (a) **the Technician recording has no consent capture at all** — verified against the raw segments, it opens cold at "Hello, Uncle" — and he is the respondent Q1's team statement is built on; (b) **nobody was told their words may be published by The Ken**, which is what the ground rule actually requires; (c) no age band or city for any of the 7. Full status table, the exact message to send, and artefact-redaction instructions: **`evidence/consent/CONSENT_LOG.md`**.
+2. **Q1's three personal-connection lines and Q8 are not written** — personal/values answers only Sricharan, Prathyusha and Atharv can write.
+3. **Opening-number error, submission-breaking if copied.** The `~/Downloads/ken-case-competition/` kit calls this "Opening 01" and misnumbers every other opening it cites. It is **#02 by title**; `report-source.md` p.2 explains the picker lists it second while its image asset still carries number 11. **Select by title, never position.** Q8 names an opening — use the live-page numbering listed in `answers_draft.md` §Q8. Also verify in the live form that the registered opening is actually #02 before touching anything else; switching resets evidence.
+4. **The deadline is today, 11:59 PM IST.** `00-PLAN.md` says target 6 PM, `report-source.md` says 8 PM — take 6 PM.
+5. ~~No survey was ever fielded~~ — **resolved 2026-09-10. A survey WAS fielded: 19 responses (12 qualified, 7 screened out), 8–10 Sep, anonymous, age band + city captured for all.** Raw CSV/XLSX, full per-respondent table, and analysis now in **`evidence/survey/`**. Two findings changed answers: **7 of 12 incidents had decide/approve-cost/pay/give-access split across more than one person** (the strongest number the team has — it makes the Payments rail load-bearing), and **0 of 12 involved a part or appliance moving**, which disconfirms the Logistics rail from the demand side. `answers_draft.md` §Q4 was rewritten against both. Note the sample has **no Eluru respondents** despite `narrowed_problem.md` planning for Hyderabad + Eluru — the real spread is Hyderabad 9, Vizag 6, Bengaluru 2, plus one Munich response to exclude from any India claim.
+6. **Evidence-pack size.** ~133 MB of audio is too large to attach. Cut 60–90 second clips around the timestamps tabulated in `answers_draft.md` §Q2.
+7. ~~Logistics rail is evidence-thin~~ — **resolved, and it was a first-draft error.** The parts evidence was in the transcripts and in the team's own Miro technician journey map all along. See `answers_draft.md` §Q4.
+
+## Correction to log against this project's own evidence discipline
+
+`best_practices.md` §1.2–§1.3 attributes several judge quotes and team examples (Deepak Shenoy's "adjusted/ebitda" line, the "we will leverage AI/ML" commentary, Metamorphosis, Illuminaire, Ken-spiracy Theorists, Kenith, ArogyaGhar.ai, ROI Rangers, and Tek-Ken/Voldemort as 2024 quick-commerce finalists) to `files/ken_case_competition_2025_winning_submissions.txt`. **None of them appear in that file** — a direct grep returns zero hits for every one, and Tek-Ken and Voldemort are 2025 teams in it, not 2024 ones. That material may have come from other web sources during the session that were never captured to `files/`, but it cannot be verified against the source it cites. It is internal strategy guidance, not a submitted claim, so it breaks nothing — but per this project's own standing rule, it is recorded here rather than left silently overstated.
