@@ -5,3 +5,6 @@ scripts/transcribe/__pycache__/
 # source .m4a files for the Whisper pipeline) -- pure derived cache, not
 # source data. Reproducible anytime via scripts/transcribe/robust_*.py.
 evidence/Interviews/_raw/_chunks*/
+
+# macOS Finder metadata
+.DS_Store
