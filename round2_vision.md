@@ -126,9 +126,17 @@ Keep in reserve (for follow-up questions or Round 3): how we'd measure it. The f
 **Strategy:** start from the **business problem**. Round 1's business move was fewer visits, and wrong diagnosis or the wrong part is the root cause of extra visits. The fourth rail is the one piece **no partner will ever own: truth about the machine.** Use the India-stack analogy (Aadhaar for people, FASTag for vehicles, nothing for household machines) and the Right to Repair policy direction. Sketch 3–4 endpoints. Say what we do meanwhile.
 **Trap to avoid:** a "WhatsApp rail" or a "data rail" (these already exist, or are too vague), or repeating the Q8 company.
 
-> **Draft:** *"Yes: a **Machine Passport** rail. Voice, money and movement exist; truth about the machine does not. Every repair today starts from zero: the technician asks the model, guesses the fault, and often fetches the right part on a second visit. The rail gives each appliance a permanent, consented ID (serial or QR) holding its model, warranty, past repairs, parts fitted and test results, readable by any technician or agent the household authorises (`resolve machine`, `get history`, `record repair`, `check warranty`). Our agent would know the machine before the phone rings, ship the exact part, and give a local technician the verified track record a brand service centre has. We'd want **Servify** to build it, since it already connects brands, service centres and logistics. Until then, Tayyar builds each passport one repair at a time from label photos and technician job cards."*
+> **Draft:** *"Yes: a **Machine Passport** rail. Voice, money and movement exist; truth about the machine does not. Every repair today starts from zero: the technician asks the model, guesses the fault, and often fetches the right part on a second visit. The rail gives each appliance a permanent, consented ID (serial or QR) holding its model, warranty, past repairs, parts fitted and test results, readable by any technician or agent the household authorises (`resolve machine`, `get history`, `record repair`, `check warranty`). Our agent would know the machine before the phone rings, ship the exact part, and give a local technician the verified track record a brand service centre has. We'd want **Servify** to build it, since it already connects brands, service centres and logistics. Until then, Tayyar builds each passport one repair at a time from label photos and technician job cards. The passport can also update itself: connected appliances (Matter, Google Home, LG ThinQ) report their own error codes into it, and older machines can do the same through a low-cost energy-monitoring plug. The machine starts supplying its own evidence before anyone calls."*
 
 *(Check Servify's current scope before submitting.)*
+
+**Why smart-home APIs are a *layer* of the passport, not the fourth rail on their own:**
+- Most Indian appliances, especially in tier-3 cities and older homes, aren't connected, and none of our interviewees had smart appliances.
+- Google isn't Indian, and Q5 asks for an Indian builder.
+- Smart-home APIs mostly expose on/off and mode, not detailed faults, and each brand keeps its data to itself.
+- "Smart home" is the kind of idea the AI baseline is likely to suggest.
+
+The **energy-monitoring plug for old machines** is the India-specific, more original half. Label it as an unproven idea: a power-draw pattern *may* show a struggling compressor or a stalling motor early. **Before quoting details, check the Google Home API and Matter appliance docs.**
 
 ---
 
