@@ -1,0 +1,1014 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kokila Round 2 Answers</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --ink:#15202B; --muted:#56636F; --rule:#D6DCE2;
+  --accent:#E3A600; --accent-ink:#1B1400; --teal:#0E6B66; --red:#B8372A; --green:#2E7D4F;
+  --tint:#FFF6D9; --tint-teal:#E3F2F0; --tint-red:#FBE9E6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0F1419; --surface:#18212B; --ink:#E7EBEF; --muted:#9AA6B2; --rule:#2B3743;
+    --accent:#F2BA1F; --accent-ink:#1B1400; --teal:#4FC1B8; --red:#F07A6A; --green:#6CCB93;
+    --tint:#2E2610; --tint-teal:#12302D; --tint-red:#3A1D19;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0F1419; --surface:#18212B; --ink:#E7EBEF; --muted:#9AA6B2; --rule:#2B3743;
+  --accent:#F2BA1F; --accent-ink:#1B1400; --teal:#4FC1B8; --red:#F07A6A; --green:#6CCB93;
+  --tint:#2E2610; --tint-teal:#12302D; --tint-red:#3A1D19;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,-apple-system,sans-serif;margin:0;padding-inline:20px;padding-block:32px 64px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:"Archivo","Arial Narrow",system-ui,sans-serif;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.7rem;font-weight:800}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0;max-width:68ch}
+.eyebrow{font:500 .75rem/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.88em}
+section{display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-direction:column;gap:6px;border-top:2px solid var(--ink);padding-top:14px}
+.qtag{display:inline-block;background:var(--accent);color:var(--accent-ink);font:600 .75rem/1 "IBM Plex Mono",monospace;padding:5px 8px;border-radius:3px;letter-spacing:.06em;width:max-content}
+header{display:flex;flex-direction:column;gap:18px}
+.promise{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(1.2rem,2.6vw,1.6rem);line-height:1.35;max-width:40ch;border-left:6px solid var(--accent);padding-left:16px}
+.lede{color:var(--muted);max-width:70ch}
+.ticket{background:var(--surface);border:1px dashed var(--rule);border-radius:6px;padding:18px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.ticket div{display:flex;flex-direction:column;gap:2px}
+.ticket b{font:800 1.5rem/1.1 "Archivo",sans-serif;font-variant-numeric:tabular-nums}
+.ticket span{font-size:.8rem;color:var(--muted)}
+.ticket .hl b{color:var(--teal)}
+.diagram{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:16px;overflow-x:auto}
+.diagram pre.mermaid{margin:0;background:transparent;display:flex;justify-content:center;min-width:640px}
+.cap{font-size:.85rem;color:var(--muted);max-width:80ch}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:760px}
+th,td{text-align:left;vertical-align:top;padding:9px 11px;border-bottom:1px solid var(--rule)}
+th{font:600 .72rem/1.3 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--ground)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.pill{display:inline-block;font:500 .72rem/1 "IBM Plex Mono",monospace;padding:4px 7px;border-radius:999px;white-space:nowrap}
+.ok{background:var(--tint-teal);color:var(--teal)}
+.part{background:var(--tint);color:var(--ink)}
+.build{background:var(--tint-red);color:var(--red)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.note{background:var(--tint);border-radius:6px;padding:14px 16px;font-size:.92rem}
+.note b{font-family:"Archivo",sans-serif}
+svg text{font-family:"IBM Plex Sans",sans-serif}
+.pos-svg{width:100%;height:auto;max-width:720px;display:block;margin:0 auto}
+.meme{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1}
+.meme small{display:block;font:500 1rem/1.5 "IBM Plex Sans",sans-serif;color:var(--muted);margin-top:8px}
+footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+.doc{max-width:980px;margin:0 auto;display:flex;flex-direction:column;gap:14px}
+.doc h1{font-size:clamp(1.8rem,4vw,2.6rem)}
+.doc h2{font-size:1.5rem;border-top:2px solid var(--ink);padding-top:14px;margin-top:28px}
+.doc h3{margin-top:12px}
+.doc blockquote{margin:0;border-left:6px solid var(--accent);background:var(--surface);padding:12px 16px;border-radius:0 6px 6px 0}
+.doc blockquote p{max-width:none}
+.doc hr{border:0;border-top:1px solid var(--rule);width:100%}
+.doc code{font-family:"IBM Plex Mono",monospace;font-size:.86em;background:var(--ground);padding:1px 4px;border-radius:3px}
+.doc ul,.doc ol{margin:0;padding-left:1.3em;max-width:75ch}
+.doc table{min-width:640px}
+.nav{font-size:.85rem}
+.nav a{color:var(--teal)}
+</style>
+</head>
+<body>
+<main class="doc">
+<p class="nav">Diagrams: <a href="PHASE2_DIAGRAMS.html">PHASE2_DIAGRAMS.html</a></p>
+<h1>Phase 2 — Assemble Your Agent · Paste-ready answers</h1>
+<p><strong>Team TripleIT · Opening 11 "Keeping the machines running" · Due Fri 25 Sep 2026, 11:59 PM IST</strong>
+Diagrams: <code>PHASE2_DIAGRAMS.html</code> (published as an artifact). Supporting research: <code>round2_strategy.md</code> (verified API notes), <code>phase2_research.md</code>, <code>files/user_journey.md</code>.</p>
+<p><strong>What changed from the Tayyar drafts (read this first).</strong> We moved the buyer from the household to the <strong>service agency</strong> (B2B2C). The household still gets the same promise: one visit, within an approved budget. But the agency pays us, runs our agent inside its own phone number, WhatsApp and ticket book, and keeps the customer relationship. We kept everything from <code>round2_vision.md</code> that still holds: the Ready gate, the rail gaps, the "voice never approves money" rule and the Machine Passport.</p>
+<p><strong>Evidence tags:</strong> <strong>[V]</strong> read in partner docs on 24 Sep · <strong>[I]</strong> our interviews or survey · <strong>[A]</strong> our assumption, stated so a judge can change it.</p>
+<hr />
+<h2>The one idea every answer returns to</h2>
+<blockquote>
+<p><strong>Any brand. Any machine. One trip.</strong> Kokila works inside a local service agency. She finds out what's wrong inside the machine <em>before</em> anyone leaves the shop, so the technician's first visit is a repair and never a discovery.</p>
+</blockquote>
+<p><strong>Why agencies, not households.</strong> Agencies pay for every wasted trip. Households stay loyal to the technician they already know <strong>[I: 3 of 12 survey incidents went to a known technician; the carpenter's crew runs on referrals]</strong>. So we sell the fix to the people who lose money on the problem, and reach the household through a name it already trusts.</p>
+<hr />
+<h2>Q1. What outcome is the agent accountable for? <em>(one sentence, ≤30 words)</em></h2>
+<blockquote>
+<p><strong>For India's tier-2 and tier-3 repair agencies: any brand, any machine, fixed on the first visit within the customer's approved budget, or the second trip is on us.</strong>
+<em>(28 words)</em></p>
+</blockquote>
+<p><strong>Business proof, one line (use it as a subtitle or in Q2 if the form allows):</strong>
+<em>A 10-technician agency that saves one trip per technician a day saves about ₹1.3 lakh a month, or about ₹7.8 lakh in six months.</em></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Line</th>
+<th>Maths <strong>[A]</strong>: every input can be changed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Trips saved</td>
+<td>10 technicians × 1 trip a day = 10 trips a day</td>
+</tr>
+<tr>
+<td>Cost of one wasted trip</td>
+<td>₹500 (about 1.5 technician-hours, fuel, and a paid visit given up)</td>
+</tr>
+<tr>
+<td>Per day</td>
+<td>10 × ₹500 = <strong>₹5,000</strong></td>
+</tr>
+<tr>
+<td>Per month (26 working days)</td>
+<td><strong>₹1,30,000</strong></td>
+</tr>
+<tr>
+<td>Six months</td>
+<td><strong>₹7.8 lakh</strong> (or ₹4–5 lakh at a more cautious 0.6 trips a technician a day)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why "one trip saved per technician per day" is plausible:</strong> a technician does about 4–6 visits a day <strong>[A]</strong>. In our survey, <strong>6 of 12 incidents needed follow-up calls, and 2 needed 3 or more [I]</strong>. Vidya Sagar: a wrong part means <em>"he might have to make three trips" [I]</em>.</p>
+<p><strong>What "the second trip is on us" means in practice:</strong> the promise only applies to jobs the agent marks <strong>Ready</strong> (Q3, Ready gate). If a Ready job needs a second trip, we waive our fee on that job and credit the agency ₹500. Honest diagnostic visits are labelled up front and don't carry the promise. That's how the promise stays checkable, and how we avoid going broke on it.</p>
+<hr />
+<h2>Workings behind Q2–Q4: the product-sense path (stakeholders → pains → options → the one we chose)</h2>
+<p><strong>Stakeholders (8)</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Stakeholder</th>
+<th>Top pain</th>
+<th>What they need</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Agency owner</strong> (the buyer)</td>
+<td>Paid for trips that earn nothing; technicians do side jobs for cash</td>
+<td>More paid jobs per technician-day; control without being on the phone</td>
+<td>Carpenter crew: triage by hand, <em>"many people call me at the same time"</em> [I]</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Dispatcher / front desk</td>
+<td>Phones every customer twice; no idea if the part is ready</td>
+<td>One list of exceptions</td>
+<td>[A]</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Technician</strong></td>
+<td>Discovery visit, then a parts run, then an argument over price</td>
+<td>Know the job before leaving; get paid on the spot</td>
+<td>Vidya Sagar: <em>"come first to diagnose, then go get back the parts"</em> [I]</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Customer at home</strong> (often elderly)</td>
+<td>A day lost waiting; explaining the problem again and again</td>
+<td>One call, one visit</td>
+<td>Maggi: urgent repairs take <em>"half of the day or one day"</em> [I]</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Payer</strong> (often a child elsewhere)</td>
+<td>Surprise charges they can't check</td>
+<td>A limit set once; a fair-price check</td>
+<td>RK Sir checked a quote through a friend [I]</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Parts shop / distributor</td>
+<td>Calls with vague part names; unsold stock</td>
+<td>Exact part numbers; paid on pickup</td>
+<td>[A]</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Brand (OEM)</td>
+<td>Warranty claims with missing evidence</td>
+<td>A complete evidence packet</td>
+<td>[A]</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Rail partners</td>
+<td>Need real transactional use cases</td>
+<td>Multi-step, multi-party jobs</td>
+<td><code>round2_strategy.md</code> §4</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The agency's leaks, in rupees</strong> (the ones we go after first):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Leak</th>
+<th>Today</th>
+<th>Kokila's fix</th>
+<th>₹ at a 10-technician agency <strong>[A]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Repeat trips</strong> (wrong part, unknown fault)</td>
+<td>About 1 per technician a day</td>
+<td>Ready gate</td>
+<td><strong>About ₹1.3 lakh a month</strong></td>
+</tr>
+<tr>
+<td>Missed calls after hours → lost jobs</td>
+<td>The owner can't pick up at 9 PM</td>
+<td>24×7 intake in the agency's name</td>
+<td>2–3 jobs a week</td>
+</tr>
+<tr>
+<td>Unbilled extra work and side cash</td>
+<td>Paid in cash, off the books</td>
+<td>Voice report → UPI approval → logged</td>
+<td>Hard to size; this is the owner's trust problem</td>
+</tr>
+<tr>
+<td>Parts runs</td>
+<td>The technician rides to the shop mid-job</td>
+<td>Part secured before the slot</td>
+<td>About 45 minutes a trip</td>
+</tr>
+<tr>
+<td>Rejected brand warranty claims</td>
+<td>Photos and serial numbers missing</td>
+<td>Evidence packet built at intake</td>
+<td>Claim revenue kept</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Five paths we considered, and why we chose one</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Path</th>
+<th>What it does</th>
+<th>Agency ₹ value</th>
+<th>Build effort</th>
+<th>Evidence</th>
+<th>Verdict</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>A. Ready-to-Repair</strong> (intake → diagnose → part → Ready gate → one visit)</td>
+<td>Cuts repeat trips</td>
+<td>🔴 Highest</td>
+<td>Medium</td>
+<td>Strongest</td>
+<td>✅ <strong>The deep path</strong></td>
+</tr>
+<tr>
+<td>B. Revenue fill (AMC and seasonal outreach calls)</td>
+<td>Fills the slots path A frees up</td>
+<td>High</td>
+<td>Low</td>
+<td>Sai Kakki: <em>"schedule the annual servicing"</em> [I]</td>
+<td>✅ <strong>Second path</strong>, human-approved first (L2 → L3)</td>
+</tr>
+<tr>
+<td>C. Collections and approvals only</td>
+<td>Stops price disputes</td>
+<td>Medium</td>
+<td>Low</td>
+<td>RK Sir [I]</td>
+<td>Folded into A (U10)</td>
+</tr>
+<tr>
+<td>D. On-site technician copilot</td>
+<td>Helps juniors diagnose on site</td>
+<td>Medium</td>
+<td>High</td>
+<td>Crew trains juniors for 1–2 years [I]</td>
+<td>Later (uses RepairGraph)</td>
+</tr>
+<tr>
+<td>E. Cross-agency capacity exchange</td>
+<td>Sells spare hours across agencies</td>
+<td>High</td>
+<td>Very high</td>
+<td>Weak</td>
+<td>Parked</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why A:</strong> it's the only path that makes money for the agency <strong>and</strong> keeps the household's promise on day one, and every other path runs on the data it creates (RepairGraph, the Passport).</p>
+<p><strong>Metrics</strong>
+- <strong>North star:</strong> first-visit fix rate on Ready jobs.
+- <strong>Business:</strong> trips saved per technician a day; ₹ saved per agency a month; paid jobs per technician a day.
+- <strong>Customer:</strong> hours from ticket to fix; calls the customer had to make (goal: 1).
+- <strong>Guardrails:</strong> budget overruns = 0; share of jobs labelled "diagnostic" (watch for gaming); disputes; share of jobs sent to a human.</p>
+<p><strong>Trade-offs we accept openly</strong>
+- <strong>Speed vs. certainty:</strong> waiting for the part can push the visit to the next day. One sure visit beats two quick ones.
+- <strong>Shipping two likely parts vs. return costs:</strong> we send two only for parts under ₹500.
+- <strong>Technicians lose their parts markup:</strong> we pay a fixed parts-handling fee through the split, or order from the technician's own shop.
+- <strong>White-label vs. our brand:</strong> the agency owns the customer; we grow through the "Kokila Certified" badge.</p>
+<p><strong>Guardrails:</strong> voice never approves money · spending is capped by the customer's UPI budget and the agency's cap · no DIY advice on gas or wiring · life-critical devices go to L2 · always offer "talk to a person" · no always-on microphone in the home · every action is logged.</p>
+<hr />
+<h2>Q2. Autonomy level</h2>
+<blockquote>
+<p><strong>L3: Kokila acts on her own inside limits two people set.</strong> The <strong>agency</strong> sets the rules: which jobs she can book, which parts she can order, and the most she can spend per job. The <strong>customer</strong> sets the budget in their UPI app. The most consequential thing she does without asking is <strong>spend inside that budget</strong>, on the visit fee, the part and the labour. She always asks first before spending above the budget, before a technician enters a home for the first time, before a machine leaves the home, and before any gas or electrical work. For <strong>life-critical devices</strong> (oxygen concentrators, clinic fridges) she <strong>drops to L2</strong>: she prepares everything and a human decides.</p>
+</blockquote>
+<p><strong>Why L3, not L4:</strong> some steps are still <strong>human today and become agent later</strong>. Claiming L4 while a dispatcher still confirms parts would be dishonest. The roadmap:</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Pilot (weeks 1–6)</th>
+<th>Month 3</th>
+<th>Month 6+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customer intake call</td>
+<td>Agent (L3)</td>
+<td>L3</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>Diagnosis (top-2 faults)</td>
+<td>Agent proposes, <strong>senior technician confirms</strong> (L2)</td>
+<td>L3 above a confidence threshold</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>Ordering the part</td>
+<td><strong>Dispatcher</strong> orders</td>
+<td>Agent orders up to ₹1,500 (L3)</td>
+<td>L3, up to the agency's cap</td>
+</tr>
+<tr>
+<td>Picking the technician</td>
+<td>Agent proposes, <strong>owner taps OK</strong> (L2)</td>
+<td>L3</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>Spend inside the budget</td>
+<td>L3</td>
+<td>L3</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>Spend above the budget</td>
+<td>L2 (payer approves in UPI)</td>
+<td>L2</td>
+<td><strong>L2 always</strong></td>
+</tr>
+<tr>
+<td>AMC and seasonal outreach calls</td>
+<td>Owner approves the list (L2)</td>
+<td>L3 within a monthly quota</td>
+<td>L3</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Q3. States: happy flow and unhappy flow</h2>
+<p><strong>The whole design in one sentence:</strong> a ticket becomes a visit only when <strong>four things are ready at the same time</strong>: the machine is known, the fault is likely, the part is in hand and the customer is approved and present. That's the <strong>Ready gate</strong>.</p>
+<p><strong>Happy flow</strong> (every state reads from or writes to a table in brackets; see the diagram in <code>PHASE2_DIAGRAMS.html</code>):</p>
+<ol>
+<li><strong>Ticket in</strong>: the agency's phone, WhatsApp or brand portal logs a job → Kokila picks it up <em>(Tickets)</em></li>
+<li><strong>Intake</strong>: she calls the customer <strong>in the agency's name</strong>, in Telugu, Hindi or English; gets the symptom and error code (read back, then "press 1"); sends a WhatsApp link for a label photo and a 10-second video <em>(Tickets, Evidence)</em></li>
+<li><strong>Machine known</strong>: the label photo gives the model; she checks the Machine Passport and warranty <em>(Machines, Passport)</em></li>
+<li><strong>Diagnosed</strong>: RepairGraph gives the top-2 faults, the parts, a price range and a confidence score <em>(RepairGraph)</em></li>
+<li><strong>Approved</strong>: the payer approves a budget in their UPI app (Pine Labs mandate) <em>(Mandates)</em></li>
+<li><strong>Part secured</strong>: from the agency's own stock, a local shop (she phones and holds it) or Delhivery <em>(Inventory, Shipments)</em></li>
+<li><strong>READY GATE ✓</strong>: the technician is matched on skill, brand and travel time, and the slot is confirmed only now <em>(Technicians, Schedule)</em></li>
+<li><strong>On site</strong>: the technician checks in and the visit fee is captured <em>(JobCards, Payments)</em></li>
+<li><strong>Repaired and tested</strong>: the customer says "yes" or presses 1, and the technician uploads a test video <em>(JobCards)</em></li>
+<li><strong>Settled</strong>: money is captured up to the budget and split between agency, shop and technician; the rest is released <em>(Payments)</em></li>
+<li><strong>Learned</strong>: the Passport and RepairGraph are updated; a 7-day "still working?" call is made; an AMC is offered <em>(Passport, RepairGraph, Campaigns)</em></li>
+</ol>
+<p><strong>Unhappy flow.</strong> Every branch ends in a named state, never in silence.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>What goes wrong</th>
+<th>How Kokila finds out</th>
+<th>What she does</th>
+<th>Ends in</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U1</td>
+<td>Model or error code misheard</td>
+<td>Read-back not confirmed</td>
+<td>Repeats slowly; keypad entry; label photo</td>
+<td>2</td>
+</tr>
+<tr>
+<td>U2</td>
+<td>No label photo (elderly user, no smartphone)</td>
+<td>Link not opened after 30 min</td>
+<td>Asks a family member on the ticket; otherwise the technician reads the label at the visit</td>
+<td>3</td>
+</tr>
+<tr>
+<td>U3</td>
+<td><strong>Low diagnosis confidence</strong></td>
+<td>Top-1 below threshold</td>
+<td><strong>An honest diagnostic visit</strong>: labelled as one, lower fee, no one-trip promise, or a 5-minute video call with a senior technician</td>
+<td>5</td>
+</tr>
+<tr>
+<td>U4</td>
+<td>Machine under brand warranty</td>
+<td>Warranty lookup</td>
+<td>If the agency is the authorised centre, a brand claim with a full evidence packet; if not, tells the customer honestly and logs a lead the agency didn't lose</td>
+<td>5 / closed</td>
+</tr>
+<tr>
+<td>U5</td>
+<td>Payer unreachable (child in another city)</td>
+<td>No approval in 2 hours</td>
+<td>Nothing is spent; reminder by call and WhatsApp; slot held, then released</td>
+<td>5</td>
+</tr>
+<tr>
+<td>U6</td>
+<td>Customer wants to pay cash</td>
+<td>Declines UPI</td>
+<td>Quote acknowledged by WhatsApp OTP; cash logged on the job card; <strong>the one-trip promise still holds</strong></td>
+<td>5</td>
+</tr>
+<tr>
+<td>U7</td>
+<td>Part not in any local shop (tier-3)</td>
+<td>Shops say no; Delhivery pincode check</td>
+<td>Delhivery next-day or two-day; tells the customer the real date; no visit before the part arrives</td>
+<td>6</td>
+</tr>
+<tr>
+<td>U8</td>
+<td>Part late or lost</td>
+<td>Delhivery tracking push or failed-delivery update</td>
+<td>Releases the slot; retries a local shop; new window</td>
+<td>6</td>
+</tr>
+<tr>
+<td>U9</td>
+<td>Technician doesn't show</td>
+<td>No check-in 20 min after the window opens</td>
+<td>Reassigns; owner alerted; customer told why</td>
+<td>7</td>
+</tr>
+<tr>
+<td>U10</td>
+<td><strong>Extra fault found on site</strong></td>
+<td>Technician calls Kokila: "pipe also worn, one-eighty"</td>
+<td>Checks the price range and remaining budget. Small and in scope → approves. Otherwise → the payer approves in UPI. <strong>The technician's voice is a claim, never an approval</strong></td>
+<td>9</td>
+</tr>
+<tr>
+<td>U11</td>
+<td>Technician asks for side cash</td>
+<td>Customer mentions it on the 7-day call; amount differs from the job card</td>
+<td>Flag to the owner; the customer's warranty only covers logged work</td>
+<td>owner</td>
+</tr>
+<tr>
+<td>U12</td>
+<td>Fake or wrong part fitted</td>
+<td>Part code in the test video doesn't match the SKU</td>
+<td>Hold payment; replacement at the agency's cost</td>
+<td>9</td>
+</tr>
+<tr>
+<td>U13</td>
+<td>Fails the test</td>
+<td>Customer says no, or the video fails</td>
+<td>Hold capture; re-visit <strong>counts against our promise</strong> (₹500 credit if the job was Ready)</td>
+<td>8</td>
+</tr>
+<tr>
+<td>U14</td>
+<td>Same fault again within 30 days</td>
+<td>Passport shows a repeat</td>
+<td>Free re-visit; RepairGraph lowers that diagnosis's confidence</td>
+<td>8</td>
+</tr>
+<tr>
+<td>U15</td>
+<td>Payment times out</td>
+<td>No receipt</td>
+<td>Look up by order reference <strong>before</strong> retrying, so no double charge</td>
+<td>10</td>
+</tr>
+<tr>
+<td>U16</td>
+<td>Customer upset or abusive; technician unsafe</td>
+<td>Negative sentiment (Gnani Workforce handoff) / technician's "unsafe" button</td>
+<td>Human callback within 15 min; visit fee protected; job moved up</td>
+<td>human</td>
+</tr>
+<tr>
+<td>U17</td>
+<td>Life-critical device</td>
+<td>Device class from the label</td>
+<td>L2; human now; arrange a backup device first</td>
+<td>human</td>
+</tr>
+<tr>
+<td>U18</td>
+<td>Two machines in one home</td>
+<td>Customer mentions a second machine</td>
+<td>Adds it to the same visit if the budget and skills allow (one trip, two fixes)</td>
+<td>4</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Q4. Each rail: what exists vs. what must be built</h2>
+<p><strong>Headline:</strong> <em>none of the three rails knows what a technician, a job or a machine is.</em> Voice talks, money moves, parcels travel, but <strong>nothing commits the right part, the right person and a ready customer to one time slot</strong>. That's the gap that causes second trips, and the gap Kokila fills.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Rail</th>
+<th>What we send it</th>
+<th>What comes back</th>
+<th>When it fails</th>
+<th>What it must never do</th>
+<th>What exists today</th>
+<th>Build status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Voice: Gnani</strong> (intake and updates)</td>
+<td>Agent Builder phone agent, calling as the agency; STT <code>POST /stt/v3</code> (clips ≤60 s); TTS <code>/api/v1/tts/inference</code> for read-backs</td>
+<td>Transcript; filled variables (<code>model</code>, <code>symptom</code>, <code>error_code</code>); keypad (DTMF) digits; call recording; post-call log</td>
+<td>Code-mixed model numbers misheard; noisy kitchens; no documented STT confidence score</td>
+<td>Diagnose (Gnani <strong>transcribes</strong>; <strong>our</strong> RepairGraph diagnoses); take a spoken "yes" as approval to spend</td>
+<td>STT/TTS, Agent Builder, DTMF, Workforce handoff on sentiment, Zoho CRM/Desk integration, custom HTTP actions <strong>[V]</strong></td>
+<td>✅ Exists. Test mid-call API replies (the docs contradict each other)</td>
+</tr>
+<tr>
+<td><strong>Voice: Gnani</strong> (outbound to parts shops, technician reports)</td>
+<td>Call a parts shop: "Do you have an LG inlet valve, part number X?"; technician says "capacitor, six-fifty"</td>
+<td>Stock yes/no and price, captured as data; part and amount read back and confirmed with press 1</td>
+<td>The shop says "maybe tomorrow" (a conditional promise)</td>
+<td>Treat "I'll try" as a firm yes</td>
+<td>Outbound calls, variables <strong>[V]</strong>; no way to extract a <em>conditional commitment</em></td>
+<td>🟡 Exists, plus <strong>our ask</strong>: structured commitment extraction</td>
+</tr>
+<tr>
+<td><strong>Voice: machine sound</strong></td>
+<td>A 10-second clip of the running machine</td>
+<td>Nothing useful. The noise filter removes it</td>
+<td>Always, by design</td>
+<td>—</td>
+<td>Background-noise filter <strong>[V]</strong></td>
+<td>🔴 <strong>Ask</strong>: a raw non-speech capture mode. Meanwhile, a WhatsApp video goes to our classifier</td>
+</tr>
+<tr>
+<td><strong>Payments: Pine Labs</strong> (the budget)</td>
+<td><code>POST /mpp/v1/mandate</code> for a UPI One-Time Mandate or Reserve Pay; Grantex scope <code>mpp:payment:max_txn_paise</code> = budget</td>
+<td><code>deep_link</code> / QR for the payer's UPI app; mandate status; <code>GET /mpp/v1/balance</code></td>
+<td>Payer doesn't approve; e-mandate extra authentication above ₹15k <strong>[A: verify]</strong></td>
+<td>Spend above the budget; let voice authorise money</td>
+<td>P3P, Grantex, UPI OTM and Reserve Pay listed as GA <strong>[V]</strong></td>
+<td>✅ Exists</td>
+</tr>
+<tr>
+<td><strong>Payments: Pine Labs</strong> (capture and split)</td>
+<td>Capture at events: check-in → visit fee; test passed → part and labour; split between agency, shop and technician</td>
+<td><code>Payment-Receipt</code>; settlement; refund</td>
+<td>Timeout → possible double charge</td>
+<td>Capture before proof of work</td>
+<td>Capture, refunds, split settlement, payouts <strong>[T: from teammate draft, re-check]</strong></td>
+<td>🟡 Exists, plus <strong>our ask</strong>: <strong>capture triggered by a real-world event</strong> (P3P pays for an HTTP request, not a passed test); <strong>a delegate payer</strong> (a child pays for a parent)</td>
+</tr>
+<tr>
+<td><strong>Logistics: Delhivery Maps</strong></td>
+<td>Customer address (messy tier-3 landmarks); technicians' locations</td>
+<td>Geocode, cleaned-up address, two-wheeler travel-time matrix</td>
+<td>Landmark-only addresses</td>
+<td>Pick the technician (Delhivery gives <strong>travel times</strong>; <strong>our</strong> matcher picks on skill + brand + time)</td>
+<td>10 Maps APIs + MCP server (<code>geocode_address</code>, <code>compute_distance_matrix</code>…) <strong>[V]</strong></td>
+<td>✅ Exists</td>
+</tr>
+<tr>
+<td><strong>Logistics: Delhivery shipping</strong></td>
+<td>Part from a distributor to the agency or technician; reverse pickup of an unused part</td>
+<td>Pincode serviceability; tracking push webhook; failed-delivery event</td>
+<td>Tier-3 pincodes, 2-day delivery; parcel weight limits</td>
+<td>Deliver "to an address" when the job needs "to Ravi before 10 AM"</td>
+<td>Forward/reverse shipping, tracking push, failed-delivery actions <strong>[T]</strong></td>
+<td>🟡 Exists, plus <strong>our ask</strong>: <strong>delivery to a person by an appointment deadline</strong>, with an "at risk" webhook</td>
+</tr>
+<tr>
+<td><strong>Our own: agency connector</strong></td>
+<td>Ticket from the agency's WhatsApp, Google Sheet, Zoho Desk or brand portal</td>
+<td>A normalised ticket; status written back</td>
+<td>The agency types tickets inconsistently</td>
+<td>Change the agency's records without a log</td>
+<td>WhatsApp Business API, Sheets API, Zoho Desk API</td>
+<td>🔨 <strong>We build</strong> (simple)</td>
+</tr>
+<tr>
+<td><strong>Our own: RepairGraph</strong> (Q5)</td>
+<td>Model + symptom + code + video</td>
+<td>Top-2 faults, parts, labour time, price range, confidence</td>
+<td>New model, never seen</td>
+<td>Claim certainty it doesn't have</td>
+<td>Nothing shared across brands</td>
+<td>🔨 <strong>We build</strong>: the moat</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What we do until the partners fill their gaps:</strong> our backend waits for the "test passed" event, then calls capture. The payer's number is set as the approver. The slot is confirmed only after Delhivery's "delivered" push. Machine sound comes in through a WhatsApp video.</p>
+<p><strong>Where AI is used in this path</strong> (the rest is rules and APIs, deliberately):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>AI integration point</th>
+<th>Model type</th>
+<th>Autonomy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Understand the customer's Telugu, Hindi or English description</td>
+<td>Gnani STT + LLM slot-filling</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Read the model label from a photo</td>
+<td>Vision / OCR</td>
+<td>L3 (read back to confirm)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Diagnose: top-2 faults and parts</strong></td>
+<td>RAG over RepairGraph + a video/sound classifier</td>
+<td>L2 → L3</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Phone parts shops and turn the answers into data</td>
+<td>Gnani outbound + commitment extraction</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Check whether an on-site quote is fair</td>
+<td>Price range from past jobs</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Turn the technician's Telugu voice note into a job report</td>
+<td>STT + LLM</td>
+<td>L3</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Check the test video</td>
+<td>Video classifier</td>
+<td>L2 (human reviews failures)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Learn from every closed job</td>
+<td>Outcome → RepairGraph confidence update</td>
+<td>Offline</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Q5. Does the agent need a fourth rail?</h2>
+<blockquote>
+<p><strong>Yes: a <em>Repair Truth rail</em>. Voice, money and parcels exist; knowledge of what fails inside the machine doesn't.</strong> Every repair in India starts from zero. The technician asks for the model, guesses the fault, and comes back with the right part on a second trip. The rail has two parts: (1) <strong>RepairGraph</strong>, a shared, brand-neutral knowledge base covering every consumer machine in India: model → components → how each one fails → the symptom customers describe (in Telugu, Hindi or English) → the test that confirms it → the part number and compatible alternatives → labour time → a fair price range; and (2) a <strong>Machine Passport</strong>, a consented ID for each machine with its warranty, past repairs and parts fitted. <strong>We build it and give it free to certified agencies</strong>, starting simple (TV, microwave, RO, washing machine), then AC and fridges, then laptops. In return, every job they close teaches it something. That's how agencies cut their costs, and how our data compounds. Long-term it should be an open standard, like Aadhaar for people, FASTag for vehicles and DigiLocker for documents. The Government's Right to Repair portal already asks brands to share this information; the rail is what makes it usable by an agent.</p>
+</blockquote>
+<p><strong>The modules and layers of the full solution</strong> (diagram in <code>PHASE2_DIAGRAMS.html</code>):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Modules</th>
+<th>Owner</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Channels</strong>: where the work already happens</td>
+<td>Agency phone number (IVR/call forwarding), agency WhatsApp Business number, ticket connectors (WhatsApp group, Google Sheet, Zoho Desk, brand portal)</td>
+<td>Ours, on partner APIs</td>
+</tr>
+<tr>
+<td><strong>2. Brain</strong>: the master agent</td>
+<td><strong>Kokila Orchestrator</strong>: owns each case and its state machine; <strong>policy engine</strong> (agency rules, customer budget, safety list); audit log</td>
+<td>Ours</td>
+</tr>
+<tr>
+<td><strong>3. Sub-agents</strong>: one job each</td>
+<td>Intake (voice) · Identify (vision) · Diagnose (RAG) · Quote &amp; Approve (payments) · Parts Sourcing (voice + logistics) · Dispatch (matching) · Field Assist (technician copilot) · Close &amp; Settle · Revenue (AMC/seasonal calls)</td>
+<td>Ours</td>
+</tr>
+<tr>
+<td><strong>4. Modules</strong> (the rails)</td>
+<td>Voice module (Gnani) · Authorisation &amp; Payments module (Pine Labs) · Location &amp; Logistics module (Delhivery) · Messaging module (WhatsApp Business)</td>
+<td>Partners</td>
+</tr>
+<tr>
+<td><strong>5. Truth</strong>: the data</td>
+<td><strong>RepairGraph</strong> · <strong>Machine Passport</strong> · agency ops database (tickets, technicians, stock, schedule) · price book</td>
+<td>Ours → open standard</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How RepairGraph gets built</strong> (give to get):</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Phase</th>
+<th>Categories</th>
+<th>Why this order</th>
+<th>Sources</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1 (months 0–3)</strong></td>
+<td>TV, microwave, RO purifier, washing machine</td>
+<td>High volume, few failure modes, cheap parts, 3 of our survey categories</td>
+<td>Public service manuals, brand error-code lists, the Right to Repair portal, <strong>every job card from pilot agencies</strong></td>
+</tr>
+<tr>
+<td><strong>2 (months 3–9)</strong></td>
+<td>AC, fridge, geyser</td>
+<td>Seasonal spikes; gas and compressor work needs L2 safety rules</td>
+<td>Plus distributor part catalogues</td>
+</tr>
+<tr>
+<td><strong>3 (months 9+)</strong></td>
+<td>Laptops, phones</td>
+<td>Board-level faults; brand-locked parts</td>
+<td>Plus refurbishers</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Why agencies give us their data:</strong> they get the whole graph free; a certified badge ("Kokila Certified: one-trip guaranteed") that households see; and fewer wasted trips. Agencies' data stays theirs; only anonymised fault → part → outcome links go into the shared graph.</p>
+<p><strong>Next revenue stream (not in the pilot):</strong> RepairGraph knows which parts fail on which models, and which pulled parts still work. That's the base for a <strong>graded refurbished-parts marketplace</strong>: working parts harvested from scrapped machines, sold to agencies with a RepairGraph grade. It's cheaper for tier-3 customers, and brings in revenue beyond SaaS.</p>
+<p><strong>Who should build the rail, if not us:</strong> the open standard should sit with the Department of Consumer Affairs' <strong>Right to Repair portal</strong>, with brands contributing through their industry body. Until then, we build it one job at a time.</p>
+<hr />
+<h2>Q6. How a human interacts with the agent: their interface</h2>
+<blockquote>
+<p><strong>No new app. Kokila lives inside what the agency already uses, and speaks in the agency's name.</strong> A ticket lands wherever it lands today: a phone call to the shop, a WhatsApp message, a line in the register sheet, or a job from a brand's portal. Kokila picks it up and does the rest from inside the agency's own system.</p>
+</blockquote>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Who</th>
+<th>Their interface</th>
+<th>What they see or hear</th>
+<th>What they never have to do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Customer</strong> (often an elderly parent)</td>
+<td>A call from <strong>the agency's own number</strong>, plus WhatsApp from <strong>the agency's WhatsApp Business number</strong></td>
+<td><em>"Namaste, this is Kokila from Sri Sai Electronics. Your washing machine: is it showing an error code?"</em> Read-backs; one link for the label photo and video; the technician's name, photo and time; <em>"Is it working? Say yes or press 1."</em></td>
+<td>Download an app; explain the problem twice; chase the technician</td>
+</tr>
+<tr>
+<td><strong>Payer</strong> (often a child in another city)</td>
+<td>UPI app + WhatsApp</td>
+<td>One plain budget: <em>"Sri Sai can spend up to ₹2,500."</em> Approval requests with the part photo and a fair-price range; the receipt shows which part went in</td>
+<td>Pay above the budget without a fresh UPI approval</td>
+</tr>
+<tr>
+<td><strong>Technician</strong></td>
+<td>WhatsApp job card + one "Call Kokila" number</td>
+<td>Telugu voice summary of the job: machine, likely fault, part "with you" or "arriving 9 AM", customer window. Check in, press "unsafe", upload the test video. <strong>Reports extra work by voice</strong> ("pipe also worn, one-eighty") → read back → press 1. Paid when the test passes</td>
+<td>Type; learn an app; argue about money at the door</td>
+</tr>
+<tr>
+<td><strong>Dispatcher / front desk</strong></td>
+<td>The agency's existing sheet or Zoho Desk, with Kokila's status written into each row</td>
+<td>Only exceptions: no-show, part stuck, dispute, life-critical</td>
+<td>Call every customer twice a day</td>
+</tr>
+<tr>
+<td><strong>Agency owner</strong></td>
+<td>A WhatsApp message every evening</td>
+<td><em>"Today: 14 jobs, 11 first-visit fixes, 9 trips saved, ₹4,500 saved. 2 need you."</em></td>
+<td>Log in to a dashboard</td>
+</tr>
+<tr>
+<td><strong>Parts shop</strong></td>
+<td>An ordinary phone call</td>
+<td>Kokila asks for stock in Telugu, holds the part, pays by UPI</td>
+<td>Install anything</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How we connect to each kind of agency:</strong></p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Agency type</th>
+<th>Where tickets live today</th>
+<th>How Kokila connects</th>
+<th>Setup time <strong>[A]</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Small crew (like our carpenter's 10 people)</td>
+<td>Owner's phone + a WhatsApp group</td>
+<td>Agency number forwarded to Gnani; Kokila joins the WhatsApp Business inbox</td>
+<td>1 day</td>
+</tr>
+<tr>
+<td>Mid-size multi-brand agency</td>
+<td>Excel / Google Sheet</td>
+<td>Sheet connector reads new rows and writes status back</td>
+<td>2–3 days</td>
+</tr>
+<tr>
+<td>Established agency / brand-authorised centre</td>
+<td>Zoho Desk, Freshdesk, or a brand portal</td>
+<td>API/webhook (Gnani has a Zoho Desk integration <strong>[V]</strong>); brand portal job emails read automatically</td>
+<td>1–2 weeks</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2>Q7. Name</h2>
+<blockquote>
+<h2><strong>Kokila</strong></h2>
+<p><em>(yes, that Kokila, from "Rasode mein kaun tha?")</em>
+Kokilaben's famous question was about the kitchen. Ours is <strong><em>"Machine mein kya tha?"</em></strong> Kokila won't let anyone leave the shop until she knows what's wrong inside the machine. The technician arrives with the answer and the part.</p>
+</blockquote>
+<p><strong>Why it works:</strong> it's a real name, easy to say on a phone call ("this is Kokila from Sri Sai Electronics"), and white-labels cleanly. Everyone in India gets the joke, and the joke <em>is</em> the product: ask first, then send someone.
+<strong>Tagline for agencies:</strong> <em>"Pehli trip mein fix. Baaki Kokila dekh legi."</em> (Fixed on the first trip. Kokila handles the rest.)
+<strong>Backups:</strong> <em>Ek Trip Baburao</em> (Hera Pheri: <em>"yeh trip bachana, Baburao ka style hai"</em>, "saving this trip is Baburao's style"), <em>Paisa Hi Paisa</em> (for the pitch to agency owners).</p>
+<hr />
+<h2>Q8. Which Indian company has the best chance of building an agent like this?</h2>
+<blockquote>
+<p><strong>Servify, not Urban Company.</strong> Urban Company, NoBroker and Housejoy sell repairs <strong>to households</strong> and own the technician, so helping independent agencies works against their business. Servify already runs after-sales for brands like Apple and Samsung, coordinating about 18,000 service centres and about 8 million service transactions a year, so it holds the device data, the service-centre connections and the logistics links. <strong>Why it hasn't built Kokila:</strong> its customers are the brands, and brands have no reason to make <strong>multi-brand, independent</strong> agencies better at fixing their machines, or to share fault data with them. That gap, where most tier-2 and tier-3 repairs actually happen, is ours.</p>
+</blockquote>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Competitor</th>
+<th>Type</th>
+<th>Who pays them</th>
+<th>Why they won't build Kokila</th>
+<th>Threat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Servify</strong></td>
+<td>Direct (closest)</td>
+<td>Brands</td>
+<td>Serves brands, not multi-brand independents</td>
+<td>🔴 High</td>
+</tr>
+<tr>
+<td><strong>Urban Company</strong></td>
+<td>Indirect (competes for the same customer)</td>
+<td>Households; commission from technicians</td>
+<td>Owns the technician and the visit; independent agencies are its competitors</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>NoBroker Home Services</strong></td>
+<td>Indirect</td>
+<td>Households (bundled with rentals)</td>
+<td>Metro, rental-led; repairs are a cross-sell</td>
+<td>🟢 Low</td>
+</tr>
+<tr>
+<td><strong>Housejoy</strong></td>
+<td>Indirect</td>
+<td>Households</td>
+<td>Same marketplace model as UC, smaller</td>
+<td>🟢 Low</td>
+</tr>
+<tr>
+<td><strong>Pronto</strong></td>
+<td>Indirect (instant house help)</td>
+<td>Households</td>
+<td>Cleaning and cooking in under 10 minutes, not diagnosis-led repair; but it shows investors back speed in home services</td>
+<td>🟢 Low</td>
+</tr>
+<tr>
+<td><strong>Brand service networks / Onsitego</strong></td>
+<td>Indirect</td>
+<td>Brands / warranty buyers</td>
+<td>Single-brand or warranty-led</td>
+<td>🟠 Medium</td>
+</tr>
+<tr>
+<td><strong>Justdial / Sulekha</strong></td>
+<td>Indirect (agencies' lead source today)</td>
+<td>Agencies pay for leads</td>
+<td>Sells leads, doesn't fulfil jobs; we make the agency's paid leads convert</td>
+<td>🟢 Low</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Our edge in one line:</strong> they own the customer or the brand. We make <strong>the agency</strong> the best version of itself, under its own name.</p>
+<hr />
+<h2>How judges' criteria map onto this (for our own check before pasting)</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Criterion</th>
+<th>Where we earn it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Evidence</strong></td>
+<td>Survey (6 of 12 incidents needed follow-ups), Vidya Sagar's <em>"three trips"</em>, the carpenter crew's own dispatch habits, verified endpoints</td>
+</tr>
+<tr>
+<td><strong>Creativity</strong></td>
+<td>White-label agent inside the agency's system; RepairGraph given away free (give to get); Kokila</td>
+</tr>
+<tr>
+<td><strong>Clarity</strong></td>
+<td>One promise (one trip) repeated in all 8 answers</td>
+</tr>
+<tr>
+<td><strong>Feasibility</strong></td>
+<td>Every piece exists except RepairGraph and three precise partner asks; the pilot starts with one 10-person crew we already know</td>
+</tr>
+<tr>
+<td><strong>Thoroughness</strong></td>
+<td>18 unhappy states, an autonomy roadmap, the rail table, competitors</td>
+</tr>
+<tr>
+<td><strong>Business value</strong></td>
+<td>About ₹1.3 lakh a month for a 10-technician agency <strong>[A]</strong>; our fee is about ₹1,000 per technician a month <strong>[A]</strong> → about 13× return</td>
+</tr>
+</tbody>
+</table></div>
+<h2>How to build it (the feasibility story, in case a judge asks "how hard?")</h2>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Week</th>
+<th>What gets built</th>
+<th>With what</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1–2</td>
+<td>Intake agent in the agency's name; WhatsApp link for photo and video; Google Sheet connector</td>
+<td>Gnani Agent Builder, WhatsApp Business API, Sheets API</td>
+</tr>
+<tr>
+<td>2–4</td>
+<td>RepairGraph v0 for washing machines and RO (manuals + error codes); top-2 diagnosis with a confidence score</td>
+<td>An LLM with RAG over a small graph database</td>
+</tr>
+<tr>
+<td>3–5</td>
+<td>Budget mandate + capture on job events</td>
+<td>Pine Labs P3P sandbox (when it opens)</td>
+</tr>
+<tr>
+<td>4–6</td>
+<td>Technician matching + part tracking; evening digest for the owner</td>
+<td>Delhivery Maps MCP; WhatsApp</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Pilot with the carpenter's 10-person crew</strong>: measure first-visit fix rate before and after</td>
+<td>Our Round 1 contact</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>The metric that matters:</strong> <strong>first-visit fix rate on Ready jobs</strong>. Guardrail metrics: the share of jobs honestly labelled "diagnostic" (if it climbs, the promise is being gamed), customer budget overruns (must be 0), and payment disputes.</p>
+</main>
+</body>
+</html>

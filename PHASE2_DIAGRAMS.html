@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kokila Blueprint</title>
+</head>
+<body>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ground:#F2F4F6; --surface:#FFFFFF; --ink:#15202B; --muted:#56636F; --rule:#D6DCE2;
+  --accent:#E3A600; --accent-ink:#1B1400; --teal:#0E6B66; --red:#B8372A; --green:#2E7D4F;
+  --tint:#FFF6D9; --tint-teal:#E3F2F0; --tint-red:#FBE9E6;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0F1419; --surface:#18212B; --ink:#E7EBEF; --muted:#9AA6B2; --rule:#2B3743;
+    --accent:#F2BA1F; --accent-ink:#1B1400; --teal:#4FC1B8; --red:#F07A6A; --green:#6CCB93;
+    --tint:#2E2610; --tint-teal:#12302D; --tint-red:#3A1D19;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0F1419; --surface:#18212B; --ink:#E7EBEF; --muted:#9AA6B2; --rule:#2B3743;
+  --accent:#F2BA1F; --accent-ink:#1B1400; --teal:#4FC1B8; --red:#F07A6A; --green:#6CCB93;
+  --tint:#2E2610; --tint-teal:#12302D; --tint-red:#3A1D19;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font:16px/1.6 "IBM Plex Sans",system-ui,-apple-system,sans-serif;margin:0;padding-inline:20px;padding-block:32px 64px}
+.wrap{max-width:1080px;margin:0 auto;display:flex;flex-direction:column;gap:56px}
+h1,h2,h3{font-family:"Archivo","Arial Narrow",system-ui,sans-serif;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(2.2rem,5vw,3.6rem);font-weight:800;letter-spacing:-.01em}
+h2{font-size:1.7rem;font-weight:800}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0;max-width:68ch}
+.eyebrow{font:500 .75rem/1 "IBM Plex Mono",ui-monospace,monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.88em}
+section{display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-direction:column;gap:6px;border-top:2px solid var(--ink);padding-top:14px}
+.qtag{display:inline-block;background:var(--accent);color:var(--accent-ink);font:600 .75rem/1 "IBM Plex Mono",monospace;padding:5px 8px;border-radius:3px;letter-spacing:.06em;width:max-content}
+header{display:flex;flex-direction:column;gap:18px}
+.promise{font-family:"Archivo",sans-serif;font-weight:700;font-size:clamp(1.2rem,2.6vw,1.6rem);line-height:1.35;max-width:40ch;border-left:6px solid var(--accent);padding-left:16px}
+.lede{color:var(--muted);max-width:70ch}
+.ticket{background:var(--surface);border:1px dashed var(--rule);border-radius:6px;padding:18px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.ticket div{display:flex;flex-direction:column;gap:2px}
+.ticket b{font:800 1.5rem/1.1 "Archivo",sans-serif;font-variant-numeric:tabular-nums}
+.ticket span{font-size:.8rem;color:var(--muted)}
+.ticket .hl b{color:var(--teal)}
+.diagram{background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:16px;overflow-x:auto}
+.diagram pre.mermaid{margin:0;background:transparent;display:flex;justify-content:center;min-width:640px}
+.cap{font-size:.85rem;color:var(--muted);max-width:80ch}
+.tbl{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:6px}
+table{border-collapse:collapse;width:100%;font-size:.86rem;min-width:760px}
+th,td{text-align:left;vertical-align:top;padding:9px 11px;border-bottom:1px solid var(--rule)}
+th{font:600 .72rem/1.3 "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);background:var(--ground)}
+tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}
+.pill{display:inline-block;font:500 .72rem/1 "IBM Plex Mono",monospace;padding:4px 7px;border-radius:999px;white-space:nowrap}
+.ok{background:var(--tint-teal);color:var(--teal)}
+.part{background:var(--tint);color:var(--ink)}
+.build{background:var(--tint-red);color:var(--red)}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.note{background:var(--tint);border-radius:6px;padding:14px 16px;font-size:.92rem}
+.note b{font-family:"Archivo",sans-serif}
+svg text{font-family:"IBM Plex Sans",sans-serif}
+.pos-svg{width:100%;height:auto;max-width:720px;display:block;margin:0 auto}
+.meme{font-family:"Archivo",sans-serif;font-weight:800;font-size:clamp(1.8rem,4vw,2.6rem);line-height:1.1}
+.meme small{display:block;font:500 1rem/1.5 "IBM Plex Sans",sans-serif;color:var(--muted);margin-top:8px}
+footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--rule);padding-top:14px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="eyebrow">Team TripleIT · The Ken Case Competition 2026 · Opening 11 · Round 2</span>
+  <h1>Kokila: any brand, any machine, one trip.</h1>
+  <p class="promise">For India's tier-2 and tier-3 repair agencies: any brand, any machine, fixed on the first visit within the customer's approved budget, or the second trip is on us.</p>
+  <p class="lede">Kokila is a white-label AI agent that works inside a local service agency's own phone number, WhatsApp and ticket book. Before a technician leaves the shop, she finds out what's wrong inside the machine, secures the part and gets the customer's budget approved. The first visit becomes a repair, not a discovery.</p>
+  <div class="ticket" role="group" aria-label="Savings for a 10-technician agency (assumptions)">
+    <div><span>Technicians</span><b>10</b></div>
+    <div><span>Trips saved / day</span><b>10</b></div>
+    <div><span>Cost of a wasted trip</span><b>₹500</b></div>
+    <div><span>Saved / day</span><b>₹5,000</b></div>
+    <div class="hl"><span>Saved / month (26 days)</span><b>₹1.3 lakh</b></div>
+    <div class="hl"><span>Saved in 6 months</span><b>₹7.8 lakh</b></div>
+  </div>
+  <p class="cap">Assumptions, not measurements: one trip saved per technician a day, and ₹500 per wasted trip (technician time, fuel, a paid visit given up). At a more cautious 0.6 trips a day, six months saves about ₹4.7 lakh. Our survey found 6 of 12 incidents needed follow-up calls, and 2 needed three or more.</p>
+</header>
+
+<section>
+  <div class="sec-head"><span class="qtag">Q2 · Q3 · Q4</span><h2>The master agent and its sub-agents</h2></div>
+  <p>One orchestrator owns each case from start to finish. Each sub-agent does one job and reports back. A policy engine sits between the agents and the rails, so no sub-agent can spend money or send a person on its own.</p>
+  <div class="diagram"><pre class="mermaid">
+flowchart TB
+  IN["Ticket from the agency's<br/>phone · WhatsApp · sheet · brand portal"] --> K
+  K{{"KOKILA ORCHESTRATOR<br/>owns the case · runs the state machine"}}
+  POL["POLICY ENGINE<br/>agency rules · customer budget · safety list · audit log"]
+  K <--> POL
+  K --> S1["1 Intake<br/>voice call in the agency's name"]
+  K --> S2["2 Identify<br/>label photo → model · warranty"]
+  K --> S3["3 Diagnose<br/>RepairGraph → top-2 faults + parts"]
+  K --> S4["4 Quote &amp; Approve<br/>budget in the payer's UPI app"]
+  K --> S5["5 Parts Sourcing<br/>stock · call local shop · ship"]
+  K --> S6["6 Dispatch<br/>skill + brand + travel time"]
+  K --> S7["7 Field Assist<br/>job card · voice reports"]
+  K --> S8["8 Close &amp; Settle<br/>test · capture · split · learn"]
+  K --> S9["9 Revenue<br/>AMC and seasonal calls into freed slots"]
+  POL --> R1[("Gnani<br/>voice")]
+  POL --> R2[("Pine Labs<br/>payments")]
+  POL --> R3[("Delhivery<br/>maps + parcels")]
+  POL --> R4[("RepairGraph +<br/>Machine Passport")]
+  </pre></div>
+  <p class="cap">Sub-agents 1–8 make up the deep path (path A, Ready-to-Repair). Sub-agent 9 is the second path (path B, filling freed slots). It starts at L2, with the owner approving the call list, and moves to L3.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="qtag">The deep path</span><h2>One ticket, end to end: a washing machine in Eluru</h2></div>
+  <p>Who talks to whom, in order. The customer hears only the agency's name. Look at steps 6–9: all three rails work while the customer does nothing, and that invisible stretch is where the second trip disappears.</p>
+  <div class="diagram"><pre class="mermaid">
+sequenceDiagram
+  autonumber
+  participant C as Customer (Amma)
+  participant P as Payer (daughter)
+  participant A as Agency sheet / WhatsApp
+  participant K as Kokila
+  participant G as Gnani voice
+  participant RG as RepairGraph
+  participant PL as Pine Labs
+  participant D as Shop / Delhivery
+  participant T as Technician
+  C->>A: "Washing machine not taking water"
+  A->>K: New ticket (row / message)
+  K->>G: Outbound call in the agency's name, Telugu
+  G->>C: Symptom? Error code? (read back, press 1)
+  K-->>C: WhatsApp link: label photo + 10 s video
+  K->>RG: Model + symptom + code + video
+  RG-->>K: Inlet valve 78% · pipe 12% · ₹1,400–2,100
+  K->>PL: POST /mpp/v1/mandate (budget ₹2,500)
+  PL-->>P: UPI approval request (QR / deep link)
+  P-->>PL: Approves in UPI app
+  K->>G: Call local shop: "LG inlet valve in stock?"
+  G-->>K: Yes, held till 6 PM
+  K->>D: Maps travel times for 3 free technicians
+  Note over K: READY GATE: machine known ✓ fault likely ✓<br/>part held ✓ budget approved ✓ → slot 10–12
+  K->>T: WhatsApp job card + Telugu voice summary
+  K->>A: Status written back to the agency's row
+  T->>C: Visit · check-in → visit fee captured
+  T->>G: "Pipe also worn, one-eighty" (press 1)
+  K->>K: Fair range ₹150–250 ✓ within budget ✓
+  K-->>P: WhatsApp: ₹180 extra, auto-approved within budget
+  C->>G: "Is it working?" → "Yes" (press 1)
+  K->>PL: Capture ₹1,980 · split agency / shop / technician
+  K->>RG: Outcome logged → confidence updated
+  K-->>A: Owner digest: 1 trip saved, ₹500
+  </pre></div>
+  <p class="cap">Every number here is an example. RepairGraph's percentages come from our own model, not from any partner. Gnani transcribes, and Kokila diagnoses. Delhivery returns travel times, and Kokila picks the technician. Pine Labs caps the amount, and Kokila checks the scope.</p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="qtag">Q3</span><h2>States: the happy flow and every exit from it</h2></div>
+  <p>The Ready gate is the heart of the design. A slot is confirmed only when all four checks pass. Every failure lands in a named state, so a customer is never left in silence.</p>
+  <div class="diagram"><pre class="mermaid">
+stateDiagram-v2
+  direction LR
+  [*] --> TicketIn
+  TicketIn --> Intake
+  Intake --> MachineKnown: model read back ✓
+  Intake --> Intake: U1 misheard → keypad
+  MachineKnown --> Diagnosed
+  MachineKnown --> BrandClaim: U4 in warranty
+  Diagnosed --> Approved: confidence high
+  Diagnosed --> DiagnosticVisit: U3 low confidence (honest label, no promise)
+  Approved --> PartSecured
+  Approved --> Held: U5 payer silent (nothing spent)
+  Held --> Approved
+  PartSecured --> READY_GATE
+  PartSecured --> PartSecured: U7/U8 late part → new window
+  READY_GATE --> OnSite: tech + part + budget + customer
+  OnSite --> OnSite: U10 extra fault → budget check / UPI
+  OnSite --> Dispatch_again: U9 no-show → reassign
+  Dispatch_again --> READY_GATE
+  OnSite --> Tested
+  Tested --> Settled: customer says yes + video
+  Tested --> Revisit: U13 fails (₹500 credit if Ready)
+  Revisit --> OnSite
+  Settled --> Learned
+  Learned --> [*]
+  DiagnosticVisit --> Approved
+  BrandClaim --> Approved
+  </pre></div>
+  <div class="tbl"><table>
+    <thead><tr><th>State</th><th>Reads</th><th>Writes</th><th>Human involved?</th></tr></thead>
+    <tbody>
+      <tr><td>Intake</td><td>Tickets</td><td>Evidence (transcript, code, media)</td><td>No</td></tr>
+      <tr><td>Machine known</td><td>Machine Passport, warranty</td><td>Machines</td><td>No</td></tr>
+      <tr><td>Diagnosed</td><td>RepairGraph</td><td>Diagnosis (top-2, confidence)</td><td>Senior technician confirms during the pilot (L2)</td></tr>
+      <tr><td>Approved</td><td>Price book</td><td>Mandates</td><td>Payer, in their UPI app</td></tr>
+      <tr><td>Part secured</td><td>Inventory, shop list</td><td>Holds, Shipments</td><td>Dispatcher during the pilot</td></tr>
+      <tr><td>Ready gate</td><td>Technicians, Schedule</td><td>Schedule</td><td>Owner taps OK during the pilot</td></tr>
+      <tr><td>On site → Settled</td><td>Job card</td><td>Payments, split</td><td>Payer, only above the budget</td></tr>
+      <tr><td>Learned</td><td>Outcome</td><td>Passport, RepairGraph, Campaigns</td><td>No</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="qtag">Q4</span><h2>Each rail: what we send it, what comes back, what's missing</h2></div>
+  <p>The headline: none of the three rails knows what a technician, a job or a machine is. Nothing commits a part, a person and a ready customer to one time slot.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Rail</th><th>What we send it</th><th>What comes back</th><th>When it fails</th><th>What it must never do</th><th>What exists today</th><th>Build status</th></tr></thead>
+    <tbody>
+      <tr><td>Gnani: intake</td><td>Agent Builder call as the agency; <span class="mono">POST /stt/v3</span>; TTS read-back</td><td>Transcript, filled variables, keypad digits, recording</td><td>Code-mixed model numbers; noise; no confidence score</td><td>Diagnose; treat a spoken "yes" as approval to spend</td><td>STT/TTS, DTMF, sentiment handoff, Zoho Desk integration</td><td><span class="pill ok">Exists</span></td></tr>
+      <tr><td>Gnani: outbound</td><td>Parts-shop call; technician's voice report</td><td>Stock + price as data; part + amount confirmed with press 1</td><td>"Maybe tomorrow" (a conditional promise)</td><td>Record "I'll try" as a firm yes</td><td>Outbound calls, variables</td><td><span class="pill part">Ask: extract conditional commitments</span></td></tr>
+      <tr><td>Gnani: machine sound</td><td>10-second clip of the running machine</td><td>Filtered away</td><td>Always, by design</td><td>n/a</td><td>Background-noise filter</td><td><span class="pill build">Ask: raw capture mode</span></td></tr>
+      <tr><td>Pine Labs: budget</td><td><span class="mono">POST /mpp/v1/mandate</span>; Grantex <span class="mono">max_txn_paise</span></td><td>UPI deep link / QR; <span class="mono">GET /mpp/v1/balance</span></td><td>Payer doesn't approve</td><td>Spend above the budget</td><td>P3P, Grantex, UPI OTM / Reserve Pay</td><td><span class="pill ok">Exists</span></td></tr>
+      <tr><td>Pine Labs: capture</td><td>Capture on check-in and on a passed test; split</td><td>Payment receipt, settlement, refund</td><td>Timeout → risk of a double charge</td><td>Capture before proof of work</td><td>Capture, refunds, split, payouts</td><td><span class="pill part">Ask: capture on a real-world event; delegate payer</span></td></tr>
+      <tr><td>Delhivery Maps</td><td>Messy tier-3 address; technician locations</td><td>Geocode, cleaned address, two-wheeler travel-time matrix</td><td>Landmark-only addresses</td><td>Pick the technician</td><td>10 APIs + MCP server</td><td><span class="pill ok">Exists</span></td></tr>
+      <tr><td>Delhivery parcels</td><td>Part to a technician; reverse pickup</td><td>Serviceability, tracking push, failed-delivery event</td><td>Tier-3, 2-day delivery</td><td>Deliver to an address when the job needs a person</td><td>Forward/reverse, tracking push</td><td><span class="pill part">Ask: delivery to a person by a deadline</span></td></tr>
+      <tr><td>Agency connector</td><td>WhatsApp, sheet, Zoho Desk or portal ticket</td><td>Normalised ticket; status written back</td><td>Tickets typed inconsistently</td><td>Change records without a log</td><td>WhatsApp Business, Sheets, Zoho APIs</td><td><span class="pill build">We build (simple)</span></td></tr>
+      <tr><td>RepairGraph</td><td>Model + symptom + code + video</td><td>Top-2 faults, parts, labour time, price range, confidence</td><td>A model it has never seen</td><td>Claim certainty it doesn't have</td><td>Nothing shared across brands</td><td><span class="pill build">We build: the moat</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="qtag">Q5</span><h2>Layers and modules, and the fourth rail</h2></div>
+  <p>Voice, money and parcels already exist. What's missing is knowledge of what fails inside the machine. We build it as RepairGraph, give it free to certified agencies, and every job they close teaches it something.</p>
+  <div class="diagram"><pre class="mermaid">
+flowchart TB
+  subgraph L1["1 · CHANNELS: where the work already happens"]
+    c1["Agency phone / IVR"]
+    c2["Agency WhatsApp Business"]
+    c3["Sheet · Zoho Desk · brand portal"]
+  end
+  subgraph L2["2 · BRAIN"]
+    o["Kokila Orchestrator"]
+    pe["Policy engine + audit log"]
+  end
+  subgraph L3["3 · SUB-AGENTS"]
+    a1["Intake"] --- a2["Identify"] --- a3["Diagnose"] --- a4["Quote &amp; Approve"]
+    a5["Parts Sourcing"] --- a6["Dispatch"] --- a7["Field Assist"] --- a8["Close &amp; Settle"] --- a9["Revenue"]
+  end
+  subgraph L4["4 · MODULES ON PARTNER RAILS"]
+    m1["Voice module · Gnani"]
+    m2["Authorisation &amp; Payments · Pine Labs"]
+    m3["Location &amp; Logistics · Delhivery"]
+    m4["Messaging · WhatsApp"]
+  end
+  subgraph L5["5 · TRUTH: the fourth rail"]
+    t1[("RepairGraph<br/>brand-neutral fault knowledge")]
+    t2[("Machine Passport<br/>one ID per machine")]
+    t3[("Agency ops DB<br/>tickets · techs · stock · schedule")]
+    t4[("Price book")]
+  end
+  L1 --> L2 --> L3 --> L4
+  L3 --> L5
+  </pre></div>
+
+  <div class="grid2">
+    <div class="diagram"><pre class="mermaid">
+erDiagram
+  BRAND ||--o{ MODEL : makes
+  MODEL ||--o{ COMPONENT : contains
+  COMPONENT ||--o{ FAILURE_MODE : "fails as"
+  FAILURE_MODE ||--o{ SYMPTOM : "shows as (Te/Hi/En)"
+  FAILURE_MODE ||--o{ DIAG_TEST : "confirmed by"
+  FAILURE_MODE ||--o{ PART_SKU : "fixed with"
+  PART_SKU ||--o{ PART_SKU : "compatible alternate"
+  FAILURE_MODE ||--|| PRICE_BAND : "labour + parts"
+  MACHINE }o--|| MODEL : "is a"
+  MACHINE ||--o{ REPAIR_RECORD : passport
+  REPAIR_RECORD }o--|| FAILURE_MODE : "confirmed"
+    </pre></div>
+    <div class="tbl"><table style="min-width:0">
+      <thead><tr><th>Phase</th><th>Machines</th><th>Why this order</th></tr></thead>
+      <tbody>
+        <tr><td>1 · months 0–3</td><td>TV, microwave, RO purifier, washing machine</td><td>High volume, few failure modes, cheap parts</td></tr>
+        <tr><td>2 · months 3–9</td><td>AC, fridge, geyser</td><td>Seasonal peaks; gas work needs L2 safety rules</td></tr>
+        <tr><td>3 · months 9+</td><td>Laptops, phones</td><td>Board-level faults, brand-locked parts</td></tr>
+        <tr><td>Later</td><td>Refurbished-parts marketplace</td><td>Working parts harvested from scrapped machines, graded by RepairGraph: a second revenue stream</td></tr>
+      </tbody>
+    </table></div>
+  </div>
+  <div class="note"><b>Give to get.</b> Certified agencies get the full graph free, plus a "Kokila Certified: one-trip guaranteed" badge that customers see. In return, anonymised fault → part → outcome links from their jobs feed the graph. Their customers and prices stay theirs.</div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="qtag">Q6</span><h2>No new app: Kokila plugs into what the agency already uses</h2></div>
+  <div class="diagram"><pre class="mermaid">
+flowchart LR
+  subgraph Agency["The agency's existing world"]
+    ph["Shop phone number"]
+    wa["WhatsApp Business number"]
+    sh["Register sheet / Zoho Desk"]
+    bp["Brand portal job emails"]
+  end
+  ph -- "call forwarding" --> K{{"Kokila"}}
+  wa -- "WhatsApp Business API" --> K
+  sh -- "sheet / API connector, status written back" --> K
+  bp -- "email parser" --> K
+  K -- "calls as 'Kokila from Sri Sai Electronics'" --> cu["Customer"]
+  K -- "UPI budget request" --> py["Payer"]
+  K -- "WhatsApp job card + voice line" --> te["Technician"]
+  K -- "exceptions only" --> di["Dispatcher"]
+  K -- "evening digest: trips + ₹ saved" --> ow["Owner"]
+  K -- "plain phone call" --> ps["Parts shop"]
+  </pre></div>
+  <div class="tbl"><table>
+    <thead><tr><th>Agency type</th><th>Where tickets live today</th><th>How Kokila connects</th><th>Setup</th></tr></thead>
+    <tbody>
+      <tr><td>Small crew (about 10 people)</td><td>Owner's phone + WhatsApp group</td><td>Number forwarded to Gnani; Kokila joins the WhatsApp Business inbox</td><td>1 day</td></tr>
+      <tr><td>Mid-size multi-brand</td><td>Excel / Google Sheet</td><td>Sheet connector reads new rows and writes status back</td><td>2–3 days</td></tr>
+      <tr><td>Authorised centre</td><td>Zoho Desk / Freshdesk / brand portal</td><td>API or webhook; portal emails read automatically</td><td>1–2 weeks</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <div class="sec-head"><span class="qtag">Q7</span><h2>The name</h2></div>
+  <p class="meme">Kokila.<small>Kokilaben asked "Rasode mein kaun tha?" (who was in the kitchen?). Our Kokila asks "Machine mein kya tha?" (what's wrong inside the machine?) and won't let anyone leave the shop until she knows. Tagline for agencies: <i>"Pehli trip mein fix. Baaki Kokila dekh legi."</i> (Fixed on the first trip. Kokila handles the rest.)</small></p>
+</section>
+
+<section>
+  <div class="sec-head"><span class="qtag">Q8</span><h2>Who else could build this</h2></div>
+  <p>Two questions separate the field: who pays the company, and does it work across many brands? Kokila is the only one that pays off for independent, multi-brand agencies.</p>
+  <div class="diagram">
+    <svg class="pos-svg" viewBox="0 0 720 440" role="img" aria-label="Positioning map: who pays versus brand coverage">
+      <rect x="80" y="20" width="600" height="360" fill="var(--surface)" stroke="var(--rule)"/>
+      <line x1="380" y1="20" x2="380" y2="380" stroke="var(--rule)" stroke-dasharray="4 4"/>
+      <line x1="80" y1="200" x2="680" y2="200" stroke="var(--rule)" stroke-dasharray="4 4"/>
+      <text x="380" y="410" text-anchor="middle" font-size="13" fill="var(--muted)">Who pays: household ←  → agency or brand</text>
+      <text x="30" y="200" text-anchor="middle" font-size="13" fill="var(--muted)" transform="rotate(-90 30 200)">Single brand ←  → multi-brand</text>
+      <g font-size="13" fill="var(--ink)">
+        <circle cx="170" cy="80" r="7" fill="var(--muted)"/><text x="182" y="85">Urban Company</text>
+        <circle cx="150" cy="130" r="7" fill="var(--muted)"/><text x="162" y="135">Housejoy</text>
+        <circle cx="230" cy="160" r="7" fill="var(--muted)"/><text x="242" y="165">NoBroker Services</text>
+        <circle cx="130" cy="340" r="7" fill="var(--muted)"/><text x="142" y="345">Pronto (house help)</text>
+        <circle cx="560" cy="300" r="7" fill="var(--red)"/><text x="572" y="305">Servify</text>
+        <circle cx="470" cy="345" r="7" fill="var(--muted)"/><text x="482" y="350">Brand service networks</text>
+        <circle cx="470" cy="150" r="7" fill="var(--muted)"/><text x="482" y="155">Justdial / Sulekha (leads)</text>
+        <circle cx="590" cy="70" r="11" fill="var(--accent)" stroke="var(--ink)" stroke-width="1.5"/><text x="560" y="100" font-weight="700">Kokila</text>
+      </g>
+    </svg>
+  </div>
+  <div class="note"><b>Best chance: Servify.</b> It already runs after-sales for brands like Apple and Samsung, coordinating about 18,000 service centres. It hasn't built Kokila because its customers are the brands, and brands have no reason to help independent multi-brand agencies or share fault data with them. That's where most tier-2 and tier-3 repairs happen.</div>
+</section>
+
+<footer>Team TripleIT · Round 2 submission workings · 25 Sep 2026. Rail facts come from partner documentation read on 24 Sep. All rupee figures are stated assumptions, not measurements.</footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
+<script>
+  const dark = document.documentElement.dataset.theme === 'dark' ||
+    (!document.documentElement.dataset.theme && window.matchMedia('(prefers-color-scheme: dark)').matches);
+  mermaid.initialize({ startOnLoad: true, theme: dark ? 'dark' : 'neutral', securityLevel: 'loose',
+    fontFamily: '"IBM Plex Sans", system-ui, sans-serif', sequence: { useMaxWidth: false } });
+</script>
+</body>
+</html>
