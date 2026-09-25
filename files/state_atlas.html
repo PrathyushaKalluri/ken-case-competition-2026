@@ -1,0 +1,478 @@
+<title>Repair Economy State Atlas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+:root{
+  --paper:#EEF2F1; --surface:#FFFFFF; --ink:#15242A; --muted:#566A70; --rule:#C7D2D1;
+  --happy:#0B7A64; --happy-soft:#DDF0EA; --unhappy:#BF3526; --unhappy-soft:#FBE7E3;
+  --infra:#A86A0C; --infra-soft:#FBF0DC; --sel:#15242A; --chip:#E3E9E8;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --body:"Source Sans 3","Segoe UI",Helvetica,Arial,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#0E1618; --surface:#162226; --ink:#E4EDEB; --muted:#93A7AB; --rule:#2B3B3F;
+    --happy:#3BC49F; --happy-soft:#123029; --unhappy:#F0735F; --unhappy-soft:#3A1C17;
+    --infra:#E3A93C; --infra-soft:#35280F; --sel:#E4EDEB; --chip:#22323A;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0E1618; --surface:#162226; --ink:#E4EDEB; --muted:#93A7AB; --rule:#2B3B3F;
+  --happy:#3BC49F; --happy-soft:#123029; --unhappy:#F0735F; --unhappy-soft:#3A1C17;
+  --infra:#E3A93C; --infra-soft:#35280F; --sel:#E4EDEB; --chip:#22323A;
+}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;margin:0;padding-inline:clamp(16px,3vw,40px);padding-block:28px 64px}
+h1,h2,h3{font-family:var(--display);font-weight:700;letter-spacing:.01em;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,5vw,56px);line-height:1}
+h2{font-size:28px;margin-block:44px 6px}
+h3{font-size:19px}
+p{margin:0}
+.lede{max-width:68ch;color:var(--muted);font-size:17px;margin-top:10px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.section-note{max-width:70ch;color:var(--muted);margin-bottom:14px}
+.mono{font-family:var(--mono);font-size:12px}
+
+/* legend */
+.legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:18px;align-items:center;font-size:13px}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend svg{flex:none}
+
+/* controls */
+.controls{display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;margin-block:22px 12px}
+.controls label{font-size:13px;color:var(--muted);display:inline-flex;gap:6px;align-items:center}
+select,button{font:inherit;font-size:13px;color:var(--ink);background:var(--surface);border:1px solid var(--rule);border-radius:6px;padding:5px 10px;cursor:pointer}
+button[aria-pressed="true"]{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+button:focus-visible,select:focus-visible,.node:focus-visible,input:focus-visible{outline:2px solid var(--happy);outline-offset:2px}
+
+/* map + panel */
+.workspace{display:grid;grid-template-columns:minmax(0,1fr) 360px;gap:18px;align-items:start}
+@media (max-width:1000px){.workspace{grid-template-columns:1fr}}
+.mapwrap{overflow:auto;background:var(--surface);border:1px solid var(--rule);border-radius:8px;max-height:78vh}
+.mapwrap.fit{max-height:none}
+.mapwrap.fit svg{width:100%;height:auto}
+#map{display:block}
+.panel{position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px);background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:18px;max-height:calc(100vh - 24px);overflow:auto}
+.panel h3{font-size:24px;line-height:1.1;margin-block:4px 8px}
+.panel .kind{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+.panel .kind.happy{color:var(--happy)} .panel .kind.unhappy{color:var(--unhappy)}
+.panel dl{margin:12px 0 0;display:grid;gap:10px}
+.panel dt{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.panel dd{margin:2px 0 0}
+.roles{list-style:none;padding:0;margin:4px 0 0;display:grid;gap:6px}
+.roles li{display:grid;grid-template-columns:44px 1fr;gap:8px;font-size:14px}
+.code{font-family:var(--mono);font-size:11px;background:var(--chip);border-radius:4px;padding:1px 5px;align-self:start;text-align:center}
+.cap{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600}
+.quote{border-left:3px solid var(--rule);padding-left:10px;color:var(--muted);font-size:14px}
+.linkish{color:var(--happy);text-decoration:underline;cursor:pointer;background:none;border:0;padding:0;font:inherit}
+
+/* svg classes */
+.lane-title{font-family:var(--display);font-weight:700;font-size:20px;fill:var(--ink)}
+.lane-sub{font-family:var(--body);font-size:12.5px;fill:var(--muted)}
+.lane-rule{stroke:var(--rule);stroke-width:1}
+.n-rect.happy{fill:var(--surface);stroke:var(--happy);stroke-width:1.6}
+.n-rect.unhappy{fill:var(--unhappy-soft);stroke:var(--unhappy);stroke-width:1.4;stroke-dasharray:5 3}
+.n-id{font-family:var(--mono);font-size:10px;fill:var(--muted)}
+.n-name{font-family:var(--display);font-weight:600;font-size:14.5px;fill:var(--ink)}
+.n-foot{font-family:var(--body);font-size:11px;fill:var(--muted)}
+.n-foot.unhappy{fill:var(--unhappy)}
+.e-happy{stroke:var(--happy);stroke-width:1.8;fill:none}
+.e-unhappy{stroke:var(--unhappy);stroke-width:1.4;stroke-dasharray:4 3;fill:none}
+.e-label{font-family:var(--body);font-size:10.5px;fill:var(--muted)}
+.g-exists{fill:var(--ink)} .g-line{stroke:var(--ink);stroke-width:1.3;fill:none}
+.g-infra{fill:var(--infra-soft);stroke:var(--infra);stroke-width:1.5}
+.ah-happy{fill:var(--happy)} .ah-unhappy{fill:var(--unhappy)}
+.node{cursor:pointer}
+.node:hover .n-rect{stroke-width:2.4}
+.node.sel .n-rect{stroke:var(--sel);stroke-width:2.6;stroke-dasharray:none}
+.dim{opacity:.16}
+.hide-unhappy .u{display:none}
+
+/* grids and tables */
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.card{background:var(--surface);border:1px solid var(--rule);border-radius:8px;padding:12px 14px;display:grid;gap:4px;align-content:start}
+.card b{font-family:var(--display);font-size:17px;font-weight:600}
+.card .jtbd{font-size:14px}
+.card .want{font-size:13px;color:var(--muted)}
+.tablewrap{overflow-x:auto;background:var(--surface);border:1px solid var(--rule);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:760px}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--rule)}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500;background:var(--paper)}
+td.num{font-variant-numeric:tabular-nums;text-align:right;font-family:var(--mono);font-size:13px}
+tr.lanehead td{background:var(--chip);font-family:var(--display);font-weight:600;font-size:16px}
+tr.u td:first-child{color:var(--unhappy)}
+.ledger{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.gaps{margin:0;padding-left:18px;display:grid;gap:6px;font-size:14px}
+footer{margin-top:40px;color:var(--muted);font-size:13px;max-width:80ch}
+@media (prefers-reduced-motion:no-preference){.node .n-rect{transition:stroke-width .12s}}
+</style>
+
+<header>
+  <p class="eyebrow">Opening 11 · Keeping the machines running · Round 2 scope map</p>
+  <h1>Repair Economy State Atlas</h1>
+  <p class="lede">Nine workflows that keep India's household machines running, drawn as state machines. Each state shows who does what, where an AI agent could step in, and whether Gnani, Pine Labs and Delhivery can support that step today. Click any state for details.</p>
+  <div class="legend" aria-label="Legend">
+    <span><svg width="40" height="12" aria-hidden="true"><line x1="0" y1="6" x2="32" y2="6" class="e-happy"/><polygon points="32,2 40,6 32,10" class="ah-happy"/></svg>Happy flow</span>
+    <span><svg width="40" height="12" aria-hidden="true"><line x1="0" y1="6" x2="32" y2="6" class="e-unhappy"/><polygon points="32,2 40,6 32,10" class="ah-unhappy"/></svg>Unhappy flow (failure and recovery)</span>
+    <span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" class="g-exists"/></svg>Rail supports it today</span>
+    <span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" class="g-line"/><path d="M7 1.5 A5.5 5.5 0 0 1 7 12.5 Z" class="g-exists"/></svg>Partly exists</span>
+    <span><svg width="14" height="14" aria-hidden="true"><circle cx="7" cy="7" r="5.5" class="g-line"/></svg>Must be built (agent or app layer)</span>
+    <span><svg width="14" height="14" aria-hidden="true"><polygon points="7,1 13,7 7,13 1,7" class="g-infra"/></svg>Missing infrastructure (fourth-rail candidate)</span>
+    <span class="mono">V = Gnani voice · P = Pine Labs payments · L = Delhivery logistics</span>
+  </div>
+</header>
+
+<h2>The map</h2>
+<p class="section-note">Lanes read left to right. Red dashed states hang below the step where things go wrong; the ↩ label says where the flow recovers, and → marks a handoff to another lane. Use the filters to see one stakeholder's part, or only the steps a rail cannot support yet.</p>
+
+<div class="controls">
+  <label for="who">Highlight stakeholder
+    <select id="who"><option value="">Everyone</option></select>
+  </label>
+  <span class="mono" style="color:var(--muted)">Capability:</span>
+  <button type="button" id="cap-all" aria-pressed="true" data-cap="">All</button>
+  <button type="button" id="cap-exists" aria-pressed="false" data-cap="exists">Exists</button>
+  <button type="button" id="cap-partial" aria-pressed="false" data-cap="partial">Partial</button>
+  <button type="button" id="cap-build" aria-pressed="false" data-cap="build">Must build</button>
+  <button type="button" id="cap-infra" aria-pressed="false" data-cap="infra">Missing infra</button>
+  <label for="show-u"><input type="checkbox" id="show-u" checked> Show unhappy flows</label>
+  <button type="button" id="fit" aria-pressed="false">Fit map to screen</button>
+</div>
+
+<div class="workspace">
+  <div class="mapwrap" id="mapwrap">
+    <svg id="map" role="img" aria-label="State-transition map of nine repair workflows: preventive care, breakdown repair, warranty, take-away repair, repair or replace, technician and agency day, parts supply, shared and rented assets, and critical machines. Happy flows run left to right in green; failures branch below in red."></svg>
+  </div>
+  <aside class="panel" id="panel" aria-live="polite"></aside>
+</div>
+
+<h2>Stakeholders and their jobs to be done</h2>
+<p class="section-note">Sixteen parties touch a repair. The codes appear in the map's detail panel and in the filter.</p>
+<div class="cards" id="stakeholders"></div>
+
+<h2>Where the money is</h2>
+<p class="section-note">Each workflow has its own revenue pool, payer and metric. The AI step that unlocks it is where a product can charge.</p>
+<div class="tablewrap"><table id="money"></table></div>
+
+<h2>Capability ledger</h2>
+<p class="section-note">Counted across every state and failure in the map. The missing-infrastructure list is the shortlist for a fourth rail.</p>
+<div class="ledger" id="ledger"></div>
+
+<h2>Full state index</h2>
+<p class="section-note">Every state in one table, for reading without the map.</p>
+<div class="tablewrap"><table id="index"></table></div>
+
+<footer>Built for Team TripleIT, Round 2, 25 September 2026. Rail capabilities come from the public docs read on 24 September 2026 (see round2_strategy.md §3). Quotes are from the team's interviews. Stakeholder goals and money pools are our analysis, not partner statements.</footer>
+
+<script>
+const STAKE = [
+ ["HH","Household user","At home, uses the machine","Get it working again without losing my day"],
+ ["PY","Payer / decision-maker","Often family in another city","Pay a fair price, no surprises, even from far away"],
+ ["TC","Technician","Independent or in a crew","Fill my day with paid repairs, not trips; get paid on time"],
+ ["AG","Agency / crew lead","Assigns jobs, owns the customer","More completed jobs per technician; fewer repeat visits"],
+ ["MP","Service marketplace","App platforms","Own the booking and keep customers on the platform"],
+ ["OEM","Brand & authorised service","Manufacturer and its franchises","Lower warranty cost; loyal customers"],
+ ["PS","Parts shop / distributor","Local counter or wholesaler","Sell stock faster; less dead inventory"],
+ ["LG","Logistics (Delhivery)","Parcels, returns, maps","More urgent, high-value parts and returns on its network"],
+ ["PG","Payments (Pine Labs)","Mandates, capture, payouts","More agent-initiated payments on its rails, safely"],
+ ["VC","Voice (Gnani)","Phone and voice agents","More voice minutes doing real transactional work"],
+ ["LL","Landlord / owner","Owns a rented home's machines","Control repair costs without weekly calls"],
+ ["RWA","Society / facility manager","Common machines: lifts, pumps","Keep shared machines running with a trusted panel"],
+ ["INS","Insurer / extended warranty","Protection plans","Pay only valid claims"],
+ ["FIN","Lender / EMI","Finances big purchases","Finance repairs and replacements at low risk"],
+ ["RCY","Exchange / recycler","Old units and e-waste","Collect and scrap old units legally, at volume"],
+ ["GOV","Regulators","Right to Repair, RBI, TRAI","Consumers can repair; payments and calls stay safe"]
+];
+
+// cap: exists | partial | build | infra ; r: rail letters
+const LANES = [
+{ id:"M", name:"1 · Preventive care", jtbd:"Keep it running without having to remember", money:"AMC plans, consumables, seasonal servicing",
+  states:[
+  {id:"M1",n:"Machine|registered",roles:[["HH","Shares a label photo or invoice once"],["OEM","Holds the product registration"]],ai:["Intake","Reads model and serial from a photo and creates the machine record"],cap:"infra",r:"",note:"No shared machine-identity layer; each brand keeps its own records"},
+  {id:"M2",n:"Service due|worked out",roles:[["HH","Nothing to do"]],ai:["Care scheduler","Works out the due date from last service, season and usage (AC before summer, RO filter by litres)"],cap:"build",r:""},
+  {id:"M3",n:"Reminder|delivered",roles:[["VC","Places the reminder call in the household's language"],["HH","Says yes or later"]],ai:["Care scheduler","Calls, then texts, at a time the household chose"],cap:"exists",r:"V",note:"Gnani voice agent with outbound call trigger and SMS action",q:"Sai Kakki: \"I would like them to schedule the annual servicing remembering the date.\""},
+  {id:"M4",n:"Service|booked",roles:[["AG","Offers a slot"],["MP","Offers a slot"],["HH","Confirms the window"]],ai:["Guardian","Books within a standing permission"],cap:"partial",r:"P",note:"Recurring payment exists (Subscriptions, UPI Autopay); booking a slot across vendors does not"},
+  {id:"M5",n:"Consumables|delivered",roles:[["PS","Supplies the filter or gas"],["LG","Delivers before the visit"]],ai:["Parts","Orders consumables ahead of the visit"],cap:"exists",r:"L",note:"Forward shipment and tracking"},
+  {id:"M6",n:"Serviced",roles:[["TC","Runs the checklist and notes wear"],["HH","Lets the technician in"]],ai:["Tech copilot","Model-specific checklist; flags parts close to failure"],cap:"build",r:""},
+  {id:"M7",n:"Paid and|recorded",roles:[["PG","Debits the plan"],["HH","Gets a receipt"]],ai:["Pay & authority","Debits within the plan; files the service in the machine history"],cap:"partial",r:"P",note:"The debit exists; the service record has nowhere shared to live"}
+  ],
+  unhappy:[
+  {id:"MU1",from:"M3",n:"Reminder|ignored",roles:[["HH","Forgets or postpones"],["PY","Gets a nudge"]],ai:["Care scheduler","Escalates to the payer, then re-offers"],rec:"M3",cap:"build",r:"V"},
+  {id:"MU2",from:"M4",n:"Contract|lapsed",roles:[["AG","Forgets the renewal call"]],ai:["Care scheduler","Renews or re-offers before expiry"],rec:"M4",cap:"build",r:"P",q:"Industry commentary in our research: AMC vendors track renewals in Excel and lose 20–30% of renewals to forgetting."},
+  {id:"MU3",from:"M6",n:"Fault found|in service",roles:[["TC","Finds a worn or failing part"]],ai:["Diagnosis","Opens a repair case with the evidence already attached"],to:"Lane 2 · B5",cap:"build",r:""}
+  ]},
+{ id:"B", name:"2 · Breakdown repair at home", jtbd:"Restore the routine fast, at a fair price, first time", money:"Visit fee, labour, parts margin; technician capacity",
+  states:[
+  {id:"B1",n:"Fault|noticed",roles:[["HH","Notices; the routine breaks"]],ai:["Care scheduler","Early warning from appliance data or a power-draw plug"],cap:"infra",r:"",note:"Few Indian appliances are connected; no shared telemetry"},
+  {id:"B2",n:"Self-fix|tried",roles:[["HH","Tries a remembered fix, asks family"],["VC","Can guide by voice"]],ai:["Intake","Suggests safe first checks only: plug, valve, reset"],cap:"partial",r:"V",note:"Agent knowledge base exists; safety rules must be built",q:"Sai Kakki: they had told her a few steps for the inlet problem; she followed them, and it still failed."},
+  {id:"B3",n:"Problem|reported",roles:[["HH","Calls a known technician, an app or a helpline"],["VC","Answers in Telugu, Hindi or English"]],ai:["Intake","Takes the report by voice, any time"],cap:"exists",r:"V",note:"Gnani Agent Builder, STT, DTMF keypad capture"},
+  {id:"B4",n:"Evidence|gathered",roles:[["HH","Sends label photo, video, sound, error code"],["VC","Asks targeted questions"]],ai:["Intake","Reads codes back; sends a link for photos and sound"],cap:"partial",r:"V",note:"Voice exists; voice agents take no images, and the noise filter removes machine sound"},
+  {id:"B5",n:"Fault|triaged",roles:[["TC","Optional remote second opinion"],["OEM","Warranty data, if shared"]],ai:["Diagnosis","Ranks likely faults and parts; sets a safety class; checks warranty"],cap:"infra",r:"",note:"Needs model-to-fault and model-to-part data that no rail holds",to:"Lane 3 · W1 if under warranty; Lane 5 · R1 if not worth repairing"},
+  {id:"B6",n:"Provider|matched",roles:[["AG","Assigns by skill"],["MP","Offers its own technician"],["HH","Keeps a preferred technician"]],ai:["Dispatch","Matches skill first, travel time second"],cap:"partial",r:"L",note:"Delhivery Maps gives travel times; there is no technician roster or skill data on any rail"},
+  {id:"B7",n:"Limit|approved",roles:[["PY","Approves one limit in their UPI app"],["HH","Told who is paying"],["PG","Holds the mandate"]],ai:["Pay & authority","Sets the cap and never exceeds it"],cap:"exists",r:"P",note:"P3P mandate (one-time, Reserve Pay, card) plus Grantex per-transaction cap"},
+  {id:"B8",n:"Part|readied",roles:[["PS","Holds the part"],["LG","Ships it to the technician"],["PG","Pays the shop"]],ai:["Parts","Finds stock by calling shops; orders the likely part"],cap:"partial",r:"L",note:"Parcel shipping exists; delivery to a person before a job slot does not"},
+  {id:"B9",n:"Visit|confirmed",roles:[["HH","Gets name, photo and window"],["TC","Gets the job card"]],ai:["Dispatch","Confirms only when address, technician, part and household window all hold"],cap:"build",r:"",note:"No rail commits a person, a part and a time window together"},
+  {id:"B10",n:"On-site|diagnosis",roles:[["TC","Confirms the fault"],["HH","Explains what happened"]],ai:["Tech copilot","Shows the evidence, history and likely cause"],cap:"build",r:"",to:"Lane 4 · T1 if bench repair is needed"},
+  {id:"B11",n:"Repaired",roles:[["TC","Fits the part; photographs old and new"],["HH","Watches"]],ai:["Tech copilot","Records which part went in"],cap:"build",r:"",q:"Maggi gives a \"very strict order\" that only the agreed part is replaced, because her mother \"will not recheck it.\""},
+  {id:"B12",n:"Working|confirmed",roles:[["HH","Confirms by voice or keypad"],["VC","Places the confirmation call"]],ai:["QA & disputes","Treats a passed test as the only way to close"],cap:"exists",r:"V"},
+  {id:"B13",n:"Settled",roles:[["PG","Captures within the limit; splits to agency, shop, technician"],["PY","Gets the receipt"]],ai:["Pay & authority","Captures, releases the rest, pays everyone"],cap:"partial",r:"P",note:"Capture, split and payout exist; capture triggered by a real-world event does not"},
+  {id:"B14",n:"Follow-up",roles:[["VC","Seven-day check call"],["HH","Says whether it still works"]],ai:["Care scheduler","Records the outcome to the machine history"],cap:"partial",r:"V",note:"The call exists; a shared machine history does not"}
+  ],
+  unhappy:[
+  {id:"BU1",from:"B2",n:"Self-fix made|it worse",roles:[["HH","Tried something unsafe"]],ai:["Safety","Stops DIY advice; routes to a qualified technician"],rec:"B3",cap:"build",r:""},
+  {id:"BU2",from:"B3",n:"No one|answers",roles:[["HH","Stuck in helpline loops"]],ai:["Guardian","Keeps chasing; offers alternatives"],rec:"B6",cap:"exists",r:"V",q:"Sai Kakki described long helpline waits and repeated follow-ups to check whether a technician would come."},
+  {id:"BU3",from:"B4",n:"Code or model|misheard",roles:[["HH","Repeats"]],ai:["Intake","Reads back; asks for keypad entry"],rec:"B4",cap:"partial",r:"V",note:"Gnani documents no recognition confidence"},
+  {id:"BU4",from:"B5",n:"Unsafe|work",roles:[["TC","Qualified technician only"]],ai:["Safety","Gas, wiring, refrigerant: safety hold"],rec:"B6",cap:"build",r:""},
+  {id:"BU5",from:"B6",n:"No-show|or late",roles:[["AG","Reassigns"],["HH","Told why"]],ai:["Dispatch","Detects a missed check-in; reassigns"],rec:"B6",cap:"build",r:""},
+  {id:"BU6",from:"B7",n:"Payer|declines",roles:[["PY","Says no or can't be reached"]],ai:["Pay & authority","No work beyond scope; visit fee only"],rec:"B7",cap:"exists",r:"P"},
+  {id:"BU7",from:"B8",n:"Wrong or|late part",roles:[["LG","Failed delivery or delay"],["PS","Wrong variant"]],ai:["Parts","Re-sources and moves the slot"],rec:"B8",cap:"partial",r:"L",q:"Vidya Sagar: \"If by mistake he gets incorrect parts… he might have to make three trips.\""},
+  {id:"BU8",from:"B10",n:"Extra fault,|price rises",roles:[["TC","Reports it to the agent by voice"],["PY","Approves in UPI"]],ai:["Price check","Compares the quote with the usual range"],rec:"B7",cap:"build",r:"VP",q:"RK Sir: \"they identify issues with capacitor and other things then they charge more.\""},
+  {id:"BU9",from:"B11",n:"Abuse or|distress",roles:[["HH","Upset, crying"],["TC","Faces a rude customer"]],ai:["Safety","Human callback; technician's stop button; visit fee protected"],rec:"B12",cap:"partial",r:"V",note:"Gnani Workforce can hand off on negative sentiment"},
+  {id:"BU10",from:"B12",n:"Test|fails",roles:[["TC","Returns to fix"]],ai:["QA & disputes","Holds payment; books rework"],rec:"B10",cap:"build",r:"",q:"RK Sir: \"within no time it gets spoiled again.\""},
+  {id:"BU11",from:"B13",n:"Charge|disputed",roles:[["PG","Refunds"],["PY","Raises the dispute"]],ai:["QA & disputes","Looks up the order before any retry; refunds"],rec:"B13",cap:"exists",r:"P"}
+  ]},
+{ id:"W", name:"3 · Warranty and brand service", jtbd:"Get the free, authorised repair I'm owed", money:"OEM pays per claim; parts under warranty",
+  states:[
+  {id:"W1",n:"Entitlement|checked",roles:[["HH","Finds the invoice"],["OEM","Holds warranty status"],["GOV","Right to Repair portal lists brand info"]],ai:["Warranty","Checks warranty from serial or invoice"],cap:"infra",r:"",note:"No cross-brand warranty check; the portal gives information, not a live answer"},
+  {id:"W2",n:"Brand ticket|raised",roles:[["OEM","IVR or app"],["VC","Agent calls the brand for the household"]],ai:["Warranty","Navigates the brand's IVR and logs the ticket"],cap:"partial",r:"V",note:"Outbound voice exists; navigating another company's IVR is untested"},
+  {id:"W3",n:"Franchise|assigned",roles:[["OEM","Hands the job to a local franchise"]],ai:["Guardian","Tracks the promised visit"],cap:"build",r:""},
+  {id:"W4",n:"Authorised|visit",roles:[["TC","Franchise technician"],["HH","Lets them in"]],ai:["Tech copilot","Shares the evidence already gathered"],cap:"build",r:""},
+  {id:"W5",n:"Claim|approved",roles:[["OEM","Approves"],["INS","Pays under a protection plan"],["LG","Ships the warranty part"]],ai:["Warranty","Chases the approval"],cap:"exists",r:"L"},
+  {id:"W6",n:"Closed under|warranty",roles:[["HH","Confirms it works"]],ai:["Warranty","Records the repair against the machine"],cap:"infra",r:""}
+  ],
+  unhappy:[
+  {id:"WU1",from:"W1",n:"Invoice|lost",roles:[["HH","Can't find proof"]],ai:["Warranty","Searches email and SMS receipts"],rec:"W1",cap:"build",r:""},
+  {id:"WU2",from:"W3",n:"Franchise|stalls",roles:[["OEM","Slow or poor result"]],ai:["Guardian","Escalates, or switches to an independent technician"],to:"Lane 2 · B6",cap:"build",r:"",q:"RK Sir: the brand \"assigning the work to the local franchises and no proper result.\""},
+  {id:"WU3",from:"W5",n:"Claim|rejected",roles:[["OEM","Rejects"]],ai:["QA & disputes","Explains why; offers the paid repair"],to:"Lane 2 · B7",cap:"build",r:""}
+  ]},
+{ id:"T", name:"4 · Take-away repair", jtbd:"Bench repairs (motor rewinding, circuit boards, mixers) without carrying the machine myself", money:"Pickup and return logistics; bench labour",
+  states:[
+  {id:"T1",n:"Removal|approved",roles:[["PY","Approves the machine leaving"],["HH","Hands it over"]],ai:["Guardian","Asks for explicit consent to removal"],cap:"build",r:""},
+  {id:"T2",n:"Picked up",roles:[["LG","Reverse pickup"]],ai:["Dispatch","Books the pickup"],cap:"partial",r:"L",note:"Reverse pickup exists; large appliances may exceed parcel weight limits"},
+  {id:"T3",n:"Bench|diagnosis",roles:[["AG","Workshop"],["TC","Opens it up"],["HH","Gets photos"]],ai:["Tech copilot","Sends findings with photos"],cap:"build",r:""},
+  {id:"T4",n:"Quote|approved",roles:[["PY","Approves in UPI"],["PG","Holds the payment"]],ai:["Price check","Benchmarks the quote"],cap:"exists",r:"P"},
+  {id:"T5",n:"Repaired on|the bench",roles:[["TC","Repairs and tests"]],ai:["Tech copilot","Records parts and test"],cap:"build",r:""},
+  {id:"T6",n:"Returned and|reinstalled",roles:[["LG","Delivers back"],["TC","Reinstalls"]],ai:["Dispatch","Makes the delivery and the installer arrive together"],cap:"partial",r:"L"}
+  ],
+  unhappy:[
+  {id:"TU1",from:"T2",n:"Too heavy or|no service",roles:[["LG","Not serviceable"]],ai:["Dispatch","Books a local tempo or the crew"],rec:"T2",cap:"build",r:""},
+  {id:"TU2",from:"T4",n:"Machine held|over quote",roles:[["AG","Inflates the quote"]],ai:["Price check","Benchmarks; offers a second opinion"],rec:"T4",cap:"build",r:""},
+  {id:"TU3",from:"T6",n:"Damaged in|transit",roles:[["INS","Handles the claim"]],ai:["QA & disputes","Files the transit claim"],rec:"T6",cap:"partial",r:"L"}
+  ]},
+{ id:"R", name:"5 · Repair or replace", jtbd:"Decide rationally when a machine is past saving", money:"New appliance sales, EMI, exchange value: the largest tickets",
+  states:[
+  {id:"R1",n:"Economics|weighed",roles:[["HH","Shares age and history"],["PY","Considers the options"]],ai:["Replace advisor","Compares repair cost, age and new price"],cap:"build",r:"",q:"Sarala interview: a mixer costing about ₹2,400 new, with a repair quoted at about ₹1,700."},
+  {id:"R2",n:"Decision|made",roles:[["PY","Decides"]],ai:["Replace advisor","Shows both options side by side"],cap:"build",r:""},
+  {id:"R3",n:"Replacement|bought",roles:[["FIN","Offers EMI"],["PG","Takes the payment"]],ai:["Pay & authority","Buys within the approved budget"],cap:"exists",r:"P",note:"Affordability (EMI) is listed in the Pine Labs docs"},
+  {id:"R4",n:"Delivered and|installed",roles:[["LG","Delivers"],["TC","Installs"]],ai:["Dispatch","Makes the delivery and the installer arrive together"],cap:"partial",r:"L"},
+  {id:"R5",n:"Old unit|exchanged",roles:[["RCY","Collects and pays exchange value"],["LG","Reverse pickup"]],ai:["Replace advisor","Arranges exchange or recycling"],cap:"partial",r:"L"},
+  {id:"R6",n:"New machine|registered",roles:[["OEM","Registers warranty"],["HH","Shares the label once"]],ai:["Intake","Creates the new machine record"],cap:"infra",r:""}
+  ],
+  unhappy:[
+  {id:"RU1",from:"R1",n:"Pushed to|replace",roles:[["MP","Earns more on a sale"]],ai:["Replace advisor","Shows both options and any commission"],rec:"R1",cap:"build",r:""},
+  {id:"RU2",from:"R5",n:"Old unit|dumped",roles:[["RCY","Not reached"]],ai:["Replace advisor","Books an authorised recycler pickup"],rec:"R5",cap:"partial",r:"L"}
+  ]},
+{ id:"S", name:"6 · Technician and agency day", jtbd:"Fill the day with paid repairs, not trips", money:"Software per technician, faster payouts, more jobs per day",
+  states:[
+  {id:"S1",n:"Jobs|pooled",roles:[["AG","Collects calls, referrals and app jobs"]],ai:["Dispatch","One inbox with the evidence for every job"],cap:"build",r:""},
+  {id:"S2",n:"Day|planned",roles:[["AG","Assigns by urgency and seniority"]],ai:["Dispatch","Batches by skill, time window and travel"],cap:"partial",r:"L",note:"Route and distance matrix exist; a multi-stop solver with skills does not"},
+  {id:"S3",n:"Kit|loaded",roles:[["TC","Loads the van or bag"],["PS","Supplies"]],ai:["Parts","Predicts parts for the day's jobs"],cap:"build",r:""},
+  {id:"S4",n:"On the|road",roles:[["TC","Travels"],["HH","Gets an ETA"]],ai:["Dispatch","Shares the ETA; re-plans on delays"],cap:"partial",r:"L"},
+  {id:"S5",n:"Job|done",roles:[["TC","Repairs (see Lane 2, B10–B12)"]],ai:["Tech copilot","Job card, voice notes, test proof"],cap:"build",r:"V"},
+  {id:"S6",n:"Paid out",roles:[["PG","Pays the technician"],["AG","Keeps its share"]],ai:["Pay & authority","Pays the moment the test passes"],cap:"partial",r:"P",note:"Payouts exist on bank rails; payouts to informal workers by UPI ID are unclear"},
+  {id:"S7",n:"Record|earned",roles:[["TC","Builds a verified work history"]],ai:["QA & disputes","Adds the verified job to the technician's record"],cap:"infra",r:"",note:"No portable record of a technician's verified work"}
+  ],
+  unhappy:[
+  {id:"SU1",from:"S2",n:"Overbooked|route",roles:[["TC","Can't make every window"]],ai:["Dispatch","Rebalances; caps working hours"],rec:"S2",cap:"build",r:""},
+  {id:"SU2",from:"S4",n:"Mid-day|parts run",roles:[["TC","Leaves to buy a part"]],ai:["Parts","The wasted trip this map is designed to remove"],rec:"S3",cap:"build",r:"",q:"Sai Kakki: \"The technician himself goes out and gets the parts.\""},
+  {id:"SU3",from:"S5",n:"Unsafe site|or abuse",roles:[["TC","Stops work"],["AG","Is alerted"]],ai:["Safety","Stop button; visit fee protected; incident logged"],rec:"S6",cap:"build",r:""},
+  {id:"SU4",from:"S6",n:"Payment|delayed",roles:[["TC","Chases money"]],ai:["Pay & authority","Automatic payout on a passed test"],rec:"S6",cap:"partial",r:"P"}
+  ]},
+{ id:"P", name:"7 · Parts supply", jtbd:"The right part, fast, genuine", money:"Parts margin, demand forecasting, fewer returns",
+  states:[
+  {id:"P1",n:"Part|identified",roles:[["TC","Confirms"]],ai:["Parts","Maps the machine model to a compatible part"],cap:"infra",r:"",note:"No cross-brand model-to-part compatibility source"},
+  {id:"P2",n:"Stock|found",roles:[["PS","Answers the call"],["VC","Agent calls shops in Telugu"]],ai:["Parts","Calls nearby shops and records stock"],cap:"partial",r:"V",note:"Voice works; local shops have no inventory API"},
+  {id:"P3",n:"Part|held",roles:[["PS","Holds it for a time"]],ai:["Parts","Asks for a hold with an expiry"],cap:"build",r:""},
+  {id:"P4",n:"Shop|paid",roles:[["PG","Pays through P3P"],["PS","Gets paid"]],ai:["Pay & authority","Pays within the case budget"],cap:"exists",r:"P"},
+  {id:"P5",n:"Part|moved",roles:[["LG","Carries it"]],ai:["Parts","Books the fastest option"],cap:"partial",r:"L",note:"Parcel exists; same-day local delivery in tier-3 towns is unclear"},
+  {id:"P6",n:"Fitted, old|part returned",roles:[["TC","Fits it"],["LG","Takes the old part back"],["OEM","Receives cores"]],ai:["Parts","Books the return"],cap:"partial",r:"L"}
+  ],
+  unhappy:[
+  {id:"PU1",from:"P1",n:"Fit|uncertain",roles:[["TC","Verifies"]],ai:["Parts","Sends the top two candidates"],rec:"P1",cap:"build",r:""},
+  {id:"PU2",from:"P2",n:"Fake or poor|part",roles:[["PS","Sells low quality"]],ai:["Parts","Asks for provenance photos; prefers trusted shops"],rec:"P2",cap:"build",r:"",q:"Sai Kakki: a replacement water-filter tap turned out to be poor quality after a few uses."},
+  {id:"PU3",from:"P6",n:"Unused|part",roles:[["LG","Reverse pickup"],["PG","Refunds"]],ai:["Pay & authority","Refunds when the pickup is scanned"],rec:"P6",cap:"partial",r:"LP"}
+  ]},
+{ id:"O", name:"8 · Shared and rented machines", jtbd:"Fix it without fighting over who pays", money:"Contracts with societies and landlords; cost-split fees",
+  states:[
+  {id:"O1",n:"Responsibility|decided",roles:[["HH","Tenant reports"],["LL","Owner is told"]],ai:["Guardian","Reads the relevant rent-agreement clause"],cap:"build",r:"",q:"Our research: AC servicing is a documented grey zone between tenant and landlord in Indian rentals."},
+  {id:"O2",n:"Owner|approves",roles:[["LL","Approves remotely"],["PG","Takes the payment"]],ai:["Pay & authority","Sends the approval to the owner, not the tenant"],cap:"partial",r:"P",note:"No delegate or third-party payer concept is documented"},
+  {id:"O3",n:"Common-machine|ticket",roles:[["RWA","Lift, borewell pump, generator"]],ai:["Guardian","Opens a society-level case"],cap:"build",r:"",q:"Sarala: a motor failure is urgent because the water tank must be filled by evening."},
+  {id:"O4",n:"Panel vendor|sent",roles:[["RWA","Uses its approved vendor"],["AG","Sends a technician"]],ai:["Dispatch","Books from the approved panel"],cap:"build",r:""},
+  {id:"O5",n:"Cost split and|recorded",roles:[["PG","Splits the payment"],["LL","Pays its share"]],ai:["Pay & authority","Splits by the agreed rule"],cap:"partial",r:"P"}
+  ],
+  unhappy:[
+  {id:"OU1",from:"O1",n:"Who-pays|dispute",roles:[["LL","Refuses"],["HH","Disputes"]],ai:["QA & disputes","Shows the evidence and the clause"],rec:"O1",cap:"build",r:""},
+  {id:"OU2",from:"O2",n:"Owner|silent",roles:[["LL","Doesn't respond"]],ai:["Guardian","Tenant pays and records it for adjustment"],rec:"O5",cap:"partial",r:"P"}
+  ]},
+{ id:"C", name:"9 · Critical machines", jtbd:"No gap in essential function (oxygen, medicine cold chain, water)", money:"Premium response contracts; rental backups",
+  states:[
+  {id:"C1",n:"Critical|flagged",roles:[["HH","Reports"],["AG","Is alerted"]],ai:["Safety","Identifies the device class from the label"],cap:"build",r:"",q:"Round 1, Atharv: breakdowns of medical equipment at his mother's nursing home disrupt patient care."},
+  {id:"C2",n:"Backup|arranged",roles:[["MP","Rents a backup"],["LG","Delivers it"]],ai:["Dispatch","Gets a backup device there first"],cap:"partial",r:"L"},
+  {id:"C3",n:"Human-led|dispatch",roles:[["AG","A person decides"]],ai:["Safety","The agent prepares everything; it acts at L2 only"],cap:"build",r:""},
+  {id:"C4",n:"Restored and|verified",roles:[["TC","Qualified technician"],["OEM","Compliance check"],["GOV","Rules for regulated devices"]],ai:["QA & disputes","Keeps the verification record"],cap:"build",r:""}
+  ],
+  unhappy:[
+  {id:"CU1",from:"C1",n:"Missed as|critical",roles:[["HH","Didn't say it was critical"]],ai:["Safety","Human review for unknown devices"],rec:"C1",cap:"build",r:""},
+  {id:"CU2",from:"C3",n:"No qualified|technician",roles:[["OEM","Escalated to"]],ai:["Safety","Keeps the backup in place; escalates"],rec:"C2",cap:"build",r:""}
+  ]}
+];
+
+const MONEY = [
+ ["1 · Preventive care","AMC plans, consumables, seasonal servicing","Household","Reminder and booking that actually happen","Renewal rate; failures avoided"],
+ ["2 · Breakdown repair","Visit fee, labour, parts margin","Household / payer","Fewer visits per repair frees technician hours","Visits per resolved repair; days lost"],
+ ["3 · Warranty","Cost per claim, parts under warranty","Brand / insurer","Pre-visit evidence cuts repeat franchise visits","Cost per closed claim"],
+ ["4 · Take-away repair","Pickup and return, bench labour","Household","Reverse logistics volume for small appliances","Turnaround days"],
+ ["5 · Repair or replace","New appliance sale, EMI, exchange","Household / lender","Neutral advice that households trust","Share of advice followed; conflicts disclosed"],
+ ["6 · Technician day","Software per technician, payout speed","Agency","Batching and parts prediction","Completed jobs per technician-day"],
+ ["7 · Parts supply","Parts margin, demand forecasting","Technician / agency","Model-to-part matching and holds","Wrong-part rate; returns"],
+ ["8 · Shared machines","Society and landlord contracts","Landlord / society","Clear responsibility and cost split","Disputes per job"],
+ ["9 · Critical machines","Premium response, rental backups","Clinic / household","Backup first, then repair","Minutes without function"]
+];
+
+const CAPLABEL={exists:"Rail supports it today",partial:"Partly exists",build:"Must be built",infra:"Missing infrastructure"};
+const RAIL={V:"Gnani voice",P:"Pine Labs payments",L:"Delhivery logistics"};
+const NS="http://www.w3.org/2000/svg";
+const NW=152, NH=64, STEP=180, X0=24, HAPPY_DY=58, UN_DY=58+NH+42;
+const ALL={};
+
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+function glyph(g,cap,x,y){
+  if(cap==="exists") el("circle",{cx:x,cy:y,r:5,class:"g-exists"},g);
+  else if(cap==="partial"){el("circle",{cx:x,cy:y,r:5,class:"g-line"},g);el("path",{d:`M${x} ${y-5} A5 5 0 0 1 ${x} ${y+5} Z`,class:"g-exists"},g);}
+  else if(cap==="build") el("circle",{cx:x,cy:y,r:5,class:"g-line"},g);
+  else el("polygon",{points:`${x},${y-6} ${x+6},${y} ${x},${y+6} ${x-6},${y}`,class:"g-infra"},g);
+}
+function node(svg,s,x,y,kind,lane){
+  const g=el("g",{transform:`translate(${x},${y})`,class:`node ${kind==="unhappy"?"u":""}`,tabindex:"0",role:"button","aria-label":`${s.id} ${s.n.replace("|"," ")}`,"data-id":s.id},svg);
+  el("rect",{width:NW,height:NH,rx:6,class:`n-rect ${kind}`},g);
+  const t=el("text",{x:8,y:14,class:"n-id"},g); t.textContent=s.id+(s.r?"  ·  "+s.r.split("").join(" "):"");
+  s.n.split("|").forEach((line,i)=>{const tt=el("text",{x:8,y:31+i*15,class:"n-name"},g);tt.textContent=line;});
+  glyph(g,s.cap,NW-12,11);
+  const foot=el("text",{x:8,y:NH-7,class:`n-foot ${kind==="unhappy"?"unhappy":""}`},g);
+  if(kind==="unhappy") foot.textContent = s.to ? "→ "+s.to : "↩ "+s.rec;
+  else foot.textContent = s.ai[0];
+  s._lane=lane; s._kind=kind; ALL[s.id]=s;
+  g.addEventListener("click",()=>select(s.id));
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(s.id);}});
+  return g;
+}
+function draw(){
+  const svg=document.getElementById("map");
+  const maxStates=Math.max(...LANES.map(l=>l.states.length));
+  const W=X0+maxStates*STEP+10;
+  const defs=el("defs",{},svg);
+  const m1=el("marker",{id:"ah-h",viewBox:"0 0 10 10",refX:"9",refY:"5",markerWidth:"7",markerHeight:"7",orient:"auto-start-reverse"},defs);el("path",{d:"M0 0 L10 5 L0 10 z",class:"ah-happy"},m1);
+  const m2=el("marker",{id:"ah-u",viewBox:"0 0 10 10",refX:"9",refY:"5",markerWidth:"7",markerHeight:"7",orient:"auto-start-reverse"},defs);el("path",{d:"M0 0 L10 5 L0 10 z",class:"ah-unhappy"},m2);
+  let y=18;
+  LANES.forEach((lane,li)=>{
+    const lg=el("g",{class:"lane","data-lane":lane.id},svg);
+    const t=el("text",{x:X0,y:y+18,class:"lane-title"},lg);t.textContent=lane.name;
+    const st=el("text",{x:X0,y:y+38,class:"lane-sub"},lg);st.textContent=`Job to be done: ${lane.jtbd}  ·  Money: ${lane.money}`;
+    const hy=y+HAPPY_DY, uy=y+UN_DY;
+    lane.states.forEach((s,i)=>{
+      const x=X0+i*STEP; s._x=x; s._y=hy;
+      if(i<lane.states.length-1) el("line",{x1:x+NW,y1:hy+NH/2,x2:x+STEP-3,y2:hy+NH/2,class:"e-happy","marker-end":"url(#ah-h)"},lg);
+      node(lg,s,x,hy,"happy",lane);
+    });
+    const byId={}; lane.states.forEach(s=>byId[s.id]=s);
+    lane.unhappy.forEach(u=>{
+      const src=byId[u.from]; const x=src._x, cx=x+NW/2;
+      const eg=el("g",{class:"u"},lg);
+      el("line",{x1:cx,y1:hy+NH,x2:cx,y2:uy-3,class:"e-unhappy","marker-end":"url(#ah-u)"},eg);
+      const lab=el("text",{x:cx+6,y:hy+NH+24,class:"e-label"},eg);lab.textContent="fails";
+      node(lg,u,x,uy,"unhappy",lane);
+    });
+    y = uy+NH+26;
+    if(li<LANES.length-1) el("line",{x1:X0,y1:y-8,x2:W-10,y2:y-8,class:"lane-rule"},svg);
+  });
+  svg.setAttribute("viewBox",`0 0 ${W} ${y}`);
+  svg.setAttribute("width",W); svg.setAttribute("height",y);
+}
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;"}[c]));
+function capBadge(cap){
+  const m={exists:'<circle cx="7" cy="7" r="5.5" class="g-exists"/>',partial:'<circle cx="7" cy="7" r="5.5" class="g-line"/><path d="M7 1.5 A5.5 5.5 0 0 1 7 12.5 Z" class="g-exists"/>',build:'<circle cx="7" cy="7" r="5.5" class="g-line"/>',infra:'<polygon points="7,1 13,7 7,13 1,7" class="g-infra"/>'};
+  return `<span class="cap"><svg width="14" height="14" aria-hidden="true">${m[cap]}</svg>${CAPLABEL[cap]}</span>`;
+}
+const STK={}; STAKE.forEach(s=>STK[s[0]]=s);
+function select(id){
+  document.querySelectorAll(".node.sel").forEach(n=>n.classList.remove("sel"));
+  const g=document.querySelector(`.node[data-id="${id}"]`); if(g) g.classList.add("sel");
+  const s=ALL[id]; const lane=s._lane; const un=s._kind==="unhappy";
+  const branches=(lane.unhappy||[]).filter(u=>u.from===id);
+  let h=`<p class="kind ${s._kind}">${un?"Unhappy flow":"Happy flow"} · ${esc(lane.name)}</p>`;
+  h+=`<h3>${esc(s.id)} ${esc(s.n.replace("|"," "))}</h3><dl>`;
+  if(un){ h+=`<div><dt>Branches from</dt><dd><button class="linkish" data-go="${s.from}">${s.from} ${esc(ALL[s.from].n.replace("|"," "))}</button></dd></div>`;
+    h+= s.to?`<div><dt>Hands off to</dt><dd>${esc(s.to)}</dd></div>`:`<div><dt>Recovers to</dt><dd><button class="linkish" data-go="${s.rec}">${s.rec} ${esc(ALL[s.rec].n.replace("|"," "))}</button></dd></div>`; }
+  h+=`<div><dt>Stakeholders and their role here</dt><dd><ul class="roles">${s.roles.map(r=>`<li><span class="code" title="${esc(STK[r[0]][1])}">${r[0]}</span><span>${esc(r[1])}</span></li>`).join("")}</ul></dd></div>`;
+  h+=`<div><dt>Where AI can step in</dt><dd><b>${esc(s.ai[0])} agent.</b> ${esc(s.ai[1])}</dd></div>`;
+  h+=`<div><dt>Capability today</dt><dd>${capBadge(s.cap)}${s.r?` <span class="mono">· ${s.r.split("").map(c=>RAIL[c]).join(", ")}</span>`:""}${s.note?`<br><span style="color:var(--muted);font-size:14px">${esc(s.note)}</span>`:""}</dd></div>`;
+  if(s.to && !un) h+=`<div><dt>Can hand off to</dt><dd>${esc(s.to)}</dd></div>`;
+  if(branches.length) h+=`<div><dt>What can go wrong here</dt><dd>${branches.map(b=>`<button class="linkish" data-go="${b.id}">${b.id} ${esc(b.n.replace("|"," "))}</button>`).join("<br>")}</dd></div>`;
+  if(s.q) h+=`<div><dt>Evidence</dt><dd class="quote">${esc(s.q)}</dd></div>`;
+  h+=`</dl>`;
+  const p=document.getElementById("panel"); p.innerHTML=h;
+  p.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>{select(b.dataset.go);const n=document.querySelector(`.node[data-id="${b.dataset.go}"]`);if(n)n.scrollIntoView({block:"nearest",inline:"center",behavior:"smooth"});}));
+}
+let who="", capF="";
+function applyFilters(){
+  document.querySelectorAll(".node").forEach(g=>{
+    const s=ALL[g.dataset.id];
+    const okWho=!who||s.roles.some(r=>r[0]===who)||(who==="VC"&&s.r.includes("V"))||(who==="PG"&&s.r.includes("P"))||(who==="LG"&&s.r.includes("L"));
+    const okCap=!capF||s.cap===capF;
+    g.classList.toggle("dim",!(okWho&&okCap));
+  });
+}
+function buildSide(){
+  const sel=document.getElementById("who");
+  STAKE.forEach(s=>{const o=document.createElement("option");o.value=s[0];o.textContent=`${s[0]} · ${s[1]}`;sel.appendChild(o);});
+  sel.addEventListener("change",()=>{who=sel.value;applyFilters();});
+  document.querySelectorAll("[data-cap]").forEach(b=>b.addEventListener("click",()=>{capF=b.dataset.cap;document.querySelectorAll("[data-cap]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));applyFilters();}));
+  document.getElementById("show-u").addEventListener("change",e=>document.getElementById("map").classList.toggle("hide-unhappy",!e.target.checked));
+  const fit=document.getElementById("fit");
+  fit.addEventListener("click",()=>{const on=fit.getAttribute("aria-pressed")!=="true";fit.setAttribute("aria-pressed",String(on));fit.textContent=on?"Show actual size":"Fit map to screen";document.getElementById("mapwrap").classList.toggle("fit",on);});
+
+  document.getElementById("stakeholders").innerHTML=STAKE.map(s=>`<div class="card"><span class="code" style="justify-self:start">${s[0]}</span><b>${esc(s[1])}</b><span class="want">${esc(s[2])}</span><span class="jtbd">“${esc(s[3])}”</span></div>`).join("");
+
+  document.getElementById("money").innerHTML=`<thead><tr><th>Workflow</th><th>Revenue pool</th><th>Who pays</th><th>AI step that unlocks it</th><th>Metric to move</th></tr></thead><tbody>${MONEY.map(r=>`<tr>${r.map((c,i)=>i===0?`<td><b>${esc(c)}</b></td>`:`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody>`;
+
+  const all=Object.values(ALL);
+  const count=k=>all.filter(s=>s.cap===k).length;
+  const byRail=r=>["exists","partial"].map(k=>all.filter(s=>s.cap===k&&s.r.includes(r)).length);
+  const infra=all.filter(s=>s.cap==="infra");
+  document.getElementById("ledger").innerHTML=`
+   <div class="card"><b>By status</b><table style="min-width:0"><tbody>
+    ${["exists","partial","build","infra"].map(k=>`<tr><td>${capBadge(k)}</td><td class="num">${count(k)}</td></tr>`).join("")}
+    <tr><td><b>Total states</b></td><td class="num">${all.length}</td></tr></tbody></table></div>
+   <div class="card"><b>Where each rail helps</b><table style="min-width:0"><thead><tr><th>Rail</th><th>Exists</th><th>Partial</th></tr></thead><tbody>
+    ${["V","P","L"].map(r=>{const [e,p]=byRail(r);return `<tr><td>${RAIL[r]}</td><td class="num">${e}</td><td class="num">${p}</td></tr>`}).join("")}</tbody></table>
+    <span class="want">"Partial" means the rail has the primitive but not in the shape the step needs.</span></div>
+   <div class="card"><b>Missing infrastructure: fourth-rail shortlist</b><ul class="gaps">${infra.map(s=>`<li><button class="linkish" data-go="${s.id}">${s.id}</button> ${esc(s.n.replace("|"," "))}: ${esc(s.note||"")}</li>`).join("")}</ul>
+    <span class="want">Three themes recur: truth about the machine, a portable record of work, and shared telemetry.</span></div>`;
+  document.querySelectorAll("#ledger [data-go]").forEach(b=>b.addEventListener("click",()=>{select(b.dataset.go);document.querySelector(`.node[data-id="${b.dataset.go}"]`).scrollIntoView({block:"center",inline:"center",behavior:"smooth"});}));
+
+  let rows="";
+  LANES.forEach(l=>{
+    rows+=`<tr class="lanehead"><td colspan="5">${esc(l.name)} · ${esc(l.jtbd)}</td></tr>`;
+    [...l.states,...l.unhappy].forEach(s=>{
+      const un=s._kind==="unhappy";
+      rows+=`<tr class="${un?"u":""}"><td><span class="mono">${s.id}</span><br><b>${esc(s.n.replace("|"," "))}</b>${un?`<br><span class="mono">${s.to?"→ "+esc(s.to):"↩ "+s.rec}</span>`:""}</td><td>${s.roles.map(r=>`<b>${r[0]}</b> ${esc(r[1])}`).join("<br>")}</td><td><b>${esc(s.ai[0])}.</b> ${esc(s.ai[1])}</td><td>${capBadge(s.cap)}${s.note?`<br><span class="want">${esc(s.note)}</span>`:""}</td><td class="mono">${s.r?s.r.split("").map(c=>RAIL[c]).join("<br>"):"None"}</td></tr>`;
+    });
+  });
+  document.getElementById("index").innerHTML=`<thead><tr><th>State</th><th>Stakeholders and role</th><th>AI intervention</th><th>Capability today</th><th>Rail</th></tr></thead><tbody>${rows}</tbody>`;
+}
+draw(); buildSide(); select("B5");
+</script>
